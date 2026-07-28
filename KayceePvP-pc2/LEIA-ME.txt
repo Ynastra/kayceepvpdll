@@ -1,5 +1,5 @@
-KayceePvP - Setup no segundo PC
-================================
+KayceePvP - Setup no segundo PC (atualizado 2026-07-28)
+========================================================
 
 Este zip contem SO o nosso mod (KayceePvP.dll). Os outros 3 mods de que
 ele depende (BepInEx, MonoMod Loader, API) sao publicos no Thunderstore
@@ -43,51 +43,80 @@ PASSO A PASSO
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
 
+O QUE MUDOU NESSA BUILD
+------------------------
+
+O lobby agora e uma tela de verdade (Canvas), nao mais aquela caixa
+cinza feia de antes - tem campo de IP, campo de porta, botao Hospedar/
+Entrar/Pronto/Cancelar, cursor visivel. O resto do funcionamento e o
+mesmo de antes.
+
+Tambem foram corrigidos varios bugs encontrados em teste (mapa vazando
+depois do chefe, baralho aparecendo por cima do tabuleiro na tela de
+pronto, duelo travando logo no 1o turno, sacrificio de carta nao
+aparecendo pro outro lado). O duelo em si (a batalha PvP) ja foi
+validado sincronizando corretamente numa sessao de teste na mesma
+maquina - esta e a primeira vez que sera testado numa LAN de verdade
+entre 2 PCs.
+
 TESTANDO A CONEXAO LAN
 -----------------------
 
 Os dois PCs precisam estar na mesma rede (mesmo Wi-Fi/roteador).
 
-No PC que vai HOSPEDAR: dentro do jogo, aperte F9 pra abrir o lobby, e
-clica em "Hospedar (LAN)". Ele vai escutar na porta 40125.
+Dentro do jogo, aperte F9 pra abrir o lobby (tela nova). No PC que vai
+HOSPEDAR: clique em "Hospedar" (porta default 40125, pode deixar como
+esta). Ele vai escutar nessa porta.
 
   IMPORTANTE: na primeira vez que o jogo tentar escutar nessa porta, o
   Firewall do Windows do PC que hospeda provavelmente vai perguntar se
   permite a conexao - clique em "Permitir acesso" (ou libera a porta
   40125/TCP manualmente se o aviso nao aparecer e a conexao falhar).
 
-No PC que vai ENTRAR: aperte F9, digita o IP local do PC que esta
-hospedando (Wi-Fi/Ethernet, tipo 192.168.x.x - pra descobrir, no PC que
-hospeda: Configuracoes > Rede > Propriedades, ou "ipconfig" no
-terminal, procura "Endereco IPv4"), e clica em "Entrar".
+No PC que vai ENTRAR: no campo de IP, apague o "127.0.0.1" que vem
+preenchido e digita o IP local do PC que esta hospedando (Wi-Fi/
+Ethernet, tipo 192.168.x.x - pra descobrir, no PC que hospeda:
+Configuracoes > Rede > Propriedades, ou "ipconfig" no terminal, procura
+"Endereco IPv4"), deixa a porta em 40125, e clica em "Entrar".
 
-Depois que conectar, os dois clicam em "Pronto" e o jogo deveria
-comecar sozinho pros dois, com o mesmo mapa.
+Se der erro de conexao, a tela mostra a mensagem - manda pra gente.
+Tem um botao "Cancelar tentativa" se precisar tentar de novo sem
+fechar o jogo.
 
-Qualquer erro que aparecer no console ou na telinha do lobby, manda a
-mensagem completa que a gente resolve.
+Depois que conectar (aparece "Conectado!" nos dois), clicam em "Pronto"
+e o jogo deveria comecar sozinho pros dois, com o mesmo mapa.
 
-TESTANDO O DUELO (ATALHO DE DEBUG - TECLA F10)
-------------------------------------------------
+TESTANDO O DUELO (ATALHOS DE DEBUG)
+-------------------------------------
 
-Isso e novo nessa build: um atalho pra testar a batalha PvP em si sem
-precisar jogar o mapa inteiro ate o chefe.
+Duas teclas novas/atualizadas pra testar a batalha PvP sem precisar
+jogar o mapa inteiro toda vez:
 
-Sozinho (so pra ver se nao quebra nada): dentro de uma run, ja no mapa
-(cena do Kaycee's Mod carregada), aperta F10. Ele monta um baralho de
-10 cartas aleatorias e entra direto numa batalha - o "oponente"
-nessa batalha e controlado pelo proprio mod (nesse modo solo ele so
-repete as suas jogadas de volta pra si mesmo, e normal).
+  - Backspace: dentro de uma batalha (contra a IA, andando no mapa),
+    vence ela na hora. Serve so pra andar ate o chefe mais rapido -
+    nao pula o mapa em si, so as lutas.
 
-Com os dois PCs de verdade: primeiro façam o handshake do lobby normal
-(F9, host/entrar, os dois "Pronto" - isso deixa a conexao aberta). Depois
-que os dois estiverem carregados no mapa (cada um na sua run solo),
-aperta F10 nos dois PCs. Ai sim a batalha usa a conexao de rede: as
-cartas que voce joga aparecem do lado do oponente na tela do outro
-jogador, e vice-versa. Toca o sino pra passar o turno.
+  - F6: dentro de uma run ja conectada ao lobby (host/peer conectados,
+    "Pronto" apertado, run comecada, ja no mapa), aperta F6 nos DOIS
+    PCs. Isso pula direto pro duelo com um baralho pequeno e fixo
+    (sempre as mesmas cartas nos dois lados), passando pela mesma tela
+    de Pronto/contagem regressiva de sempre e usando a conexao de rede
+    de verdade - e o caminho MAIS TESTADO ate agora, prefira ele.
 
-Ainda e uma versao inicial/de debug (baralho aleatorio, nao o baralho
-real da run ainda) - o objetivo agora e so confirmar que a sincronizacao
-de jogadas entre os dois PCs funciona. Qualquer coisa estranha (jogada
-que nao aparece do outro lado, turno que nao passa, etc), anota o que
-aconteceu e manda pra gente ver o log do console.
+  - F10 (mais antigo): baralho aleatorio, pula tudo sem passar pela
+    tela de Pronto - menos testado, use so se o F6 nao servir.
+
+No duelo: joga carta, toca o sino pra passar o turno. As jogadas
+(incluindo sacrificio de carta pra pagar custo de sangue) devem
+aparecer certinhas do outro lado. Quando alguem vencer por 10 de
+diferenca na balanca, o duelo deve encerrar nos dois PCs com o mesmo
+vencedor.
+
+Itens (consumiveis) ficam desativados durante o duelo por enquanto
+(ainda nao sincronizados pela rede) - continuam disponiveis no mapa
+normalmente.
+
+Qualquer coisa estranha (jogada que nao aparece do outro lado, turno
+que nao passa, duelo que nao termina, carta duplicada), anota o que
+aconteceu e manda pra gente ver o log (BepInEx\LogOutput.log dentro
+da pasta do profile).
