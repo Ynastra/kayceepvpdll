@@ -1,4 +1,4 @@
-KayceePvP - Setup no segundo PC (atualizado 2026-07-28)
+KayceePvP - Setup no segundo PC (atualizado 2026-08-06)
 ========================================================
 
 Este zip contem SO o nosso mod (KayceePvP.dll). Os outros 3 mods de que
@@ -12,7 +12,8 @@ PASSO A PASSO
 1. Instale o Thunderstore Mod Manager nesse PC (mesmo lugar de sempre).
 
 2. Dentro do app, com "Inscryption" selecionado como jogo, crie um
-   profile novo chamado "KayceePvP".
+   profile novo chamado "KayceePvP" (se ja existir de uma vez anterior,
+   pode pular pro passo 6 - so precisa trocar o KayceePvP.dll mesmo).
 
 3. Nesse profile, use a busca/aba de mods do proprio app pra instalar
    estes 3 (e SO estes 3 - nao instale nenhum outro mod de cartas,
@@ -35,29 +36,54 @@ PASSO A PASSO
    chamada "KayceePvP" (se ainda nao existir).
 
 6. Copie o arquivo KayceePvP.dll (que veio junto nesse zip) pra dentro
-   dessa pasta:
+   dessa pasta, SUBSTITUINDO qualquer versao anterior que ja esteja la:
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
+
+   Confira que o arquivo tem 2.348.544 bytes depois de copiar (tamanho
+   exato desta build) - se vier diferente, a copia falhou ou pegou a
+   versao errada.
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
 
-O QUE MUDOU NESSA BUILD
-------------------------
+O QUE MUDOU NESSA BUILD (desde a versao de 2026-07-28)
+--------------------------------------------------------
 
-O lobby agora e uma tela de verdade (Canvas), nao mais aquela caixa
-cinza feia de antes - tem campo de IP, campo de porta, botao Hospedar/
-Entrar/Pronto/Cancelar, cursor visivel. O resto do funcionamento e o
-mesmo de antes.
+- **Partida agora e melhor-de-3** (2 vitorias fecham a serie), nao mais
+  1 duelo so. A HUD durante a batalha mostra duas linhas no topo:
+  vantagem de dano atual (numero absoluto, igual nos dois PCs) e o
+  placar da serie (ex: "PLACAR: JOGADOR 1  1 x 0  JOGADOR 2").
+- **Nomes de jogador**: o lobby agora tem um campo "Nome:" - digite um
+  nome antes de clicar Pronto (ate 16 caracteres). Se nao digitar nada,
+  fica "JOGADOR 1"/"JOGADOR 2" por padrao. O nome aparece na HUD e na
+  tela final.
+- **Fim de partida fecha o jogo**: ao terminar a serie (2-0 ou 2-1),
+  aparece uma tela final com o resultado - aperte Enter ou Espaco pra
+  FECHAR o jogo (nao volta mais pro menu sozinho). Precisa abrir o
+  jogo de novo manualmente pra uma nova partida.
+- Varias falas de NPC do mapa (Comerciante, Fogueira, Entalhador, o
+  aviso de inicio de duelo) foram trocadas por versoes customizadas -
+  so aparecem em partida PvP, o jogo normal continua com as falas
+  originais.
+- Corrigido: o poder da Pega-rabuda (Magpie/Tutor) estava deixando os
+  DOIS lados escolherem carta ao inves de so quem jogou a carta.
 
-Tambem foram corrigidos varios bugs encontrados em teste (mapa vazando
-depois do chefe, baralho aparecendo por cima do tabuleiro na tela de
-pronto, duelo travando logo no 1o turno, sacrificio de carta nao
-aparecendo pro outro lado). O duelo em si (a batalha PvP) ja foi
-validado sincronizando corretamente numa sessao de teste na mesma
-maquina - esta e a primeira vez que sera testado numa LAN de verdade
-entre 2 PCs.
+O QUE AINDA NAO FOI CONFIRMADO NUM TESTE REAL
+------------------------------------------------
+
+As mudancas acima (melhor-de-3, nomes, tela final/fechar) foram
+testadas por build/log, mas ainda NAO foram vistas rodando numa
+partida real entre 2 PCs de verdade - esta e a primeira vez. Se algo
+parecer estranho (placar nao aparece, nome nao sincroniza, o jogo nao
+fecha ao apertar Enter na tela final), anota exatamente o que
+aconteceu (com print de tela se der) e manda pra gente.
+
+Um bug conhecido e NAO corrigido ainda: a habilidade do Cuco/Corvo
+(CreateEgg) pode gerar um resultado diferente em cada PC (ovo bom de
+um lado, ovo quebrado do outro) - se acontecer, so segue jogando
+normal, ja sabemos desse.
 
 TESTANDO A CONEXAO LAN
 -----------------------
@@ -83,8 +109,9 @@ Se der erro de conexao, a tela mostra a mensagem - manda pra gente.
 Tem um botao "Cancelar tentativa" se precisar tentar de novo sem
 fechar o jogo.
 
-Depois que conectar (aparece "Conectado!" nos dois), clicam em "Pronto"
-e o jogo deveria comecar sozinho pros dois, com o mesmo mapa.
+Depois que conectar (aparece "Conectado!" nos dois), digite seu nome
+no campo "Nome:" e clicam em "Pronto" - o jogo deveria comecar sozinho
+pros dois, com o mesmo mapa.
 
 TESTANDO O DUELO (ATALHOS DE DEBUG)
 -------------------------------------
@@ -108,15 +135,13 @@ jogar o mapa inteiro toda vez:
 
 No duelo: joga carta, toca o sino pra passar o turno. As jogadas
 (incluindo sacrificio de carta pra pagar custo de sangue) devem
-aparecer certinhas do outro lado. Quando alguem vencer por 10 de
-diferenca na balanca, o duelo deve encerrar nos dois PCs com o mesmo
-vencedor.
+aparecer certinhas do outro lado.
 
 Itens (consumiveis) ficam desativados durante o duelo por enquanto
 (ainda nao sincronizados pela rede) - continuam disponiveis no mapa
 normalmente.
 
 Qualquer coisa estranha (jogada que nao aparece do outro lado, turno
-que nao passa, duelo que nao termina, carta duplicada), anota o que
-aconteceu e manda pra gente ver o log (BepInEx\LogOutput.log dentro
-da pasta do profile).
+que nao passa, duelo que nao termina, carta duplicada, placar/nome
+que nao bate entre os dois PCs), anota o que aconteceu e manda pra
+gente ver o log (BepInEx\LogOutput.log dentro da pasta do profile).
