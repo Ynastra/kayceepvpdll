@@ -1,4 +1,4 @@
-KayceePvP - Setup no segundo PC (atualizado 2026-08-06)
+KayceePvP - Setup no segundo PC (atualizado 2026-08-07)
 ========================================================
 
 Este zip contem SO o nosso mod (KayceePvP.dll). Os outros 3 mods de que
@@ -40,9 +40,12 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   Confira que o arquivo tem 2.348.544 bytes depois de copiar (tamanho
+   Confira que o arquivo tem 2.383.360 bytes depois de copiar (tamanho
    exato desta build) - se vier diferente, a copia falhou ou pegou a
    versao errada.
+
+   SHA-256 esperado:
+   86A058D82DF57E2E98ECA07700345D8C34A74AE6490A57AB86EDBA55BA0296E8
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
@@ -50,6 +53,11 @@ PASSO A PASSO
 
 O QUE MUDOU NESSA BUILD (desde a versao de 2026-07-28)
 --------------------------------------------------------
+
+- Corrigido no PC2 com save novo: a tela de selecao de baralho agora
+  abre no multiplayer. Antes, liberar os icones nao bastava porque o
+  proprio jogo pulava a tela quando havia apenas um deck na progressao.
+- Incluido o terceiro mapa "Forja Simetrica".
 
 - **Partida agora e melhor-de-3** (2 vitorias fecham a serie), nao mais
   1 duelo so. A HUD durante a batalha mostra duas linhas no topo:
