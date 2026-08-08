@@ -4,6 +4,26 @@ Este repositório contém a build de distribuição do KayceePvP para que os doi
 
 ## Instruções para o agente no PC2
 
+### Método recomendado — atualização automática
+
+Abra o PowerShell nesta pasta e execute:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Atualizar-PC2.ps1
+```
+
+O script procura o profile `KayceePvP`, encontra todas as cópias da DLL dentro
+dos plugins desse profile, substitui e valida cada uma. Se o profile ativo tiver
+outro nome, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Atualizar-PC2.ps1 -ProfileName "NOME_EXATO"
+```
+
+Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
+
+### Método manual
+
 1. Feche completamente o Inscryption e confirme que não existe `Inscryption.exe` no Gerenciador de Tarefas.
 2. Atualize este repositório na branch `master` (`git pull origin master`) ou baixe novamente o arquivo `KayceePvP.dll` da raiz.
 3. Localize o profile do Thunderstore usado no PC2. O caminho costuma ser:
