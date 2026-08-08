@@ -33,6 +33,20 @@ Este repositório contém a build de distribuição do KayceePvP para que os doi
 
    Tamanho esperado: `2383360` bytes.
 
+   **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
+   exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
+   a comparação automática abaixo, trocando somente o caminho:
+
+   ```powershell
+   $esperado = "86A058D82DF57E2E98ECA07700345D8C34A74AE6490A57AB86EDBA55BA0296E8"
+   $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
+   $obtido.Length
+   $obtido -eq $esperado
+   ```
+
+   O resultado correto é `64` e depois `True`. O arquivo `SHA256SUMS.txt`
+   contém o mesmo checksum em formato legível por ferramentas automáticas.
+
 7. Só depois da confirmação do hash, abra o jogo pelo profile correto do Thunderstore.
 8. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
 
