@@ -44,12 +44,12 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   Confira que o arquivo tem 6.512.128 bytes depois de copiar (tamanho
+   Confira que o arquivo tem 6.552.576 bytes depois de copiar (tamanho
    exato desta build) - se vier diferente, a copia falhou ou pegou a
    versao errada.
 
    SHA-256 esperado:
-   29D0C35DF82BB50DC31C8D211F83031431E599C6DD71094DEE54ADA45B4739DB
+   65AEFA92D3BEB9E39E77E27A52DDFA4333D7EB7C08B04075CB19EFB99392AA0D
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
@@ -63,6 +63,14 @@ lados": um sigilo que reposiciona a criatura no fim do turno (tipo o do
 Moose) disparava certinho no lado de quem jogou, mas nunca disparava no
 espelho do outro lado - so na primeira jogada de cada batalha. Isso fazia
 o tabuleiro discordar pro resto do duelo inteiro. Corrigido.
+
+NOVIDADE GRANDE NESTA BUILD (2026-08-24): idioma automatico + F10
+--------------------------------------------------------------------
+
+O mod agora segue o idioma configurado no proprio Inscryption (ingles ou
+portugues) - textos, dialogos, nomes das cartas renomeadas, tudo. Trocar
+idioma pelo menu do jogo ja reflete sem precisar reiniciar. Tambem tem um
+atalho novo, F10, que abre a pagina de reportar bugs/sugestoes no GitHub.
 
 CORRECAO NOVA (2026-08-24, achada no seu segundo log)
 --------------------------------------------------------

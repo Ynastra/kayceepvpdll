@@ -50,17 +50,17 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   29D0C35DF82BB50DC31C8D211F83031431E599C6DD71094DEE54ADA45B4739DB
+   65AEFA92D3BEB9E39E77E27A52DDFA4333D7EB7C08B04075CB19EFB99392AA0D
    ```
 
-   Tamanho esperado: `6512128` bytes.
+   Tamanho esperado: `6552576` bytes.
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "29D0C35DF82BB50DC31C8D211F83031431E599C6DD71094DEE54ADA45B4739DB"
+   $esperado = "65AEFA92D3BEB9E39E77E27A52DDFA4333D7EB7C08B04075CB19EFB99392AA0D"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -123,6 +123,14 @@ depois revela sua forma verdadeira) que é sorteado localmente e nunca é
 avisado pro outro lado - toda vez que ela aparecia, os dois PCs discordavam
 sobre o que aquela carta realmente era. Removida do mod, igual já fizemos
 com o Kraken e as cartas de tentáculo.
+
+## Novidade grande nesta build (2026-08-24): idioma automático + F10
+
+O mod agora segue o idioma configurado no próprio Inscryption (inglês ou
+português) - textos, diálogos, nomes das cartas renomeadas, tudo. Trocar
+idioma pelo menu do jogo já reflete sem precisar reiniciar. Também tem um
+atalho novo, **F10**, que abre a página de reportar bugs/sugestões no
+GitHub (aparece uma linha abaixo do crédito do mod avisando disso).
 
 ## O que ainda NÃO foi testado em partida real de 2 PCs
 
