@@ -48,17 +48,17 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   86A058D82DF57E2E98ECA07700345D8C34A74AE6490A57AB86EDBA55BA0296E8
+   B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225
    ```
 
-   Tamanho esperado: `2383360` bytes.
+   Tamanho esperado: `6511104` bytes.
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "86A058D82DF57E2E98ECA07700345D8C34A74AE6490A57AB86EDBA55BA0296E8"
+   $esperado = "B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -67,14 +67,50 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    O resultado correto é `64` e depois `True`. O arquivo `SHA256SUMS.txt`
    contém o mesmo checksum em formato legível por ferramentas automáticas.
 
-7. Só depois da confirmação do hash, abra o jogo pelo profile correto do Thunderstore.
-8. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
+8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
+9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
 
-## O que esta build corrige
+## O que esta build corrige (acumulado desde a última atualização do PC2, 2026-08-07)
 
-- Em saves novos do PC2, força a abertura da tela de seleção de baralho no modo multiplayer.
-- Mantém os baralhos individuais liberados sem gravar progressão falsa no save.
-- Inclui o terceiro mapa **Forja Simétrica**, além das correções e recursos acumulados da build atual.
+Sessão longa de correções reais de sincronização de rede e recursos novos.
+Destaques mais relevantes pra jogar:
+
+- **Correções de sincronização confirmadas por log real** (bugs que só
+  apareciam jogando de verdade entre 2 PCs, não em teste local): mãos
+  embaralhadas de forma diferente a cada batalha do melhor-de-3 (antes
+  repetiam a mesma ordem); limiar de vitória do duelo PvP unificado em 15
+  dentes em todos os modos; stats do Morsel (Larva) sincronizados
+  corretamente entre os dois lados; um falso-positivo de "estado
+  dessincronizado" no fim de turno foi identificado e corrigido (o jogo
+  nunca tinha realmente dessincronizado nesse ponto, era um bug de
+  diagnóstico).
+- **Rato Misterioso virou "Rato Curioso" e Amoeba virou "Ameba Alfa"**:
+  depois de vários bugs reais de sincronização causados pelo sigilo
+  Amorphous (habilidade aleatória) nessas duas cartas, abandonamos esse
+  design. Agora o Rato Curioso tem `Tutor` (Pega-rabuda/Hoarder) fixo e a
+  Ameba Alfa tem `BuffNeighbours` (Líder/Leader) fixo - sem sorteio, sem
+  risco de dessincronizar. Nenhuma das duas concede mais item de mochila.
+- **Novo modo de mapa**: as 3 rotas do modo "Batalhas" (Refinamento/Totem/
+  Expansão) foram redesenhadas com identidades próprias (decks
+  trabalhados/clonados, sinergia tribal com Totem, ou deck grande com
+  economia de peles). O estipêndio pós-batalha central agora é concedido
+  aos dois jogadores, vença ou perca.
+- **F6 agora é configurável**: o baralho de teste do atalho F6 pode ser
+  editado num arquivo de texto (sem recompilar), útil pra reproduzir
+  cenários específicos rapidamente.
+- Novo starter deck "COBAIAS" (Rato Curioso + Larva + Skink) disponível na
+  seleção normal quando multiplayer está habilitado.
+- Dependência `API` atualizada para `2.24.0` (ver passo 7 acima - precisa
+  atualizar dos dois lados).
+
+## O que ainda NÃO foi testado em partida real de 2 PCs
+
+Todas as correções acima passaram por gates automatizados e testes de
+código, mas várias delas (principalmente as de sincronização do Rato/
+barreira de combate) ainda esperam confirmação num playtest real bilateral.
+Se algo parecer estranho, anota o que aconteceu (com log se possível) e
+manda pra gente ver.
 
 ## Alternativa sem Git
 

@@ -1,4 +1,4 @@
-KayceePvP - Setup no segundo PC (atualizado 2026-08-07)
+KayceePvP - Setup no segundo PC (atualizado 2026-08-24)
 ========================================================
 
 Este zip contem SO o nosso mod (KayceePvP.dll). Os outros 3 mods de que
@@ -21,9 +21,13 @@ PASSO A PASSO
 
      - BepInExPack Inscryption   (autor: BepInEx)
      - MonoMod Loader Inscryption (autor: BepInEx)
-     - API                        (autor: API_dev)
+     - API                        (autor: API_dev) - VERSAO 2.24.0 EXATA
 
-   Confirme que os 3 aparecem habilitados na lista do profile.
+   Confirme que os 3 aparecem habilitados na lista do profile. Se o profile
+   ja existia de uma vez anterior e a API estiver numa versao diferente de
+   2.24.0, ATUALIZE ela pelo proprio Thunderstore Mod Manager antes de
+   continuar - uma versao errada da API e a causa mais provavel do mod dar
+   erro ao iniciar o jogo.
 
 4. Ache a pasta desse profile. Geralmente fica em:
 
@@ -40,53 +44,59 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   Confira que o arquivo tem 2.383.360 bytes depois de copiar (tamanho
+   Confira que o arquivo tem 6.511.104 bytes depois de copiar (tamanho
    exato desta build) - se vier diferente, a copia falhou ou pegou a
    versao errada.
 
    SHA-256 esperado:
-   86A058D82DF57E2E98ECA07700345D8C34A74AE6490A57AB86EDBA55BA0296E8
+   B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
 
-O QUE MUDOU NESSA BUILD (desde a versao de 2026-07-28)
+O QUE MUDOU NESSA BUILD (acumulado desde 2026-08-07)
 --------------------------------------------------------
 
-- Corrigido no PC2 com save novo: a tela de selecao de baralho agora
-  abre no multiplayer. Antes, liberar os icones nao bastava porque o
-  proprio jogo pulava a tela quando havia apenas um deck na progressao.
-- Incluido o terceiro mapa "Forja Simetrica".
+Sessao longa de correcoes reais de sincronizacao encontradas jogando de
+verdade entre 2 PCs, mais recursos novos:
 
-- **Partida agora e melhor-de-3** (2 vitorias fecham a serie), nao mais
-  1 duelo so. A HUD durante a batalha mostra duas linhas no topo:
-  vantagem de dano atual (numero absoluto, igual nos dois PCs) e o
-  placar da serie (ex: "PLACAR: JOGADOR 1  1 x 0  JOGADOR 2").
-- **Nomes de jogador**: o lobby agora tem um campo "Nome:" - digite um
-  nome antes de clicar Pronto (ate 16 caracteres). Se nao digitar nada,
-  fica "JOGADOR 1"/"JOGADOR 2" por padrao. O nome aparece na HUD e na
-  tela final.
-- **Fim de partida fecha o jogo**: ao terminar a serie (2-0 ou 2-1),
-  aparece uma tela final com o resultado - aperte Enter ou Espaco pra
-  FECHAR o jogo (nao volta mais pro menu sozinho). Precisa abrir o
-  jogo de novo manualmente pra uma nova partida.
-- Varias falas de NPC do mapa (Comerciante, Fogueira, Entalhador, o
-  aviso de inicio de duelo) foram trocadas por versoes customizadas -
-  so aparecem em partida PvP, o jogo normal continua com as falas
-  originais.
-- Corrigido: o poder da Pega-rabuda (Magpie/Tutor) estava deixando os
-  DOIS lados escolherem carta ao inves de so quem jogou a carta.
+- Maos embaralhadas de forma DIFERENTE em cada batalha do melhor-de-3
+  (antes repetiam a mesma ordem/mao em todas as 3 batalhas - corrigido).
+- Limiar de vitoria do duelo PvP unificado em 15 dentes em todos os modos
+  de mapa (antes alguns modos usavam 10).
+- Stats do Morsel (Larva) agora sincronizam certinho entre os dois lados
+  quando ela e sacrificada/transfere vida.
+- Um "estado dessincronizado" falso que aparecia as vezes no fim de turno
+  foi identificado e corrigido - era um bug de diagnostico (duas acoes
+  diferentes sendo comparadas por engano), o jogo nunca tinha realmente
+  dessincronizado nesse ponto.
+- O Rato Misterioso virou "Rato Curioso" e a Amoeba virou "Ameba Alfa":
+  removemos de vez o sigilo aleatorio (Amorphous) dessas duas cartas
+  depois de varios bugs reais de sincronizacao causados por ele. Agora o
+  Rato Curioso tem Tutor (Pega-rabuda) fixo, a Ameba Alfa tem
+  BuffNeighbours (Lider) fixo - sem sorteio, e nenhuma das duas concede
+  mais item de mochila.
+- Modo de mapa "Batalhas" redesenhado: as 3 rotas (Refinamento/Totem/
+  Expansao) agora tem identidades proprias mais trabalhadas, e o
+  estipendio pos-batalha central e dado aos dois jogadores, vença ou
+  perca (antes so o vencedor recebia).
+- Novo starter deck "COBAIAS" (Rato Curioso + Larva + Skink) na selecao
+  normal quando multiplayer esta habilitado.
+- F6 (atalho de teste) agora le o baralho de um arquivo de configuracao -
+  detalhe tecnico, nao muda a forma de jogar normal.
+- IMPORTANTE: a dependencia "API" precisa estar na versao 2.24.0 dos dois
+  lados agora (era 2.23.7) - ver aviso no passo 3 acima.
 
 O QUE AINDA NAO FOI CONFIRMADO NUM TESTE REAL
 ------------------------------------------------
 
-As mudancas acima (melhor-de-3, nomes, tela final/fechar) foram
-testadas por build/log, mas ainda NAO foram vistas rodando numa
-partida real entre 2 PCs de verdade - esta e a primeira vez. Se algo
-parecer estranho (placar nao aparece, nome nao sincroniza, o jogo nao
-fecha ao apertar Enter na tela final), anota exatamente o que
-aconteceu (com print de tela se der) e manda pra gente.
+Todas as correcoes acima passaram por testes automatizados/build, mas
+varias (principalmente as de sincronizacao do Rato e da barreira de
+combate) ainda esperam confirmacao numa partida real entre os 2 PCs -
+essa e a primeira vez que essa build especifica roda numa partida de
+verdade. Se algo parecer estranho, anota exatamente o que aconteceu (com
+log/print se der) e manda pra gente ver.
 
 Um bug conhecido e NAO corrigido ainda: a habilidade do Cuco/Corvo
 (CreateEgg) pode gerar um resultado diferente em cada PC (ovo bom de

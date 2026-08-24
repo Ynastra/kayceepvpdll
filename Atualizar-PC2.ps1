@@ -3,7 +3,8 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$expectedHash = "86A058D82DF57E2E98ECA07700345D8C34A74AE6490A57AB86EDBA55BA0296E8"
+$expectedHash = "B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225"
+$expectedApiVersion = "2.24.0"
 $sourceDll = Join-Path $PSScriptRoot "KayceePvP.dll"
 
 if (Get-Process -Name "Inscryption" -ErrorAction SilentlyContinue) {
@@ -60,6 +61,25 @@ foreach ($profile in $profiles) {
             throw "Falha ao validar $target. Obtido=$installedHash"
         }
         Write-Host "ATUALIZADA E VALIDADA: $target" -ForegroundColor Green
+    }
+
+    # A dependencia API_dev-API precisa estar na MESMA versao dos dois lados,
+    # senao o mod pode falhar ao carregar ou os dois lados anunciam
+    # protocolos diferentes no lobby. Checagem apenas informativa - nao
+    # tenta atualizar a dependencia sozinho.
+    $apiManifest = Join-Path $plugins "API_dev-API\manifest.json"
+    if (Test-Path -LiteralPath $apiManifest) {
+        $apiVersion = (Get-Content -LiteralPath $apiManifest -Raw | ConvertFrom-Json).version_number
+        if ($apiVersion -ne $expectedApiVersion) {
+            Write-Host "ATENCAO: API_dev-API neste profile esta na versao $apiVersion, mas o build atual foi feito contra $expectedApiVersion." -ForegroundColor Yellow
+            Write-Host "Atualize a dependencia 'API' para $expectedApiVersion pelo Thunderstore Mod Manager antes de abrir o jogo." -ForegroundColor Yellow
+        }
+        else {
+            Write-Host "API_dev-API confirmada na versao esperada ($apiVersion)." -ForegroundColor Green
+        }
+    }
+    else {
+        Write-Host "ATENCAO: nao encontrei API_dev-API em $plugins - confirme que a dependencia 'API' (autor API_dev) esta instalada nesse profile." -ForegroundColor Yellow
     }
 }
 
