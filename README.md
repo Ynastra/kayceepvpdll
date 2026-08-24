@@ -1,6 +1,8 @@
 # KayceePvP — atualização do PC2
 
-Este repositório contém a build de distribuição do KayceePvP para que os dois computadores usem **exatamente a mesma DLL**.
+Este repositório contém a build de distribuição do KayceePvP para que os dois computadores usem **exatamente a mesma DLL**, e é também o canal usado para reportar bugs de volta (branch `report-de-erros`).
+
+**Encontrou algo estranho numa partida?** Veja `COMO-REPORTAR-BUGS.md` neste repositório — não precisa esperar a próxima atualização pra reportar.
 
 ## Instruções para o agente no PC2
 
@@ -48,17 +50,17 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225
+   F73F1EFA47AF1982CBC7C2C24E40A7BF739E86B4968FBCDC981A6A2055543B16
    ```
 
-   Tamanho esperado: `6511104` bytes.
+   Tamanho esperado: `6511616` bytes.
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225"
+   $esperado = "F73F1EFA47AF1982CBC7C2C24E40A7BF739E86B4968FBCDC981A6A2055543B16"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -103,6 +105,15 @@ Destaques mais relevantes pra jogar:
   seleção normal quando multiplayer está habilitado.
 - Dependência `API` atualizada para `2.24.0` (ver passo 7 acima - precisa
   atualizar dos dois lados).
+
+## Correção nova nesta build (2026-08-24, achada no seu último report)
+
+O log que você mandou (obrigado!) mostrou que TODAS as cartas divergiam
+entre os dois lados desde a primeira jogada da batalha. Achamos a causa
+exata: um sigilo que reposiciona a criatura no fim do turno (como o do
+Moose) disparava certinho no lado de quem jogou, mas nunca disparava no
+espelho do outro lado — só na primeira jogada de cada batalha. Isso fazia
+o tabuleiro discordar pro resto do duelo inteiro. Corrigido.
 
 ## O que ainda NÃO foi testado em partida real de 2 PCs
 

@@ -44,16 +44,25 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   Confira que o arquivo tem 6.511.104 bytes depois de copiar (tamanho
+   Confira que o arquivo tem 6.511.616 bytes depois de copiar (tamanho
    exato desta build) - se vier diferente, a copia falhou ou pegou a
    versao errada.
 
    SHA-256 esperado:
-   B8C95C3A9336B19A25B29BA45C3292B26D02CCC21BE0D07F6F25911033C65225
+   F73F1EFA47AF1982CBC7C2C24E40A7BF739E86B4968FBCDC981A6A2055543B16
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-24, achada no seu ultimo log - obrigado por mandar!)
+----------------------------------------------------------------------------
+
+Achamos a causa exata do "as cartas nao tiveram os efeitos iguais pros dois
+lados": um sigilo que reposiciona a criatura no fim do turno (tipo o do
+Moose) disparava certinho no lado de quem jogou, mas nunca disparava no
+espelho do outro lado - so na primeira jogada de cada batalha. Isso fazia
+o tabuleiro discordar pro resto do duelo inteiro. Corrigido.
 
 O QUE MUDOU NESSA BUILD (acumulado desde 2026-08-07)
 --------------------------------------------------------
