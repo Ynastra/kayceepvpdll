@@ -44,8 +44,8 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (sem mudanca de gameplay - so tooling/documentacao):
-   9C40D6AB8ECA8D0A0F0514D69FDC1E5071BDE7209ADE6AC9AA10E8847C48D45D
+   SHA-256 esperado (0.1.1 candidata - painel de feedback novo no F10):
+   420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
@@ -60,7 +60,16 @@ Moose) disparava certinho no lado de quem jogou, mas nunca disparava no
 espelho do outro lado - so na primeira jogada de cada batalha. Isso fazia
 o tabuleiro discordar pro resto do duelo inteiro. Corrigido.
 
-NOVIDADE GRANDE NESTA BUILD (2026-08-24): idioma automatico + F10
+NOVIDADE (0.1.1 candidata): painel de feedback completo
+------------------------------------------------------------
+
+O F10 nao abre mais o navegador direto - agora abre um painel bilingue
+dentro do jogo: ENTER abre a pagina de reportar bug/sugestao no GitHub,
+D gera um diagnostico sanitizado (sem IP/convite/caminho pessoal) numa
+pasta local pra anexar manualmente, ESC fecha sem fazer nada. Nada e
+enviado automaticamente.
+
+NOVIDADE GRANDE (2026-08-24): idioma automatico + F10
 --------------------------------------------------------------------
 
 O mod agora segue o idioma configurado no proprio Inscryption (ingles ou

@@ -50,18 +50,18 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   9C40D6AB8ECA8D0A0F0514D69FDC1E5071BDE7209ADE6AC9AA10E8847C48D45D
+   420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5
    ```
 
-   (sem mudança de gameplay - só ajustes de tooling/documentação pra
-   preparação do lançamento público)
+   (versão 0.1.1 candidata - F10 agora abre um painel com diagnóstico
+   sanitizado em vez de ir direto pro navegador; veja a nota abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "9C40D6AB8ECA8D0A0F0514D69FDC1E5071BDE7209ADE6AC9AA10E8847C48D45D"
+   $esperado = "420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -132,6 +132,15 @@ português) - textos, diálogos, nomes das cartas renomeadas, tudo. Trocar
 idioma pelo menu do jogo já reflete sem precisar reiniciar. Também tem um
 atalho novo, **F10**, que abre a página de reportar bugs/sugestões no
 GitHub (aparece uma linha abaixo do crédito do mod avisando disso).
+
+## Novidade (0.1.1 candidata): painel de feedback completo
+
+O F10 não abre mais o navegador direto - agora abre um painel bilíngue
+dentro do jogo: **ENTER** abre a página de reportar bug/sugestão no
+GitHub, **D** gera um arquivo de diagnóstico sanitizado (sem IP, sem
+código de convite, sem caminho pessoal) numa pasta local pra você anexar
+manualmente, **ESC** fecha sem fazer nada. Nada é enviado automaticamente
+em nenhum momento.
 
 ## O que ainda NÃO foi testado em partida real de 2 PCs
 
