@@ -50,17 +50,18 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   65AEFA92D3BEB9E39E77E27A52DDFA4333D7EB7C08B04075CB19EFB99392AA0D
+   9C40D6AB8ECA8D0A0F0514D69FDC1E5071BDE7209ADE6AC9AA10E8847C48D45D
    ```
 
-   Tamanho esperado: `6552576` bytes.
+   (sem mudança de gameplay - só ajustes de tooling/documentação pra
+   preparação do lançamento público)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "65AEFA92D3BEB9E39E77E27A52DDFA4333D7EB7C08B04075CB19EFB99392AA0D"
+   $esperado = "9C40D6AB8ECA8D0A0F0514D69FDC1E5071BDE7209ADE6AC9AA10E8847C48D45D"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado

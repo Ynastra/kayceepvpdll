@@ -44,12 +44,8 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   Confira que o arquivo tem 6.552.576 bytes depois de copiar (tamanho
-   exato desta build) - se vier diferente, a copia falhou ou pegou a
-   versao errada.
-
-   SHA-256 esperado:
-   65AEFA92D3BEB9E39E77E27A52DDFA4333D7EB7C08B04075CB19EFB99392AA0D
+   SHA-256 esperado (sem mudanca de gameplay - so tooling/documentacao):
+   9C40D6AB8ECA8D0A0F0514D69FDC1E5071BDE7209ADE6AC9AA10E8847C48D45D
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
