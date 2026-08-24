@@ -50,17 +50,17 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   F73F1EFA47AF1982CBC7C2C24E40A7BF739E86B4968FBCDC981A6A2055543B16
+   29D0C35DF82BB50DC31C8D211F83031431E599C6DD71094DEE54ADA45B4739DB
    ```
 
-   Tamanho esperado: `6511616` bytes.
+   Tamanho esperado: `6512128` bytes.
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "F73F1EFA47AF1982CBC7C2C24E40A7BF739E86B4968FBCDC981A6A2055543B16"
+   $esperado = "29D0C35DF82BB50DC31C8D211F83031431E599C6DD71094DEE54ADA45B4739DB"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -114,6 +114,15 @@ exata: um sigilo que reposiciona a criatura no fim do turno (como o do
 Moose) disparava certinho no lado de quem jogou, mas nunca disparava no
 espelho do outro lado — só na primeira jogada de cada batalha. Isso fazia
 o tabuleiro discordar pro resto do duelo inteiro. Corrigido.
+
+## Correção nova nesta build (2026-08-24, achada no seu segundo log)
+
+O Ijiraq foi removido do mod inteiramente. Achamos que essa carta tem um
+mecanismo de disfarce (finge ser outra criatura aleatória até ser jogada,
+depois revela sua forma verdadeira) que é sorteado localmente e nunca é
+avisado pro outro lado - toda vez que ela aparecia, os dois PCs discordavam
+sobre o que aquela carta realmente era. Removida do mod, igual já fizemos
+com o Kraken e as cartas de tentáculo.
 
 ## O que ainda NÃO foi testado em partida real de 2 PCs
 

@@ -44,12 +44,12 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   Confira que o arquivo tem 6.511.616 bytes depois de copiar (tamanho
+   Confira que o arquivo tem 6.512.128 bytes depois de copiar (tamanho
    exato desta build) - se vier diferente, a copia falhou ou pegou a
    versao errada.
 
    SHA-256 esperado:
-   F73F1EFA47AF1982CBC7C2C24E40A7BF739E86B4968FBCDC981A6A2055543B16
+   29D0C35DF82BB50DC31C8D211F83031431E599C6DD71094DEE54ADA45B4739DB
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
@@ -63,6 +63,15 @@ lados": um sigilo que reposiciona a criatura no fim do turno (tipo o do
 Moose) disparava certinho no lado de quem jogou, mas nunca disparava no
 espelho do outro lado - so na primeira jogada de cada batalha. Isso fazia
 o tabuleiro discordar pro resto do duelo inteiro. Corrigido.
+
+CORRECAO NOVA (2026-08-24, achada no seu segundo log)
+--------------------------------------------------------
+
+O Ijiraq foi removido do mod inteiramente. Ele tinha um mecanismo de
+disfarce (finge ser outra criatura aleatoria at ser jogada, depois revela
+sua forma verdadeira) sorteado localmente e nunca avisado pro outro lado -
+toda vez que aparecia, os 2 PCs discordavam sobre o que a carta realmente
+era. Removido, igual ja fizemos com Kraken/tentaculo.
 
 O QUE MUDOU NESSA BUILD (acumulado desde 2026-08-07)
 --------------------------------------------------------
