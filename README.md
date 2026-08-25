@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   361AED8653709433F37AD02D3D438194C7586828DB51D6EE6D456AB8988BE4EF
+   110D81BDD048411F5BF13EAD3480A0D299718FA603B27EC4D46DDA2C9655859F
    ```
 
    (versão 0.1.1 candidata - F10 agora abre um painel com diagnóstico
@@ -61,7 +61,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "361AED8653709433F37AD02D3D438194C7586828DB51D6EE6D456AB8988BE4EF"
+   $esperado = "110D81BDD048411F5BF13EAD3480A0D299718FA603B27EC4D46DDA2C9655859F"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -73,6 +73,18 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25, achada testando a Colmeia): o `CorpseEater`
+
+Achamos por que o `PROTOCOL_DESYNC_FATAL` com `card=Beehive`/`card=Bee` acontecia
+sempre do lado de quem era dono da Colmeia com `CorpseEater`. A habilidade
+real do jogo (`CorpseEater`) joga a carta sozinha no tabuleiro, sem
+nenhum clique, no instante em que uma aliada sua morre em combate. Só que
+isso costuma acontecer no turno do **adversário** (quando ele ataca e
+mata sua aliada), e o código antigo tratava toda jogada automática como
+se fosse um clique manual seu, exigindo que fosse o SEU turno pra
+mandar pro outro lado. Corrigido: jogadas automáticas de habilidade
+agora têm um caminho próprio, sem essa exigência de turno.
 
 ## IMPORTANTE antes de abrir o jogo com esta build: desative o TVFsStarterDecks
 

@@ -45,11 +45,25 @@ PASSO A PASSO
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
    SHA-256 esperado (0.1.1 candidata - painel de feedback novo no F10):
-   361AED8653709433F37AD02D3D438194C7586828DB51D6EE6D456AB8988BE4EF
+   110D81BDD048411F5BF13EAD3480A0D299718FA603B27EC4D46DDA2C9655859F
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25, achada testando a Colmeia): O CORPSEEATER
+--------------------------------------------------------------------
+
+Achamos por que o PROTOCOL_DESYNC_FATAL com card=Beehive/card=Bee
+acontecia sempre do lado de quem era dono da Colmeia com CorpseEater.
+A habilidade real do jogo (CorpseEater) joga a carta sozinha no
+tabuleiro, sem nenhum clique, no instante em que uma aliada sua morre
+em combate. So que isso costuma acontecer no turno do ADVERSARIO
+(quando ele ataca e mata sua aliada), e o codigo antigo tratava toda
+jogada automatica como se fosse um clique manual seu, exigindo que
+fosse o SEU turno pra mandar pro outro lado. Corrigido: jogadas
+automaticas de habilidade agora tem um caminho proprio, sem essa
+exigencia de turno.
 
 IMPORTANTE ANTES DE ABRIR O JOGO COM ESTA BUILD: DESATIVE O TVFSSTARTERDECKS
 ------------------------------------------------------------------------------
