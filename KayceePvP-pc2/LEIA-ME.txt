@@ -45,7 +45,7 @@ PASSO A PASSO
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
    SHA-256 esperado (0.1.1 candidata - painel de feedback novo no F10):
-   D0C8F0E070F0FA643DC2246294382D32BF9AE42ECB36A7702115A7D954DF3527
+   361AED8653709433F37AD02D3D438194C7586828DB51D6EE6D456AB8988BE4EF
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
@@ -92,6 +92,18 @@ Repita a mesma sequencia nos dois PCs (cada um na sua vez). Se aparecer
 STATE HASH MISMATCH no log, manda pra gente de novo (ver
 COMO-REPORTAR-BUGS.md). Se nao aparecer nada estranho, essa e a
 confirmacao que faltava pra fechar esse bug de vez.
+
+SEGUNDO CENARIO NO MESMO BARALHO: A COLMEIA DO REPORT BILATERAL
+------------------------------------------------------------------
+
+O F6 agora tambem traz "Beehive+CorpseEater+Sacrificial" (a Colmeia com
+as duas habilidades extras que ela tinha na sua partida, alem do
+BeesOnHit normal dela). Posicione um Squirrel numa lane onde o Pronghorn
+do oponente vai atacar, mantenha a Colmeia na mao; quando o Pronghorn
+matar o Squirrel em combate, o CorpseEater deve fazer a Colmeia entrar
+sozinha em campo, de graca, pro lado que perdeu o Squirrel. Repita nos
+dois PCs (cada um com seu proprio Squirrel morto) e confira os dois logs
+por STATE HASH MISMATCH/PROTOCOL_DESYNC_FATAL com card=Beehive.
 
 CORRECAO NOVA (2026-08-24, achada no seu ultimo log - obrigado por mandar!)
 ----------------------------------------------------------------------------

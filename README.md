@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   D0C8F0E070F0FA643DC2246294382D32BF9AE42ECB36A7702115A7D954DF3527
+   361AED8653709433F37AD02D3D438194C7586828DB51D6EE6D456AB8988BE4EF
    ```
 
    (versão 0.1.1 candidata - F10 agora abre um painel com diagnóstico
@@ -61,7 +61,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "D0C8F0E070F0FA643DC2246294382D32BF9AE42ECB36A7702115A7D954DF3527"
+   $esperado = "361AED8653709433F37AD02D3D438194C7586828DB51D6EE6D456AB8988BE4EF"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -112,6 +112,16 @@ slot e Pronghorn (2ª cópia) sozinho em outro, toca o sino de novo. Repita
 a sequência nos dois PCs. Se aparecer erro, manda o log de novo (veja
 `COMO-REPORTAR-BUGS.md`); senão, essa é a confirmação que faltava pra
 fechar esse bug de vez.
+
+**Segundo cenário no mesmo baralho: a Colmeia do report bilateral.** O F6
+agora também traz `Beehive+CorpseEater+Sacrificial` (a Colmeia com as duas
+habilidades extras que ela tinha na sua partida, além do `BeesOnHit`
+normal dela). Posicione um Squirrel numa lane onde o Pronghorn do oponente
+vai atacar, mantenha a Colmeia na mão; quando o Pronghorn matar o
+Squirrel em combate, o `CorpseEater` deve fazer a Colmeia entrar sozinha
+em campo, de graça, pro lado que perdeu o Squirrel. Repita nos dois PCs
+(cada um com seu próprio Squirrel morto) e confira os dois logs por
+`STATE HASH MISMATCH`/`PROTOCOL_DESYNC_FATAL` com `card=Beehive`.
 
 ## O que esta build corrige (acumulado desde a última atualização do PC2, 2026-08-07)
 
