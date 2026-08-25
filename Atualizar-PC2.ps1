@@ -3,9 +3,10 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$expectedHash = "420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5"
+$expectedHash = "F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3"
 $expectedApiVersion = "2.24.0"
 $sourceDll = Join-Path $PSScriptRoot "KayceePvP.dll"
+$sourceF6Deck = Join-Path $PSScriptRoot "KayceePvP.F6Deck.txt"
 
 if (Get-Process -Name "Inscryption" -ErrorAction SilentlyContinue) {
     throw "Feche completamente o Inscryption antes de atualizar."
@@ -61,6 +62,19 @@ foreach ($profile in $profiles) {
             throw "Falha ao validar $target. Obtido=$installedHash"
         }
         Write-Host "ATUALIZADA E VALIDADA: $target" -ForegroundColor Green
+    }
+
+    # Baralho fixo do F6 (opcional - so copia se este script vier acompanhado
+    # de KayceePvP.F6Deck.txt, pra nao quebrar uma atualizacao que so troca a
+    # DLL). Nunca sobrescreve nada alem desse unico arquivo em BepInEx\config.
+    if (Test-Path -LiteralPath $sourceF6Deck) {
+        $configDir = Join-Path $profile.FullName "BepInEx\config"
+        if (-not (Test-Path -LiteralPath $configDir)) {
+            New-Item -ItemType Directory -Path $configDir -Force | Out-Null
+        }
+        $f6Target = Join-Path $configDir "KayceePvP.F6Deck.txt"
+        Copy-Item -LiteralPath $sourceF6Deck -Destination $f6Target -Force
+        Write-Host "BARALHO DO F6 ATUALIZADO: $f6Target" -ForegroundColor Green
     }
 
     # A dependencia API_dev-API precisa estar na MESMA versao dos dois lados,

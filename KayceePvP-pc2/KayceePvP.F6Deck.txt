@@ -1,0 +1,20 @@
+# Teste do fix de 2026-08-25 (STATE HASH MISMATCH universal / TurnEnd hash-race)
+# Formato: um card por linha, nome interno exato de CardInfo.name.
+# Quantidade opcional: "Nome x4", "Nome X4" ou "Nome*4" (sem quantidade = 1).
+# Linhas vazias e comentarios (# ...) sao ignorados.
+# Nomes duplicados em linhas separadas SOMAM a quantidade.
+# Lido do zero a cada F6 (hot reload) - edite e pressione F6 de novo sem reiniciar o jogo.
+#
+# Reproduz o cenario exato do log real de 2026-08-25 (match=-1138738068):
+#   Turno 1: joga Squirrel -> sacrifica pra jogar Goat -> sacrifica pra jogar
+#            Pronghorn (fica sozinho no board). Toca o sino (fim de turno) -
+#            a Strafe do Pronghorn deve mover ele sozinho, e o log NAO pode
+#            mostrar "STATE HASH MISMATCH" pra esse forSeq.
+#   Turno 3: joga Snelk sozinho num slot e Pronghorn (2a copia) sozinho em
+#            outro slot. Toca o sino de novo - mesma checagem.
+# Repita a mesma sequencia nos dois lados (HOST no turno 1/3 dele, PEER no
+# turno 1/3 dele) pra testar tanto o turno de abertura quanto um turno comum.
+Squirrel x2
+Goat x2
+Pronghorn x4
+Snelk x2

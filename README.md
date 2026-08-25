@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5
+   F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3
    ```
 
    (versão 0.1.1 candidata - F10 agora abre um painel com diagnóstico
@@ -61,7 +61,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5"
+   $esperado = "F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -73,6 +73,35 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25): o `STATE HASH MISMATCH` do último log
+
+Achamos a causa exata do que apareceu na sua partida de hoje. Quando uma
+carta com um sigilo que reposiciona sozinho no fim do turno (Estampida/
+Strafe, ex: Pronghorn) terminava um turno que não era o primeiro da
+batalha, os dois lados calculavam o "resumo" (hash) do tabuleiro em momentos
+diferentes: um lado antes da carta se mover, o outro depois. Isso gerava um
+`STATE HASH MISMATCH` real no log e, pouco depois, travava a partida de vez
+(`PROTOCOL_DESYNC_FATAL`), exatamente como aconteceu com você. Corrigido pra
+qualquer turno, qualquer mapa, não só o turno de abertura (que já tinha
+sido corrigido antes).
+
+**Também nesta build**: o mod agora recusa deixar você marcar "Pronto" se
+detectar qualquer outro mod instalado no seu profile que não seja uma
+dependência conhecida do KayceePvP (API/CommunityPatch/ele mesmo). Isso
+existe porque um outro jogador reportou cartas de mods de terceiros
+vazando pro pool do PvP e causando bugs. Se isso acontecer com você, o jogo
+mostra uma mensagem dizendo exatamente qual mod remover.
+
+**Baralho do F6 atualizado pra testar esse fix específico** (veja
+`KayceePvP.F6Deck.txt` incluído neste update, o `Atualizar-PC2.ps1` já
+copia ele junto com a DLL): Squirrel/Goat/Pronghorn/Snelk. No turno 1, joga
+Squirrel, sacrifica pra jogar Goat, sacrifica pra jogar Pronghorn (fica
+sozinho no tabuleiro) e toca o sino. No turno 3, joga Snelk sozinho num
+slot e Pronghorn (2ª cópia) sozinho em outro, toca o sino de novo. Repita
+a sequência nos dois PCs. Se aparecer erro, manda o log de novo (veja
+`COMO-REPORTAR-BUGS.md`); senão, essa é a confirmação que faltava pra
+fechar esse bug de vez.
 
 ## O que esta build corrige (acumulado desde a última atualização do PC2, 2026-08-07)
 

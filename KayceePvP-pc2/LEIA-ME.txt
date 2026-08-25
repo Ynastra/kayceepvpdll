@@ -45,11 +45,42 @@ PASSO A PASSO
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
    SHA-256 esperado (0.1.1 candidata - painel de feedback novo no F10):
-   420DF8CFE8D249E9E124CD2DE901290A8257C9AD192CA757994685B4B16AA2A5
+   F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25, achada no seu log de hoje)
+--------------------------------------------------------
+
+Achamos a causa exata do STATE HASH MISMATCH que apareceu na sua partida.
+Quando uma carta com sigilo que reposiciona sozinho no fim do turno
+(Estampida/Strafe, ex: Pronghorn) terminava um turno que nao era o
+primeiro da batalha, os dois PCs calculavam o "resumo" (hash) do tabuleiro
+em momentos diferentes: um lado antes da carta se mover, o outro depois.
+Isso travava a partida pouco depois (PROTOCOL_DESYNC_FATAL), exatamente
+como aconteceu com voce. Corrigido pra qualquer turno, qualquer mapa.
+
+Tambem nesta build: o mod agora recusa deixar voce marcar "Pronto" se
+detectar qualquer outro mod instalado no seu profile que nao seja
+dependencia do KayceePvP (API/CommunityPatch/ele mesmo) - existe porque
+outro jogador reportou cartas de mods de terceiros vazando pro pool do
+PvP. Se acontecer com voce, o jogo mostra qual mod remover.
+
+BARALHO DO F6 ATUALIZADO PRA TESTAR ESSE FIX ESPECIFICO
+(KayceePvP.F6Deck.txt incluido neste update - o Atualizar-PC2.ps1 ja copia
+ele junto com a DLL, sem precisar fazer nada extra):
+
+  Turno 1: joga Squirrel, sacrifica pra jogar Goat, sacrifica pra jogar
+           Pronghorn (fica sozinho no tabuleiro). Toca o sino.
+  Turno 3: joga Snelk sozinho num slot e Pronghorn (2a copia) sozinho em
+           outro slot. Toca o sino de novo.
+
+Repita a mesma sequencia nos dois PCs (cada um na sua vez). Se aparecer
+STATE HASH MISMATCH no log, manda pra gente de novo (ver
+COMO-REPORTAR-BUGS.md). Se nao aparecer nada estranho, essa e a
+confirmacao que faltava pra fechar esse bug de vez.
 
 CORRECAO NOVA (2026-08-24, achada no seu ultimo log - obrigado por mandar!)
 ----------------------------------------------------------------------------
