@@ -44,12 +44,26 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-25 - corrigido erro de conexao do turno 2):
-   C4D1AB9FB44EA6F7F1BD2913AE4D0607E40B09273E968CB14453D2623F6A2B83
+   SHA-256 esperado (build de 2026-08-25 - corrigido erro de conexao apos um tempo):
+   DDF227303A6CC8E71E61196F4E05C17E266EAB54B443A975B466D9031C026A15
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25, achada no seu teste solo): ERRO DE CONEXAO APOS UM TEMPO
+---------------------------------------------------------------------------------------
+
+Achamos por que a conexao caia sozinha depois de um tempo jogando, sem
+nada de especial acontecer. A mensagem no log era "IOException: ... An
+established connection was aborted in your host machine." - esse texto
+especifico e como o .NET avisa que um limite de tempo de leitura
+estourou, nao que a conexao caiu de verdade do outro lado. O codigo so
+dava 10 segundos para o resto de uma mensagem terminar de chegar
+depois do primeiro pedacinho dela - e esse mesmo teste (2 processos do
+jogo brigando pelos recursos da mesma maquina) ja tinha mostrado
+atrasos de rede de mais de 36 segundos em outros pontos do log.
+Corrigido: agora sao 60 segundos de folga.
 
 CORRECAO NOVA (2026-08-25, achada no seu teste solo): ERRO DE CONEXAO NO TURNO 2
 ----------------------------------------------------------------------------------
