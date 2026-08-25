@@ -50,18 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   110D81BDD048411F5BF13EAD3480A0D299718FA603B27EC4D46DDA2C9655859F
+   845E72FEFF1FA41FEDADCC74A3F9D2EC127A83AE3273A2980ED5D1D4BD2E6009
    ```
 
-   (versão 0.1.1 candidata - F10 agora abre um painel com diagnóstico
-   sanitizado em vez de ir direto pro navegador; veja a nota abaixo)
+   (build de 2026-08-25 - timeout de combate/fim de turno aumentado de
+   15s pra 45s pro teste solo de 2 processos numa máquina só; veja a
+   nota abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "110D81BDD048411F5BF13EAD3480A0D299718FA603B27EC4D46DDA2C9655859F"
+   $esperado = "845E72FEFF1FA41FEDADCC74A3F9D2EC127A83AE3273A2980ED5D1D4BD2E6009"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -73,6 +74,17 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25, achada no teste solo com o Snelk): timeout aumentado
+
+No seu teste sozinho, dois processos completos do jogo rodando na mesma
+máquina disputam CPU/GPU entre si de um jeito que não acontece entre 2
+PCs de verdade. O log mostrou um atraso de rede sozinho de ~26 segundos
+num único pacote durante o ataque do Snelk, e o combate do seu lado
+resolveu certinho, só que depois do limite de 15 segundos já ter
+disparado o `PROTOCOL_DESYNC_FATAL` por segurança. Não era uma
+dessincronização de verdade, só falta de paciência do timeout. Aumentado
+de 15s pra 45s.
 
 ## Correção nova nesta build (2026-08-25, achada testando a Colmeia): o `CorpseEater`
 

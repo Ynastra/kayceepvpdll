@@ -44,12 +44,24 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (0.1.1 candidata - painel de feedback novo no F10):
-   110D81BDD048411F5BF13EAD3480A0D299718FA603B27EC4D46DDA2C9655859F
+   SHA-256 esperado (build de 2026-08-25 - timeout de combate aumentado):
+   845E72FEFF1FA41FEDADCC74A3F9D2EC127A83AE3273A2980ED5D1D4BD2E6009
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25, achada no teste solo com o Snelk): TIMEOUT AUMENTADO
+---------------------------------------------------------------------------------
+
+No teste sozinho na mesma maquina, dois processos completos do jogo
+disputam CPU/GPU entre si de um jeito que nao acontece entre 2 PCs de
+verdade. O log mostrou um atraso de rede sozinho de ~26 segundos num
+unico pacote durante o ataque do Snelk, e o combate resolveu certinho
+do lado que travou, so que depois do limite de 15 segundos ja ter
+disparado o PROTOCOL_DESYNC_FATAL por seguranca. Nao era uma
+dessincronizacao de verdade, so falta de paciencia do timeout.
+Aumentado de 15s pra 45s.
 
 CORRECAO NOVA (2026-08-25, achada testando a Colmeia): O CORPSEEATER
 --------------------------------------------------------------------
