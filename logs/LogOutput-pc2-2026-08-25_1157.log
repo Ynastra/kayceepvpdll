@@ -1,0 +1,1890 @@
+[Message:   BepInEx] BepInEx 5.4.23.5 - Inscryption (16/06/2026 15:26:48)
+[Info   :   BepInEx] Running under Unity v2019.4.24.6137584
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.17020
+[Info   :   BepInEx] Supports SRE: False
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.5]
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.MonoMod.Loader 1.0.0.0]
+[Info   :   BepInEx] 2 patcher plugins loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Info   :   MonoMod] Collecting target assemblies from mods
+[Info   :   BepInEx] Patching [Assembly-CSharp] with [BepInEx.MonoMod.Loader.Patcher]
+[Message:   MonoMod] [Main] Scanning for mods in directory.
+[Message:   MonoMod] [ReadMod] Loading mod dir: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod
+[Message:   MonoMod] [ReadMod] Loading mod dir: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod\API_dev-API
+[Message:   MonoMod] [ReadMod] Loading mod: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod\API_dev-API\Assembly-CSharp.APIPatcher.mm.dll
+[Message:   MonoMod] [Main] Found 1 mods
+[Message:   MonoMod] [Main] mm.PatchRefs(); fixup pre-pass
+[Message:   MonoMod] [Main] mm.AutoPatch();
+[Message:   MonoMod] [AutoPatch] Parsing rules in loaded mods
+[Message:   MonoMod] [AutoPatch] PrePatch pass
+[Message:   MonoMod] [AutoPatch] Patch pass
+[Message:   MonoMod] [AutoPatch] PatchRefs pass
+[Message:   MonoMod] [PostProcessor] PostProcessor pass #1
+[Message:   MonoMod] [Main] Done.
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 5 plugins to load
+[Warning:   BepInEx] Skipping [KayceePvP 0.1.0] because a newer version exists (KayceePvP 0.1.3)
+[Info   :   BepInEx] Loading [InscryptionAPI 2.24.0]
+[Info   :   BepInEx] Loading [InscryptionCommunityPatch 2.24.0]
+[Info   :   BepInEx] Loading [KayceePvP 0.1.3]
+[Info   : KayceePvP] PvpDialogueOverrides: initialized - 17 event override(s), 4 literal override(s).
+[Info   : KayceePvP] CardEdits: renamed 'Moose' to 'Mayonnaise' with a custom portrait (Portuguese translation registered separately).
+[Info   : KayceePvP] CardEdits: renamed 'Goat' to 'Stepfather' with a custom portrait (Portuguese translation registered separately).
+[Info   : KayceePvP] CardEdits: renamed 'Mole' to 'Blue Pen' with a custom portrait (Portuguese translation registered separately).
+[Info   : KayceePvP] CardEdits: renamed 'Squirrel' to 'Cannabis' with a custom portrait (Portuguese translation registered separately).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] SelfCheck: ownership matrix (HOST/PEER x local/remote card, 4/4 cases) passed.
+[Info   : KayceePvP] SelfCheck: starter deck gate (multiplayer on/off, 2/2 cases) passed.
+[Info   : KayceePvP] SelfCheck: TVFsStarterDecks allowlist (11/11 cases) passed.
+[Info   : KayceePvP] SelfCheck: map-mode convergence (shared WaitForPeerDeckThenDuel entry point, no duplicate wait) passed.
+[Info   : KayceePvP] SelfCheck: rematch protocol (8/8 cases) passed.
+[Info   : KayceePvP] SelfCheck: PvP item allowlist (11/11 cases) passed.
+[Info   : KayceePvP] KayceePvP 0.1.3 loaded.
+[Info   :   BepInEx] Loading [TVFsStarterDecks 1.0.0]
+[Info   :TVFsStarterDecks] Loaded TVFsStarterDecks!
+[Message:   BepInEx] Chainloader startup complete
+[Info   :   Console] Searching for compatible XInput library...
+[Info   :   Console] Found Xinput1_4.dll.
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Debug  :InscryptionAPI] Inserted 4 dialogue event(s)!
+[Debug  :   BepInEx] [UnityInput] Using LegacyInputSystem
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Info   : Unity Log] Received stats and achievements from Steam
+
+[Debug  :InscryptionCommunityPatch] Ability [Reach] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [TriStrike] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [DrawAnt] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Flying] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [DebuffEnemy] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Submerge] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Evolve] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [HydraEgg] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [HydraEgg] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [HydraEgg] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [TriStrike] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [DrawCopyOnDeath] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [BuffNeighbours] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Flying] stacks [1] time(s)
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Info   : KayceePvP] New Ascension run requested - opening PvP lobby before it starts.
+[Info   : KayceePvP] Lobby: host set map mode = SymmetricForge
+[Info   : KayceePvP] Relay: connecting to 'kayceepvp.duckdns.org':443...
+[Info   : KayceePvP] Relay: TLS handshake complete.
+[Info   : KayceePvP] Relay: paired with peer.
+[Info   : KayceePvP] Lobby: run starting, shared map seed = 20260727, matchId = -1138738068, mapMode = SymmetricForge, names=[Gus]/[jao]
+[Info   : KayceePvP] Lobby ready - starting PvP run with shared map seed 20260727, matchId -1138738068, mapMode SymmetricForge (host goes first: True).
+[Info   :InscryptionAPI] Forest
+[Info   :InscryptionAPI] Wetlands
+[Info   :InscryptionAPI] Alpine
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] RunSetup: granted starting totem heads for this run.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Debug  :InscryptionCommunityPatch] Card pool has Energy cards? False. Card pool has Gem cards? False.
+[Info   : KayceePvP] Duel (totem): RunState.Run.totems changed | SELF=PEER count=0 totemTops=5 totemBottoms=0 assembled=[]
+[Warning: Singleton] Got null in Singleton<DiskCardGame.MapNodeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.MapNodeManager>.FindInstance
+[Info   : KayceePvP] PvP: filtered 3 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (56 -> 53).
+[Info   : KayceePvP] PvP: filtered 3 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (56 -> 53).
+[Info   : KayceePvP] PvP: filtered 3 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (56 -> 53).
+[Info   : KayceePvP] PvP: filtered 3 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (56 -> 53).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Warning: Singleton] Got null in Singleton<DiskCardGame.ConduitCircuitManager>.FindInstance
+[Info   : KayceePvP] PvP: Backspace pressed - skipping the current preparation battle phase.
+[Warning: Unity Log] DiskCardGame.CardInfo must be instantiated using the ScriptableObject.CreateInstance method instead of new CardInfo.
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Warning: Unity Log] DiskCardGame.CardInfo must be instantiated using the ScriptableObject.CreateInstance method instead of new CardInfo.
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (20 -> 16).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Lobby: opponent finished their boss - received their deck (9 cards, route=, risk=clean).
+[Info   : KayceePvP] Explicit Deathcard node reached - entering PvP card creation.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.GlobalTriggerHandler>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Unity Log] DiskCardGame.CardInfo must be instantiated using the ScriptableObject.CreateInstance method instead of new CardInfo.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.GameFlowManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.PlayerHand>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Info   : KayceePvP] Added created card 'braba' to the PvP run's deck.
+[Warning: KayceePvP] PvP: removed forbidden card '!DEATHCARD_BASE' from the deck (deck_final) as a safety net.
+[Info   : KayceePvP] Lobby: sent our deck (10 cards, route=) to the opponent, waiting for theirs...
+[Info   : KayceePvP] PvP handoff: peer deck received (9 cards) - continuing to the duel.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Info   : KayceePvP] PvP handoff: no TurnManager yet - loading Part1_Cabin for the duel.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Info   : KayceePvP] PvP handoff: Part1_Cabin loaded - waiting for TurnManager before starting the duel.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Debug  :InscryptionCommunityPatch] Card pool has Energy cards? False. Card pool has Gem cards? False.
+[Info   : KayceePvP] PvP handoff: TurnManager found - showing the ready screen before the duel.
+[Info   : KayceePvP] Duel (combat): CombatResolutionSignalPatch.ResetForMatch - reason='PrepareForMatch(-1138738068)', generation 0 -> 0.
+[Info   : KayceePvP] Duel: prepared for match -1138738068 - sequence/turn counters reset.
+[Info   : KayceePvP] Duel (lobby-match): INTERBATTLE_RELOAD_LATCH_OFF | match=0 battle=1
+[Info   : KayceePvP] Duel (interbattle): ResetBattleFlowForMatch - reason='PvpCardCreationFlow.ShowReadyScreenAndCountdown (real ready phase)', matchId 0 -> -1138738068, _handledBattle 0 -> 0.
+[Info   : KayceePvP] PvP: duel_begin confirmed by host protocol - starting the duel now.
+[Info   : KayceePvP] PvP items: replaced preparation inventory with exactly one SquirrelBottle for series -1138738068.
+[Info   : KayceePvP] Duel (lobby-match): BeginMatch | match=-1138738068 frozenLocalDeckCount=10
+[Info   : KayceePvP] Duel: ARMED_TURN_OWNERSHIP | self=PEER match=-1138738068 battle=1 hostGoesFirstThisBattle=True soloDebugMode=False localFirstTurn=1 expectedOutgoing=1 expectedIncoming=0
+[Info   : KayceePvP] Duel: starting with 10 cards.
+[Info   : KayceePvP] Duel (totem): SNAPSHOT at battle begin (battle 1) | matchId=-1138738068 battleNumber=1 SELF=PEER ownTotems=[none]
+[Warning: Singleton] Got null in Singleton<DiskCardGame.ConduitCircuitManager>.FindInstance
+[Warning: Unity Log] DiskCardGame.CardInfo must be instantiated using the ScriptableObject.CreateInstance method instead of new CardInfo.
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=-1138738068 battleNumber=1 seed=-1394600616 firstPicks=[Squirrel,Squirrel,Squirrel]
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=-1138738068 battleNumber=1 seed=-1394600616 firstPicks=[Beehive,Snelk,Amalgam]
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-1138738068 battle=1 turn=0 seq=0 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1522,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-1138738068 battle=1 turn=0 seq=0 sender=HOST type=card_played card=Squirrel slot=1 queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-1138738068 battle=1 turn=0 seq=0 type=card_played queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=False queueDwellMs=4,6
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=0 seq=1 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1547,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=0 basedOnActionFromHost=True hash=gTdTz5wshTHQWsmd
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 1.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=0 basedOnActionFromHost=True hash=gTdTz5wshTHQWsmd state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=0 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-1138738068 forSeq=0 basedOnActionFromHost=True hash=gTdTz5wshTHQWsmd
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-1138738068 battle=1 turn=0 seq=2 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1542,0
+[Info   : KayceePvP] Duel: RECEIVED | match=-1138738068 battle=1 turn=0 seq=2 sender=HOST type=card_played card=Goat slot=1 queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-1138738068 battle=1 turn=0 seq=2 type=card_played queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=False queueDwellMs=3,4
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Squirrel').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=0 seq=3 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1524,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=2 basedOnActionFromHost=True hash=Wvla5DV6QLxUoaa3
+[Info   : KayceePvP] Duel (card-sync): RECV card='Goat' | SELF=PEER RECONSTRUCTED_BASE=[22] WIRE=[22+14] TO_ADD=[14] TO_NEGATE=[] FINAL_EFFECTIVE=[22+14]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Goat' onto opponent slot 1.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=2 basedOnActionFromHost=True hash=Wvla5DV6QLxUoaa3 state=[HOST=[EMPTY;Goat/0/1/[14,22];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=0 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-1138738068 forSeq=2 basedOnActionFromHost=True hash=Wvla5DV6QLxUoaa3
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-1138738068 battle=1 turn=0 seq=4 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1548,6
+[Info   : KayceePvP] Duel: RECEIVED | match=-1138738068 battle=1 turn=0 seq=4 sender=HOST type=card_played card=Pronghorn slot=1 queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-1138738068 battle=1 turn=0 seq=4 type=card_played queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=False queueDwellMs=9,8
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=0 seq=5 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1557,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=4 basedOnActionFromHost=True hash=GdNEqTeavvSguXI2
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Goat').
+[Info   : KayceePvP] Duel (ownership): suppressed DrawCreatedCard's card-to-hand | ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER ABILITY=DrawCreatedCard card='Goat' - would have wrongly gone to the local player's hand.
+[Info   : KayceePvP] Duel (card-sync): RECV card='Pronghorn' | SELF=PEER RECONSTRUCTED_BASE=[3+24] WIRE=[3+24] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[3+24]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Pronghorn' onto opponent slot 1.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-1138738068 battle=1 turn=0 seq=6 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1551,7
+[Info   : KayceePvP] Duel: RECEIVED | match=-1138738068 battle=1 turn=0 seq=6 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=4 basedOnActionFromHost=True hash=GdNEqTeavvSguXI2 state=[HOST=[EMPTY;Pronghorn/1/3/[3,24];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=0 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-1138738068 forSeq=4 basedOnActionFromHost=True hash=GdNEqTeavvSguXI2
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-1138738068 battle=1 turn=0 seq=6 type=end_turn queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=False queueDwellMs=496,4
+[Info   : KayceePvP] NetworkOpponent: end_turn (seq=6) arrived during SetupPhase's QueueFirstCardBeforePlayer mirror - vanilla never calls DoCombatPhase for this turn on its own, running it here before releasing this side's own first turn. gen=1 generationBefore=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=1 playerIsAttacker=False
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=1 seq=7 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-1558,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=6 basedOnActionFromHost=True hash=XLq2iJNmAKDZwmRS
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=1 playerIsAttacker=False
+[Info   : KayceePvP] NetworkOpponent: SetupPhase-mirrored combat for end_turn seq=6 resolved - dispatching the TurnEnd trigger OpponentTurn() would have fired here, so mirrored TurnEnd abilities (e.g. Strafe) move on this side too. gen=1
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=6 basedOnActionFromHost=True hash=5z4LEqWwhJZpTPAm state=[HOST=[EMPTY;EMPTY;Pronghorn/1/3/[3,24];EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=2 TURN=1 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-1138738068 forSeq=6 basedOnActionFromHost=True localHash=5z4LEqWwhJZpTPAm peerHash=XLq2iJNmAKDZwmRS
+[Error  : KayceePvP] Duel: local state dump (forSeq=6) | HOST=[EMPTY;EMPTY;Pronghorn/1/3/[3,24];EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=2 TURN=1 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] DIAG PlayerIsWinner | role=PEER result=False opponent.NumLives=1 opponent.Surrendered=False
+[Info   : KayceePvP] DIAG GameIsOver | role=PEER result=False balance=-2 opponent.NumLives=1 opponent.Surrendered=False PlayerSurrendered=False MatchEnded=False
+[Info   : KayceePvP] Duel: SENDING | match=-1138738068 turn=1 seq=4 sender=PEER type=card_played card=Squirrel slot=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=4 basedOnActionFromHost=False hash=CiRIbGx0l8FMqvxn state=[HOST=[EMPTY;EMPTY;Pronghorn/1/3/[3,24];EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Squirrel/0/1/[]] BAL=2 TURN=1 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=1 seq=8 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-1569,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=4 basedOnActionFromHost=False hash=CiRIbGx0l8FMqvxn
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-1138738068 forSeq=4 basedOnActionFromHost=False hash=CiRIbGx0l8FMqvxn
+[Info   : KayceePvP] Duel: SENDING | match=-1138738068 turn=1 seq=6 sender=PEER type=end_turn cardsPlayedThisTurn=1
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=2 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=2 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=6 basedOnActionFromHost=False hash=4NGVAUChySxPsiIe state=[HOST=[EMPTY;EMPTY;Pronghorn/1/3/[3,24];EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Squirrel/0/1/[]] BAL=2 TURN=2 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=2
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=2 seq=9 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-1528,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=6 basedOnActionFromHost=False hash=4NGVAUChySxPsiIe
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-1138738068 forSeq=6 basedOnActionFromHost=False hash=4NGVAUChySxPsiIe
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-1138738068 battle=1 turn=2 seq=10 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-1559,8
+[Info   : KayceePvP] Duel: RECEIVED | match=-1138738068 battle=1 turn=2 seq=10 sender=HOST type=card_played card=Snelk slot=0 queueBefore=0 queueAfter=1 currentTurn=2
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=2 match=-1138738068 battle=1 turn=2 seq=10 type=card_played queueBefore=1 queueAfter=0 currentTurn=2 isPlayerTurn=False queueDwellMs=8,0
+[Info   : KayceePvP] Duel (card-sync): RECV card='Snelk' | SELF=PEER RECONSTRUCTED_BASE=[3+4] WIRE=[3+4] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[3+4]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Snelk' onto opponent slot 0.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=2 seq=11 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-1543,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-1138738068 sender=HOST forSeq=10 basedOnActionFromHost=True hash=/r5FssVY9qx9xINz
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-1138738068 forSeq=10 basedOnActionFromHost=True hash=/r5FssVY9qx9xINz state=[HOST=[Snelk/1/2/[3,4];EMPTY;Pronghorn/1/3/[3,24];EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Squirrel/0/1/[]] BAL=2 TURN=2 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-1138738068 forSeq=10 basedOnActionFromHost=True hash=/r5FssVY9qx9xINz
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-1138738068 battle=1 turn=2 seq=12 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-1543,2
+[Info   : KayceePvP] Duel: RECEIVED | match=-1138738068 battle=1 turn=2 seq=12 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=2
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=2 match=-1138738068 battle=1 turn=2 seq=12 type=end_turn queueBefore=1 queueAfter=0 currentTurn=2 isPlayerTurn=False queueDwellMs=12,0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=3 playerIsAttacker=False
+[Error  : KayceePvP] Duel: PROTOCOL_DESYNC_FATAL | self=PEER match=-1138738068 battle=1 turn=2 reason=SendCardPlayed for turn 2 not locally owned (expectedOutgoing=3, lastClosed=1, card=Beehive)
+[Error  : KayceePvP] Duel: PROTOCOL_DESYNC_OVERLAY_SHOWN | reason=SendCardPlayed for turn 2 not locally owned (expectedOutgoing=3, lastClosed=1, card=Beehive)
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-1138738068 battle=1 turn=3 seq=13 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-1547,7
+[Warning: KayceePvP] Duel: message IGNORED - ProtocolDesync already latched (SendCardPlayed for turn 2 not locally owned (expectedOutgoing=3, lastClosed=1, card=Beehive)). self=PEER sender=HOST type=duel_state_hash
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=3 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Snelk' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Snelk' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Snelk' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=0
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
