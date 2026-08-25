@@ -45,11 +45,22 @@ PASSO A PASSO
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
    SHA-256 esperado (0.1.1 candidata - painel de feedback novo no F10):
-   F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3
+   D0C8F0E070F0FA643DC2246294382D32BF9AE42ECB36A7702115A7D954DF3527
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+IMPORTANTE ANTES DE ABRIR O JOGO COM ESTA BUILD: DESATIVE O TVFSSTARTERDECKS
+------------------------------------------------------------------------------
+
+O mod TVFLabs-TVFsStarterDecks nao e mais dependencia do KayceePvP (o deck
+"Pelts" dele virou nativo, chamado "PELES" na selecao). Se esse mod ainda
+estiver habilitado no seu profile, o KayceePvP agora recusa deixar voce
+ficar "Pronto" (ver secao do bloqueio de mods abaixo). Antes de testar:
+desabilite (ou desinstale) o TVFsStarterDecks nesse profile pelo proprio
+Thunderstore Mod Manager. Nenhum outro mod deve estar habilitado alem de
+BepInExPack, MonoMod Loader e API.
 
 CORRECAO NOVA (2026-08-25, achada no seu log de hoje)
 --------------------------------------------------------

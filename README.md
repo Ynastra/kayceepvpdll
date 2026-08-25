@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3
+   D0C8F0E070F0FA643DC2246294382D32BF9AE42ECB36A7702115A7D954DF3527
    ```
 
    (versão 0.1.1 candidata - F10 agora abre um painel com diagnóstico
@@ -61,7 +61,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "F5C6F7CA890CDFAB7988D636F3B0E5D4D8CCD04990B11415DC1FED7011B12BA3"
+   $esperado = "D0C8F0E070F0FA643DC2246294382D32BF9AE42ECB36A7702115A7D954DF3527"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -73,6 +73,16 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## IMPORTANTE antes de abrir o jogo com esta build: desative o TVFsStarterDecks
+
+O mod TVFLabs-TVFsStarterDecks não é mais dependência do KayceePvP (o deck
+"Pelts" dele virou nativo, chamado "PELES" na seleção). Se esse mod ainda
+estiver habilitado no seu profile, o KayceePvP agora recusa deixar você
+ficar "Pronto" (ver a seção do bloqueio de mods abaixo). Antes de testar:
+desabilite (ou desinstale) o TVFsStarterDecks nesse profile pelo próprio
+Thunderstore Mod Manager. Nenhum outro mod deve estar habilitado além de
+BepInExPack, MonoMod Loader e API.
 
 ## Correção nova nesta build (2026-08-25): o `STATE HASH MISMATCH` do último log
 
