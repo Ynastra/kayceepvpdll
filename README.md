@@ -50,19 +50,18 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   845E72FEFF1FA41FEDADCC74A3F9D2EC127A83AE3273A2980ED5D1D4BD2E6009
+   C4D1AB9FB44EA6F7F1BD2913AE4D0607E40B09273E968CB14453D2623F6A2B83
    ```
 
-   (build de 2026-08-25 - timeout de combate/fim de turno aumentado de
-   15s pra 45s pro teste solo de 2 processos numa máquina só; veja a
-   nota abaixo)
+   (build de 2026-08-25 - corrigido o erro de conexão do turno 2; veja
+   a nota abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "845E72FEFF1FA41FEDADCC74A3F9D2EC127A83AE3273A2980ED5D1D4BD2E6009"
+   $esperado = "C4D1AB9FB44EA6F7F1BD2913AE4D0607E40B09273E968CB14453D2623F6A2B83"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -74,6 +73,20 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25, achada no seu teste solo): erro de conexão no turno 2
+
+Achamos por que a conexão caiu logo no turno 2, mesmo sem nada de
+especial acontecer. O lado que recebe (PEER) tem um contador interno
+que diz "qual turno do outro lado eu já posso aceitar". Só que esse
+contador era montado em dois passos, e o segundo passo sobrescrevia o
+primeiro sem checar se ele já tinha avançado de verdade - se o HOST
+fechasse o turno inicial rápido o suficiente, essa sobrescrita apagava
+o progresso real e o PEER ficava travado achando que ainda esperava o
+turno 0, mesmo já tendo recebido ele. Quando o HOST fechava o turno 2
+de verdade, o PEER recusava por achar que era "um turno do futuro" -
+`PROTOCOL_DESYNC_FATAL`. Corrigido: o segundo passo agora não
+sobrescreve mais um progresso já feito.
 
 ## Correção nova nesta build (2026-08-25, achada no teste solo com o Snelk): timeout aumentado
 
