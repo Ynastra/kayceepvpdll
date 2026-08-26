@@ -44,12 +44,31 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-25 - Lobo Atroz corrigido de vez):
-   D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB
+   SHA-256 esperado (build de 2026-08-26 - reverte travamento urgente):
+   7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO URGENTE (2026-08-26): A TENTATIVA ANTERIOR DO LOBO ATROZ TRAVAVA A PARTIDA INTEIRA
+----------------------------------------------------------------------------------------------
+
+A build anterior (2026-08-25, "correcao anterior do Lobo Atroz nao era
+suficiente" abaixo) tinha um problema bem mais serio do que o que
+tentava resolver: a espera nova, que devia ser rapida, na verdade
+nunca conseguia ser respondida a tempo, porque a fase que espera por
+ela roda sempre ANTES da fila de rede que traria a resposta sequer
+comecar a ser lida - um travamento estrutural, nao uma questao de
+timeout curto. Na pratica isso significava esperar os 45 segundos
+inteiros de limite em TODA troca de turno, em toda partida, deixando
+o jogo com um delay absurdo, o aviso de "sua vez" sem aparecer e a
+sensacao de partida travada/infinita. Corrigido: removemos por
+completo esse mecanismo. O Filhote de Lobo Atroz volta a ter o
+comportamento de antes (evolucao podendo ficar ate um turno atrasada
+no visual do outro lado, um bug cosmetico que se autocorrige sozinho
+logo em seguida) - preferimos isso a travar todas as partidas. Vamos
+voltar a esse bug especifico depois com uma abordagem diferente.
 
 CORRECAO NOVA (2026-08-25): CORRECAO ANTERIOR DO LOBO ATROZ NAO ERA SUFICIENTE
 -------------------------------------------------------------------------------------

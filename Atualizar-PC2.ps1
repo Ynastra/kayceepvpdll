@@ -3,7 +3,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$expectedHash = "D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB"
+$expectedHash = "7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B"
 $expectedApiVersion = "2.24.0"
 $sourceDll = Join-Path $PSScriptRoot "KayceePvP.dll"
 $sourceF6Deck = Join-Path $PSScriptRoot "KayceePvP.F6Deck.txt"

@@ -50,19 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB
+   7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B
    ```
 
-   (build de 2026-08-25 - corrigido de vez o Filhote de Lobo Atroz não
-   evoluindo do outro lado, que também estava causando o placar
-   divergir; veja a nota abaixo)
+   (build de 2026-08-26 - reverte de emergência a tentativa anterior de
+   corrigir o Filhote de Lobo Atroz, que travava toda partida por 45s a
+   cada troca de turno; veja a nota no topo do changelog abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB"
+   $esperado = "7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -74,6 +74,24 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção urgente nesta build (2026-08-26): a tentativa anterior do Lobo Atroz travava a partida inteira
+
+A build anterior (2026-08-25, "correção anterior do Lobo Atroz não era
+suficiente" abaixo) tinha um problema muito mais sério do que o que
+tentava resolver: a espera nova, que devia ser rápida, na verdade
+nunca conseguia ser respondida a tempo, porque a fase que espera por
+ela roda sempre ANTES da fila de rede que traria a resposta sequer
+começar a ser lida - um travamento estrutural, não uma questão de
+timeout curto. Na prática isso significava esperar os 45 segundos
+inteiros de limite em TODA troca de turno, em toda partida, deixando o
+jogo com um delay absurdo, o aviso de "sua vez" sem aparecer e a
+sensação de partida travada/infinita. Corrigido: removemos por
+completo esse mecanismo. O Filhote de Lobo Atroz volta a ter o
+comportamento de antes (evolução podendo ficar até um turno atrasada
+no visual do outro lado, um bug cosmético que se autocorrige sozinho
+logo em seguida) - preferimos isso a travar todas as partidas.
+Vamos voltar a esse bug específico depois com uma abordagem diferente.
 
 ## Correção nova nesta build (2026-08-25): correção anterior do Lobo Atroz não era suficiente
 
