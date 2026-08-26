@@ -44,12 +44,23 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-25 - corrigido erro de conexao apos um tempo):
-   DDF227303A6CC8E71E61196F4E05C17E266EAB54B443A975B466D9031C026A15
+   SHA-256 esperado (build de 2026-08-25 - corrigido o deck PELES):
+   06200E2C2FFDB1AC911A9C7577DFB9106C495685AFB382A7FF72921214C8FADC
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25, achada no teste real): DECK PELES VINHA COM PELES DEMAIS
+----------------------------------------------------------------------------------------
+
+O deck inicial "PELES" (menu de selecao de baralho) estava registrado
+errado desde o inicio: em vez das 3 cartas originais do mod antigo
+(1 Pele Dourada, 1 Pele de Lobo, 1 Pele de Coelho), o codigo tinha a
+Pele de Coelho triplicada por engano, resultando em 5 cartas em vez de
+3. Reconferido byte a byte contra o .dll original do mod antigo (ainda
+em cache no disco) - confirmado que a composicao certa e mesmo 1 de
+cada. Corrigido.
 
 CORRECAO NOVA (2026-08-25, achada no seu teste solo): ERRO DE CONEXAO APOS UM TEMPO
 ---------------------------------------------------------------------------------------

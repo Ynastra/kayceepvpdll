@@ -50,18 +50,18 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   DDF227303A6CC8E71E61196F4E05C17E266EAB54B443A975B466D9031C026A15
+   06200E2C2FFDB1AC911A9C7577DFB9106C495685AFB382A7FF72921214C8FADC
    ```
 
-   (build de 2026-08-25 - corrigido o erro de conexão que aparecia
-   depois de um tempo de partida; veja a nota abaixo)
+   (build de 2026-08-25 - corrigido o deck PELES, que vinha com peles
+   demais; veja a nota abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "DDF227303A6CC8E71E61196F4E05C17E266EAB54B443A975B466D9031C026A15"
+   $esperado = "06200E2C2FFDB1AC911A9C7577DFB9106C495685AFB382A7FF72921214C8FADC"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -73,6 +73,16 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25, achada no teste real): deck PELES vinha com peles demais
+
+O deck inicial "PELES" (menu de seleção de baralho) estava registrado
+errado desde o início: em vez das 3 cartas originais do mod antigo
+(1 Pele Dourada, 1 Pele de Lobo, 1 Pele de Coelho), o código tinha a
+Pele de Coelho triplicada por engano, resultando em 5 cartas em vez de
+3. Reconferido byte a byte contra o `.dll` original do mod antigo
+(ainda em cache no disco) - confirmado que a composição certa é
+mesmo 1 de cada. Corrigido.
 
 ## Correção nova nesta build (2026-08-25, achada no seu teste solo): erro de conexão depois de um tempo de partida
 
