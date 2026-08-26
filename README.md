@@ -50,19 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   82E1905D048D867204D8470228E454D7460D2943CB801F251FB2EDC693D4F709
+   3FE3F0AD00A47C03A62D983BAC95158C9A84B5EE2E203DFF3DDA9FE9FE0CBE23
    ```
 
-   (build de 2026-08-25 - corrigido o Filhote de Lobo Atroz não
-   evoluindo do outro lado, e a conexão travando pra sempre quando cai
-   silenciosamente; veja as notas abaixo)
+   (build de 2026-08-25 - corrigido o placar/dano divergindo entre os
+   dois lados, e a Death Card sendo removida do deck antes de ser
+   enviada; veja as notas abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "82E1905D048D867204D8470228E454D7460D2943CB801F251FB2EDC693D4F709"
+   $esperado = "3FE3F0AD00A47C03A62D983BAC95158C9A84B5EE2E203DFF3DDA9FE9FE0CBE23"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -74,6 +74,33 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25): Death Card sumia do deck antes de ser enviada
+
+Achamos por que a Death Card (criada quando você derrota o primeiro
+chefe) nunca aparecia de verdade na partida - ela era removida do
+seu baralho por engano bem antes de ser mandada pro adversário. O
+filtro de segurança que bloqueia "cartas técnicas internas" do jogo
+(usado pra impedir templates escondidos de vazarem em sorteios de
+cartas aleatórias) confundia a Death Card real com um desses
+templates, porque por baixo dos panos ela reaproveita o mesmo nome
+interno do template - só o nome que você escolheu pra ela muda
+visualmente. Corrigido: esse filtro agora reconhece a Death Card
+real e nunca mais remove ela.
+
+## Correção nova nesta build (2026-08-25): placar/dano divergia entre os dois lados
+
+Achamos por que às vezes o placar ficava "errado" ou uma partida
+terminava antes da hora pra um dos dois lados. Quando uma criatura
+com o sigilo que ataca duas colunas ao mesmo tempo (em vez de atacar
+só a lane à frente) causava mais dano do que cabia de uma vez na
+barra visual, o jogo original tem uma regra de limitar esse excesso
+(o excedente vira moeda em vez de ir pro placar) - só que essa regra
+só era aplicada do lado de quem realmente atacou, nunca do lado que
+só está acompanhando aquele mesmo ataque pela rede. Isso fazia o
+placar dos dois lados divergir aos poucos, partida após partida, até
+um lado achar que já tinha perdido enquanto o outro nem percebia.
+Corrigido: agora os dois lados aplicam a mesma regra.
 
 ## Correção nova nesta build (2026-08-25): conexão travava pra sempre se caísse silenciosamente
 
