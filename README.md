@@ -50,19 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   3FE3F0AD00A47C03A62D983BAC95158C9A84B5EE2E203DFF3DDA9FE9FE0CBE23
+   D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB
    ```
 
-   (build de 2026-08-25 - corrigido o placar/dano divergindo entre os
-   dois lados, e a Death Card sendo removida do deck antes de ser
-   enviada; veja as notas abaixo)
+   (build de 2026-08-25 - corrigido de vez o Filhote de Lobo Atroz não
+   evoluindo do outro lado, que também estava causando o placar
+   divergir; veja a nota abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "3FE3F0AD00A47C03A62D983BAC95158C9A84B5EE2E203DFF3DDA9FE9FE0CBE23"
+   $esperado = "D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -74,6 +74,20 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25): correção anterior do Lobo Atroz não era suficiente
+
+A correção anterior (confirmação de "terminei de reagir a esse turno")
+tinha um furo: ela era considerada válida assim que a MENSAGEM de rede
+chegava, mesmo que a jogada automática do CorpseEater relacionada a
+ela ainda estivesse esperando na fila pra ser realmente aplicada no
+seu tabuleiro. Isso liberava a checagem do outro lado cedo demais,
+antes da carta sequer estar lá. Agora essa confirmação também espera
+na mesma fila que as outras jogadas, garantindo que tudo que devia
+chegar antes dela já foi aplicado primeiro. Isso também resolve o
+placar/dano ficando diferente entre os dois PCs no mesmo teste - era
+consequência direta do Lobo Atroz ainda não evoluído de um lado
+causando dano real diferente em combate.
 
 ## Correção nova nesta build (2026-08-25): Death Card sumia do deck antes de ser enviada
 

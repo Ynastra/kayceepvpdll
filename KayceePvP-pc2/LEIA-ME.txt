@@ -44,12 +44,27 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-25 - placar/dano + Death Card):
-   3FE3F0AD00A47C03A62D983BAC95158C9A84B5EE2E203DFF3DDA9FE9FE0CBE23
+   SHA-256 esperado (build de 2026-08-25 - Lobo Atroz corrigido de vez):
+   D3092CA9DF7639B6E780EE7B985A6FFCA9AE31847D33700CEAE58F6D330298EB
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25): CORRECAO ANTERIOR DO LOBO ATROZ NAO ERA SUFICIENTE
+-------------------------------------------------------------------------------------
+
+A correcao anterior (confirmacao de "terminei de reagir a esse turno")
+tinha um furo: ela era considerada valida assim que a MENSAGEM de rede
+chegava, mesmo que a jogada automatica do CorpseEater relacionada a
+ela ainda estivesse esperando na fila pra ser realmente aplicada no
+seu tabuleiro. Isso liberava a checagem do outro lado cedo demais,
+antes da carta sequer estar la. Agora essa confirmacao tambem espera
+na mesma fila que as outras jogadas, garantindo que tudo que devia
+chegar antes dela ja foi aplicado primeiro. Isso tambem resolve o
+placar/dano ficando diferente entre os dois PCs no mesmo teste - era
+consequencia direta do Lobo Atroz ainda nao evoluido de um lado
+causando dano real diferente em combate.
 
 CORRECAO NOVA (2026-08-25): DEATH CARD SUMIA DO DECK ANTES DE SER ENVIADA
 ---------------------------------------------------------------------------------
