@@ -1,0 +1,1238 @@
+[Message:   BepInEx] BepInEx 5.4.23.5 - Inscryption (16/06/2026 15:26:48)
+[Info   :   BepInEx] Running under Unity v2019.4.24.6137584
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.17020
+[Info   :   BepInEx] Supports SRE: False
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.5]
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.MonoMod.Loader 1.0.0.0]
+[Info   :   BepInEx] 2 patcher plugins loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Info   :   MonoMod] Collecting target assemblies from mods
+[Info   :   BepInEx] Patching [Assembly-CSharp] with [BepInEx.MonoMod.Loader.Patcher]
+[Message:   MonoMod] [Main] Scanning for mods in directory.
+[Message:   MonoMod] [ReadMod] Loading mod dir: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod
+[Message:   MonoMod] [ReadMod] Loading mod dir: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod\API_dev-API
+[Message:   MonoMod] [ReadMod] Loading mod: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod\API_dev-API\Assembly-CSharp.APIPatcher.mm.dll
+[Message:   MonoMod] [Main] Found 1 mods
+[Message:   MonoMod] [Main] mm.PatchRefs(); fixup pre-pass
+[Message:   MonoMod] [Main] mm.AutoPatch();
+[Message:   MonoMod] [AutoPatch] Parsing rules in loaded mods
+[Message:   MonoMod] [AutoPatch] PrePatch pass
+[Message:   MonoMod] [AutoPatch] Patch pass
+[Message:   MonoMod] [AutoPatch] PatchRefs pass
+[Message:   MonoMod] [PostProcessor] PostProcessor pass #1
+[Message:   MonoMod] [Main] Done.
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 4 plugins to load
+[Warning:   BepInEx] Skipping [KayceePvP 0.1.3] because a newer version exists (KayceePvP 0.1.3)
+[Info   :   BepInEx] Loading [InscryptionAPI 2.24.0]
+[Info   :   BepInEx] Loading [InscryptionCommunityPatch 2.24.0]
+[Info   :   BepInEx] Loading [KayceePvP 0.1.3]
+[Info   : KayceePvP] PvpDialogueOverrides: initialized - 17 event override(s), 4 literal override(s).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] SelfCheck: ownership matrix (HOST/PEER x local/remote card, 4/4 cases) passed.
+[Info   : KayceePvP] SelfCheck: starter deck gate (multiplayer on/off, 2/2 cases) passed.
+[Info   : KayceePvP] SelfCheck: map-mode convergence (shared WaitForPeerDeckThenDuel entry point, no duplicate wait) passed.
+[Info   : KayceePvP] SelfCheck: rematch protocol (8/8 cases) passed.
+[Info   : KayceePvP] SelfCheck: PvP item allowlist (11/11 cases) passed.
+[Info   : KayceePvP] KayceePvP 0.1.3 loaded.
+[Message:   BepInEx] Chainloader startup complete
+[Info   :   Console] Searching for compatible XInput library...
+[Info   :   Console] Found Xinput1_4.dll.
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Debug  :InscryptionAPI] Inserted 4 dialogue event(s)!
+[Debug  :   BepInEx] [UnityInput] Using LegacyInputSystem
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Info   : Unity Log] Received stats and achievements from Steam
+
+[Debug  :InscryptionCommunityPatch] Ability [Reach] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [TriStrike] stacks [1] time(s)
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Info   : KayceePvP] New Ascension run requested - opening PvP lobby before it starts.
+[Info   : KayceePvP] Relay: connecting to 'kayceepvp.duckdns.org':443...
+[Info   : KayceePvP] Relay: TLS handshake complete.
+[Info   : KayceePvP] Relay: paired with peer.
+[Info   : KayceePvP] Lobby: run starting, shared map seed = 20260727, matchId = 392124866, mapMode = Battles, names=[gustavo]/[jp]
+[Info   : KayceePvP] Lobby ready - starting PvP run with shared map seed 20260727, matchId 392124866, mapMode Battles (host goes first: True).
+[Info   :InscryptionAPI] Forest
+[Info   :InscryptionAPI] Wetlands
+[Info   :InscryptionAPI] Alpine
+[Info   : KayceePvP] PvP: filtered 4 card occurrence(s) (Kraken/tentacle/Hydra/Ijiraq) out of a card pool (57 -> 53).
+[Info   : KayceePvP] RunSetup: granted starting totem heads for this run.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Debug  :InscryptionCommunityPatch] Card pool has Energy cards? False. Card pool has Gem cards? False.
+[Info   : KayceePvP] Duel (totem): RunState.Run.totems changed | SELF=PEER count=0 totemTops=5 totemBottoms=0 assembled=[]
+[Warning: Singleton] Got null in Singleton<DiskCardGame.MapNodeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.MapNodeManager>.FindInstance
+[Error  : Unity Log] ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+Stack trace:
+System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) (at <44afb4564e9347cf99a1865351ea8f4a>:0)
+System.ThrowHelper.ThrowArgumentOutOfRangeException () (at <44afb4564e9347cf99a1865351ea8f4a>:0)
+AnimatingSprite.SetFrame (System.Int32 frameIndex) (at <4bde92741da1454db82522c215e393a6>:0)
+AnimatingSprite.IterateFrame () (at <4bde92741da1454db82522c215e393a6>:0)
+AnimatingSprite.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+Stack trace:
+System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) (at <44afb4564e9347cf99a1865351ea8f4a>:0)
+System.ThrowHelper.ThrowArgumentOutOfRangeException () (at <44afb4564e9347cf99a1865351ea8f4a>:0)
+AnimatingSprite.SetFrame (System.Int32 frameIndex) (at <4bde92741da1454db82522c215e393a6>:0)
+AnimatingSprite.IterateFrame () (at <4bde92741da1454db82522c215e393a6>:0)
+AnimatingSprite.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Info   : KayceePvP] Lobby: opponent finished their boss - received their deck (17 cards, route=, risk=clean).
+[Info   : KayceePvP] Duel debug (F6 deck): arquivo='C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\config\KayceePvP.F6Deck.txt' solicitado=[Squirrel x3, Goat x2, Pronghorn x4, Snelk x2, Beehive+CorpseEater+Sacrificial x2, WolfCub+CorpseEater x2, Grizzly+SplitStrike x2] resolvido=[Squirrel x3, Goat x2, Pronghorn x4, Snelk x2, Beehive+CorpseEater+Sacrificial x2, WolfCub+CorpseEater x2, Grizzly+SplitStrike x2] total=17 cartas - handing off to the shared peer-deck wait (sending is now done inside it), then the real ready screen + DuelStart.Begin() (map/boss/Death Card skipped).
+[Info   : KayceePvP] Lobby: sent our deck (17 cards, route=) to the opponent, waiting for theirs...
+[Info   : KayceePvP] PvP handoff: peer deck received (17 cards) - continuing to the duel.
+[Info   : KayceePvP] PvP handoff: already in the gameplay scene - skipping the scene reload, going straight to the ready screen.
+[Info   : KayceePvP] Duel: ARMED_TURN_OWNERSHIP | self=PEER match=392124866 battle=1 hostGoesFirstThisBattle=True soloDebugMode=False localFirstTurn=1 expectedOutgoing=1 expectedIncoming=0
+[Info   : KayceePvP] Duel (combat): CombatResolutionSignalPatch.ResetForMatch - reason='PrepareForMatch(392124866)', generation 0 -> 0.
+[Info   : KayceePvP] Duel (turnend): TurnEndResolutionSignalPatch.ResetForMatch - reason='PrepareForMatch(392124866)', generation 0 -> 0.
+[Info   : KayceePvP] Duel: prepared for match 392124866 - sequence/turn counters reset.
+[Info   : KayceePvP] Duel (lobby-match): INTERBATTLE_RELOAD_LATCH_OFF | match=0 battle=1
+[Info   : KayceePvP] Duel (interbattle): ResetBattleFlowForMatch - reason='PvpCardCreationFlow.ShowReadyScreenAndCountdown (real ready phase)', matchId 0 -> 392124866, _handledBattle 0 -> 0.
+[Info   : KayceePvP] PvP: duel_begin confirmed by host protocol - starting the duel now.
+[Info   : KayceePvP] PvP items: replaced preparation inventory with exactly one SquirrelBottle for series 392124866.
+[Info   : KayceePvP] Duel (lobby-match): BeginMatch | match=392124866 frozenLocalDeckCount=17
+[Info   : KayceePvP] Duel: ARM_TURN_OWNERSHIP_SKIPPED | already armed for match=392124866 battle=1 (armed earlier by PrepareForMatch) - not overwriting counters that may have already advanced.
+[Info   : KayceePvP] Duel: starting with 17 cards.
+[Info   : KayceePvP] Duel (totem): SNAPSHOT at battle begin (battle 1) | matchId=392124866 battleNumber=1 SELF=PEER ownTotems=[none]
+[Warning: Singleton] Got null in Singleton<DiskCardGame.ConduitCircuitManager>.FindInstance
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=392124866 battleNumber=1 seed=1642792662 firstPicks=[Squirrel,Squirrel,Squirrel]
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=392124866 battleNumber=1 seed=1642792662 firstPicks=[Goat,Pronghorn,Snelk]
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=0 seq=0 currentTurn=0 isPlayerTurn=False netTransitMsApprox=-233,3
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=0 seq=0 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=392124866 battle=1 turn=0 seq=0 type=end_turn queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=False queueDwellMs=5,2
+[Info   : KayceePvP] NetworkOpponent: end_turn (seq=0) arrived during SetupPhase's QueueFirstCardBeforePlayer mirror - vanilla never calls DoCombatPhase for this turn on its own, running it here before releasing this side's own first turn. gen=1 generationBefore=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=1 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=1 playerIsAttacker=False
+[Info   : KayceePvP] NetworkOpponent: SetupPhase-mirrored combat for end_turn seq=0 resolved - dispatching the TurnEnd trigger OpponentTurn() would have fired here, so mirrored TurnEnd abilities (e.g. Strafe) move on this side too. gen=1
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=1
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=0 basedOnActionFromHost=True hash=S6V0hVxoBAO3jJTH state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=1 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] DIAG PlayerIsWinner | role=PEER result=False opponent.NumLives=1 opponent.Surrendered=False
+[Info   : KayceePvP] DIAG GameIsOver | role=PEER result=False balance=0 opponent.NumLives=1 opponent.Surrendered=False PlayerSurrendered=False MatchEnded=False
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=1 seq=1 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-253,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=0 basedOnActionFromHost=True hash=S6V0hVxoBAO3jJTH
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=0 basedOnActionFromHost=True hash=S6V0hVxoBAO3jJTH
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=1 seq=2 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=2 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=2 seq=2 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-279,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=2 basedOnActionFromHost=False hash=leFGgqPtx6EBMrP8
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=turn_reaction_settled match=392124866 battle=1 turn=2 seq=3 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-269,2
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=2 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=2 basedOnActionFromHost=False hash=leFGgqPtx6EBMrP8 state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=2 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=2 basedOnActionFromHost=False hash=leFGgqPtx6EBMrP8
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=2
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=2 seq=4 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-273,8
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=2 seq=4 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=2
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=2 match=392124866 battle=1 turn=2 seq=4 type=end_turn queueBefore=1 queueAfter=0 currentTurn=2 isPlayerTurn=False queueDwellMs=13,3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=3 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=3 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=3
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=4 basedOnActionFromHost=True hash=7eTRiAbkIpoZjUHR state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=3 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=3 seq=5 currentTurn=3 isPlayerTurn=True netTransitMsApprox=-271,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=4 basedOnActionFromHost=True hash=7eTRiAbkIpoZjUHR
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=4 basedOnActionFromHost=True hash=7eTRiAbkIpoZjUHR
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=3 seq=6 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=4 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=4 seq=6 currentTurn=3 isPlayerTurn=True netTransitMsApprox=-280,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=6 basedOnActionFromHost=False hash=p+6oWBVvhgpw/cwh
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=turn_reaction_settled match=392124866 battle=1 turn=4 seq=7 currentTurn=3 isPlayerTurn=True netTransitMsApprox=-253,1
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=4 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=4
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=4
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=6 basedOnActionFromHost=False hash=p+6oWBVvhgpw/cwh state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=4 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=6 basedOnActionFromHost=False hash=p+6oWBVvhgpw/cwh
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=3
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=4 seq=8 currentTurn=4 isPlayerTurn=False netTransitMsApprox=-252,8
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=4 seq=8 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=4
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=3 match=392124866 battle=1 turn=4 seq=8 type=end_turn queueBefore=1 queueAfter=0 currentTurn=4 isPlayerTurn=False queueDwellMs=10,6
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=5 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=5 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=5
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=5
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=8 basedOnActionFromHost=True hash=AEP+U1ft4015qu/4 state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=5 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=5 seq=9 currentTurn=5 isPlayerTurn=True netTransitMsApprox=-260,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=8 basedOnActionFromHost=True hash=AEP+U1ft4015qu/4
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=8 basedOnActionFromHost=True hash=AEP+U1ft4015qu/4
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=5 seq=10 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=6 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=6 seq=10 currentTurn=5 isPlayerTurn=True netTransitMsApprox=-269,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=10 basedOnActionFromHost=False hash=J5TNHxMUc0yJJcud
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=turn_reaction_settled match=392124866 battle=1 turn=6 seq=11 currentTurn=5 isPlayerTurn=True netTransitMsApprox=-257,3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=6 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=6
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=6
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=10 basedOnActionFromHost=False hash=J5TNHxMUc0yJJcud state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=6 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=10 basedOnActionFromHost=False hash=J5TNHxMUc0yJJcud
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=4
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=6 seq=12 currentTurn=6 isPlayerTurn=False netTransitMsApprox=-260,4
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=6 seq=12 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=6
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=4 match=392124866 battle=1 turn=6 seq=12 type=end_turn queueBefore=1 queueAfter=0 currentTurn=6 isPlayerTurn=False queueDwellMs=8,0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=7 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=7 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=7
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=7
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=12 basedOnActionFromHost=True hash=AYzSEdY8tar2OLyB state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=7 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=7 seq=13 currentTurn=7 isPlayerTurn=True netTransitMsApprox=-245,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=12 basedOnActionFromHost=True hash=AYzSEdY8tar2OLyB
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=12 basedOnActionFromHost=True hash=AYzSEdY8tar2OLyB
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=7 seq=14 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=8 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=8 seq=14 currentTurn=7 isPlayerTurn=True netTransitMsApprox=-287,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=14 basedOnActionFromHost=False hash=zdByJljXNJEJeRh9
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=turn_reaction_settled match=392124866 battle=1 turn=8 seq=15 currentTurn=7 isPlayerTurn=True netTransitMsApprox=-272,5
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=8 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=8
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=8
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=14 basedOnActionFromHost=False hash=zdByJljXNJEJeRh9 state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=8 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=14 basedOnActionFromHost=False hash=zdByJljXNJEJeRh9
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=5
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=392124866 battle=1 turn=8 seq=16 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-274,9
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=8 seq=16 sender=HOST type=card_played card=Squirrel slot=1 queueBefore=0 queueAfter=1 currentTurn=8
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=5 match=392124866 battle=1 turn=8 seq=16 type=card_played queueBefore=1 queueAfter=0 currentTurn=8 isPlayerTurn=False queueDwellMs=9,6
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 1.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=8 seq=17 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-286,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=16 basedOnActionFromHost=True hash=Van8MyYuWdb/y9Ec
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=16 basedOnActionFromHost=True hash=Van8MyYuWdb/y9Ec state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=8 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=16 basedOnActionFromHost=True hash=Van8MyYuWdb/y9Ec
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=392124866 battle=1 turn=8 seq=18 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-266,7
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=8 seq=18 sender=HOST type=card_played card=Squirrel slot=3 queueBefore=0 queueAfter=1 currentTurn=8
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=5 match=392124866 battle=1 turn=8 seq=18 type=card_played queueBefore=1 queueAfter=0 currentTurn=8 isPlayerTurn=False queueDwellMs=12,7
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=8 seq=19 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-262,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=18 basedOnActionFromHost=True hash=8vsATAVz4DXuUg8/
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 3.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=18 basedOnActionFromHost=True hash=8vsATAVz4DXuUg8/ state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;Squirrel/0/1/[]] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=8 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=18 basedOnActionFromHost=True hash=8vsATAVz4DXuUg8/
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=8 seq=20 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-271,6
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=8 seq=20 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=8
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=5 match=392124866 battle=1 turn=8 seq=20 type=end_turn queueBefore=1 queueAfter=0 currentTurn=8 isPlayerTurn=False queueDwellMs=35,4
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=9 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=9 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=9
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=9
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=20 basedOnActionFromHost=True hash=iRWRonpDOOXkEMOi state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;Squirrel/0/1/[]] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=9 seq=21 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-278,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=20 basedOnActionFromHost=True hash=iRWRonpDOOXkEMOi
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=20 basedOnActionFromHost=True hash=iRWRonpDOOXkEMOi
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=9 seq=20 sender=PEER type=card_played card=Squirrel slot=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=20 basedOnActionFromHost=False hash=O6ll/sqeSQ90rV9b state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;Squirrel/0/1/[]] PEER=[EMPTY;EMPTY;Squirrel/0/1/[];EMPTY] BAL=0 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=9 seq=22 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-272,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=20 basedOnActionFromHost=False hash=O6ll/sqeSQ90rV9b
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=20 basedOnActionFromHost=False hash=O6ll/sqeSQ90rV9b
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=9 seq=22 sender=PEER type=card_played card=Squirrel slot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=22 basedOnActionFromHost=False hash=iISJqscw4l9SG67E state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;Squirrel/0/1/[]] PEER=[EMPTY;Squirrel/0/1/[];Squirrel/0/1/[];EMPTY] BAL=0 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=9 seq=23 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-284,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=22 basedOnActionFromHost=False hash=iISJqscw4l9SG67E
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=22 basedOnActionFromHost=False hash=iISJqscw4l9SG67E
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 2 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=9 seq=24 sender=PEER type=card_played card=Pronghorn slot=2 sacrificedSlots=[1,2]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=24 basedOnActionFromHost=False hash=Nll9pQ53vcpk495h state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;Squirrel/0/1/[]] PEER=[EMPTY;EMPTY;Pronghorn/1/3/[3,24];EMPTY] BAL=0 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=9 seq=24 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-288,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=24 basedOnActionFromHost=False hash=Nll9pQ53vcpk495h
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=24 basedOnActionFromHost=False hash=Nll9pQ53vcpk495h
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=9 seq=26 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=10 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=10 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=10
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True cardSlot=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=10
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=26 basedOnActionFromHost=False hash=bbTUMHdMqWefSLGF state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/3/[3,24]] BAL=0 TURN=10 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=10 seq=25 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-269,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=26 basedOnActionFromHost=False hash=/+BNCeWa23tRLTlL
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=26 basedOnActionFromHost=False localHash=bbTUMHdMqWefSLGF peerHash=/+BNCeWa23tRLTlL
+[Error  : KayceePvP] Duel: local state dump (forSeq=26) | HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/3/[3,24]] BAL=0 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=auto_card_played match=392124866 battle=1 turn=10 seq=26 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-254,2
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=10 seq=26 sender=HOST type=auto_card_played card=Beehive slot=1 queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=auto_card_played match=392124866 battle=1 turn=10 seq=27 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-259,2
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=10 seq=27 sender=HOST type=auto_card_played card=WolfCub slot=3 queueBefore=1 queueAfter=2 currentTurn=10
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=turn_reaction_settled match=392124866 battle=1 turn=10 seq=28 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-282,1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=10 seq=29 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-284,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=26 basedOnActionFromHost=True hash=/+BNCeWa23tRLTlL
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=10 seq=30 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-286,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=27 basedOnActionFromHost=True hash=/+BNCeWa23tRLTlL
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=6
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=392124866 battle=1 turn=10 seq=26 type=auto_card_played queueBefore=2 queueAfter=1 currentTurn=10 isPlayerTurn=False queueDwellMs=134,7
+[Info   : KayceePvP] Duel (card-sync): RECV card='Beehive' | SELF=PEER RECONSTRUCTED_BASE=[2] WIRE=[2+11+20] TO_ADD=[11+20] TO_NEGATE=[] FINAL_EFFECTIVE=[2+11+20]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Beehive' onto opponent slot 1 (automatic ability trigger, never turn-gated).
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=26 basedOnActionFromHost=True hash=LNG98gKsJKjvywzD state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/3/[3,24]] BAL=0 TURN=10 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=26 basedOnActionFromHost=True localHash=LNG98gKsJKjvywzD peerHash=/+BNCeWa23tRLTlL
+[Error  : KayceePvP] Duel: local state dump (forSeq=26) | HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/3/[3,24]] BAL=0 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=392124866 battle=1 turn=10 seq=27 type=auto_card_played queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=1068,1
+[Info   : KayceePvP] Duel (card-sync): RECV card='WolfCub' | SELF=PEER RECONSTRUCTED_BASE=[5] WIRE=[5+11] TO_ADD=[11] TO_NEGATE=[] FINAL_EFFECTIVE=[5+11]
+[Info   : KayceePvP] NetworkOpponent: queueing 'WolfCub' onto opponent slot 3 (automatic ability trigger, never turn-gated).
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=27 basedOnActionFromHost=True hash=/+BNCeWa23tRLTlL state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/3/[3,24]] BAL=0 TURN=10 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=392124866 forSeq=27 basedOnActionFromHost=True hash=/+BNCeWa23tRLTlL
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=10 seq=31 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-274,3
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=10 seq=31 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=392124866 battle=1 turn=10 seq=31 type=end_turn queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=12,8
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=11 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=11 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=11
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=False RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=11
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=31 basedOnActionFromHost=True hash=6I7wYYX62D+iUxyW state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=11 seq=32 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-275,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=31 basedOnActionFromHost=True hash=78dPT2Xm5gZWbRWE
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=31 basedOnActionFromHost=True localHash=6I7wYYX62D+iUxyW peerHash=78dPT2Xm5gZWbRWE
+[Error  : KayceePvP] Duel: local state dump (forSeq=31) | HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;EMPTY;Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=11 seq=32 sender=PEER type=card_played card=Squirrel slot=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=32 basedOnActionFromHost=False hash=MVbK+/GElJiewMDK state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;Squirrel/0/1/[];Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=11 seq=33 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-264,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=32 basedOnActionFromHost=False hash=lm5W7C/v8Bgv9rS8
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=32 basedOnActionFromHost=False localHash=MVbK+/GElJiewMDK peerHash=lm5W7C/v8Bgv9rS8
+[Error  : KayceePvP] Duel: local state dump (forSeq=32) | HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;Squirrel/0/1/[];Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 2 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=11 seq=34 sender=PEER type=card_played card=Goat slot=1 sacrificedSlots=[2]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=34 basedOnActionFromHost=False hash=BDJxZKlWVTRmsP5a state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;Goat/0/1/[22];EMPTY;Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=11 seq=34 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-281,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=34 basedOnActionFromHost=False hash=LhTkWwTZ6oh2W+Fx
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=34 basedOnActionFromHost=False localHash=BDJxZKlWVTRmsP5a peerHash=LhTkWwTZ6oh2W+Fx
+[Error  : KayceePvP] Duel: local state dump (forSeq=34) | HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;Goat/0/1/[22];EMPTY;Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel (card-sync): SEND card='WolfCub' | SELF=PEER BASE=[Evolve] PERMANENT_MOD_ABILITIES=[CorpseEater] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[5+11] WIRE=[5+11] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=11 seq=36 sender=PEER type=card_played card=WolfCub slot=2 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=36 basedOnActionFromHost=False hash=smHEFstpEt7MkauZ state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=11 seq=35 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-254,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=36 basedOnActionFromHost=False hash=ZzTB3Tf2Fu8Hu0CC
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=36 basedOnActionFromHost=False localHash=smHEFstpEt7MkauZ peerHash=ZzTB3Tf2Fu8Hu0CC
+[Error  : KayceePvP] Duel: local state dump (forSeq=36) | HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=0 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=11 seq=38 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=12 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=12 seq=36 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-255,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=38 basedOnActionFromHost=False hash=XfEfkH40/cSVdNKu
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=turn_reaction_settled match=392124866 battle=1 turn=12 seq=37 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-231,2
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=12 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=12
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Pronghorn' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True cardSlot=3
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=12
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=38 basedOnActionFromHost=False hash=OEKSZKIyKgM3W4NX state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=-2 TURN=12 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=38 basedOnActionFromHost=False localHash=OEKSZKIyKgM3W4NX peerHash=XfEfkH40/cSVdNKu
+[Error  : KayceePvP] Duel: local state dump (forSeq=38) | HOST=[EMPTY;Beehive/0/2/[2,11,20];EMPTY;WolfCub/1/1/[5,11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=-2 TURN=12 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=7
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=392124866 battle=1 turn=12 seq=38 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-253,7
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=12 seq=38 sender=HOST type=card_played card=Goat slot=2 queueBefore=0 queueAfter=1 currentTurn=12
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=7 match=392124866 battle=1 turn=12 seq=38 type=card_played queueBefore=1 queueAfter=0 currentTurn=12 isPlayerTurn=False queueDwellMs=5,3
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Beehive').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=12 seq=39 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-256,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=38 basedOnActionFromHost=True hash=NWTB2O/xSXmX+0E3
+[Info   : KayceePvP] Duel (card-sync): RECV card='Goat' | SELF=PEER RECONSTRUCTED_BASE=[22] WIRE=[22] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[22]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Goat' onto opponent slot 2.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=38 basedOnActionFromHost=True hash=wNyFUfzS+O4j1n0u state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];Goat/0/1/[22];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=-2 TURN=12 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=38 basedOnActionFromHost=True localHash=wNyFUfzS+O4j1n0u peerHash=NWTB2O/xSXmX+0E3
+[Error  : KayceePvP] Duel: local state dump (forSeq=38) | HOST=[EMPTY;Beehive/0/2/[2,11,20];Goat/0/1/[22];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=-2 TURN=12 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=392124866 battle=1 turn=12 seq=40 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-267,8
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=12 seq=40 sender=HOST type=card_played card=Grizzly slot=2 queueBefore=0 queueAfter=1 currentTurn=12
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=7 match=392124866 battle=1 turn=12 seq=40 type=card_played queueBefore=1 queueAfter=0 currentTurn=12 isPlayerTurn=False queueDwellMs=11,5
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 2 ('Goat').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=12 seq=41 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-257,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=40 basedOnActionFromHost=True hash=BwPkCudacaXTpmkZ
+[Info   : KayceePvP] Duel (card-sync): RECV card='Grizzly' | SELF=PEER RECONSTRUCTED_BASE=[] WIRE=[24] TO_ADD=[24] TO_NEGATE=[] FINAL_EFFECTIVE=[24]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Grizzly' onto opponent slot 2.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=40 basedOnActionFromHost=True hash=S/a2Yd+/L2+K0LKH state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=-2 TURN=12 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=40 basedOnActionFromHost=True localHash=S/a2Yd+/L2+K0LKH peerHash=BwPkCudacaXTpmkZ
+[Error  : KayceePvP] Duel: local state dump (forSeq=40) | HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Pronghorn/1/2/[3,24]] BAL=-2 TURN=12 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=392124866 battle=1 turn=12 seq=42 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-265,1
+[Info   : KayceePvP] Duel: RECEIVED | match=392124866 battle=1 turn=12 seq=42 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=12
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=7 match=392124866 battle=1 turn=12 seq=42 type=end_turn queueBefore=1 queueAfter=0 currentTurn=12 isPlayerTurn=False queueDwellMs=13,2
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=13 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): CorpseEater.OnOtherCardDie STARTED | SELF=PEER card='Beehive'
+[Info   : KayceePvP] Duel (ability-trigger): CorpseEater.OnOtherCardDie RESOLVED | SELF=PEER card='Beehive'
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Beehive' -> proceeding (local card).
+[Info   : KayceePvP] Duel (ability-trigger): CorpseEater.OnOtherCardDie STARTED | SELF=PEER card='Bee'
+[Info   : KayceePvP] Duel (ability-trigger): CorpseEater.OnOtherCardDie RESOLVED | SELF=PEER card='Bee'
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=13 seq=43 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-278,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=42 basedOnActionFromHost=True hash=6sRnpldRFG2VJTbq
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=13 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=13
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=13
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=42 basedOnActionFromHost=True hash=GFjHYUzWIPv7qd3i state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=42 basedOnActionFromHost=True localHash=GFjHYUzWIPv7qd3i peerHash=6sRnpldRFG2VJTbq
+[Error  : KayceePvP] Duel: local state dump (forSeq=42) | HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel (card-sync): SEND card='Beehive' | SELF=PEER BASE=[BeesOnHit] PERMANENT_MOD_ABILITIES=[CorpseEater+Sacrificial] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[2+11+20] WIRE=[2+11+20] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=13 seq=43 sender=PEER type=auto_card_played card=Beehive slot=3 (automatic ability trigger, never turn-gated)
+[Info   : KayceePvP] Duel (card-sync): SEND card='Bee' | SELF=PEER BASE=[Flying] PERMANENT_MOD_ABILITIES=[CorpseEater+Sacrificial] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[19+11+20] WIRE=[19+11+20] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=13 seq=44 sender=PEER type=auto_card_played card=Bee slot=3 (automatic ability trigger, never turn-gated)
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=44 basedOnActionFromHost=False hash=GFjHYUzWIPv7qd3i state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=13 seq=44 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-274,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=43 basedOnActionFromHost=False hash=JSIxKAU7UE3tZp52
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=13 seq=45 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-271,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=44 basedOnActionFromHost=False hash=JSIxKAU7UE3tZp52
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=44 basedOnActionFromHost=False localHash=GFjHYUzWIPv7qd3i peerHash=JSIxKAU7UE3tZp52
+[Error  : KayceePvP] Duel: local state dump (forSeq=44) | HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;WolfCub/1/1/[5,11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0
+[Warning: KayceePvP] Duel: RecordLocalStateHashAfterResolved timed out waiting for 'Beehive' to resolve onto slot 3 (forSeq=43) - recording the hash anyway.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=43 basedOnActionFromHost=False hash=Cg/4VCrkWRxuE4br state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;Wolf/3/2/[11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=43 basedOnActionFromHost=False localHash=Cg/4VCrkWRxuE4br peerHash=JSIxKAU7UE3tZp52
+[Error  : KayceePvP] Duel: local state dump (forSeq=43) | HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;EMPTY;Wolf/3/2/[11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=392124866 turn=13 seq=48 sender=PEER type=card_played card=Snelk slot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=392124866 forSeq=48 basedOnActionFromHost=False hash=ZMxIxaofmPuZruoR state=[HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;Snelk/1/2/[3,4];Wolf/3/2/[11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=392124866 battle=1 turn=13 seq=46 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-261,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=392124866 sender=HOST forSeq=48 basedOnActionFromHost=False hash=1PnGTfwCFv1KcJ8V
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=392124866 forSeq=48 basedOnActionFromHost=False localHash=ZMxIxaofmPuZruoR peerHash=1PnGTfwCFv1KcJ8V
+[Error  : KayceePvP] Duel: local state dump (forSeq=48) | HOST=[EMPTY;Beehive/0/2/[2,11,20];Grizzly/4/6/[24];Wolf/3/2/[11]] PEER=[EMPTY;Snelk/1/2/[3,4];Wolf/3/2/[11];Bee/1/1/[11,19,20]] BAL=2 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.LifeManager>.FindInstance
