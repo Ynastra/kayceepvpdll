@@ -44,12 +44,46 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-26 - reverte travamento urgente):
-   7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B
+   SHA-256 esperado (build de 2026-08-26 - Lobo Atroz evolui certinho):
+   A8D4B7A437264403F25ED1E20E8CB5F318B14E8EECE3027D1DDF1836460DC777
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-26): FILHOTE DE LOBO ATROZ AGORA EVOLUI CERTINHO NOS DOIS LADOS
+------------------------------------------------------------------------------------------
+
+Achamos a causa real do Lobo Atroz nao evoluindo do outro lado (a
+tentativa anterior, revertida por travar tudo, tinha diagnosticado o
+sintoma certo mas a correcao errada). A habilidade Evolve nao checa de
+quem e a carta - ela dispara igual nos dois PCs, so pela posicao no
+tabuleiro. Isso parece seguro, mas nao e para uma carta que acabou de
+chegar automaticamente (via CorpseEater): o mecanismo que aplica essa
+chegada so comeca a rodar DEPOIS que a checagem de inicio de turno
+daquele mesmo turno ja passou, do lado que so esta acompanhando. Ou
+seja, a carta sempre perde a unica chance de evoluir bem na hora
+certa, do lado espelhado. Confirmado com um teste real: o Lobo Atroz
+evoluiu de verdade num PC e matou uma criatura do adversario em
+combate, enquanto o outro PC continuava achando que ele nao tinha
+evoluido e que a criatura sobreviveu - os dois placares divergiam de
+vez dali pra frente, sem se corrigir sozinho.
+
+Corrigido do mesmo jeito que ja corrigimos o CorpseEater: quem
+realmente e dono da carta avisa o outro lado assim que a evolucao
+acontece de verdade, e o lado que so acompanha nunca mais tenta
+calcular isso sozinho - so aplica o que chegou pela rede.
+
+BARALHO DO F6 ENXUGADO NESTA BUILD, focado nesse teste especifico
+(KayceePvP.F6Deck.txt incluido, Atualizar-PC2.ps1 ja copia junto):
+Squirrel x2, Pronghorn x2, WolfCub+CorpseEater x2 - poucos tipos de
+carta de proposito, pra mao inicial ja vir com tudo que precisa. Jogue
+um Squirrel numa lane; deixe ele morrer em combate no turno do
+adversario com o Lobo Atroz ainda na mao - o CorpseEater deve joga-lo
+sozinho, de graca. No upkeep seguinte do DONO do Lobo Atroz, ele deve
+virar "Wolf" (3/2) nos DOIS PCs ao mesmo tempo, e o combate seguinte
+dele contra um Pronghorn precisa bater o mesmo resultado nos dois
+lados. Confira os dois logs por STATE HASH MISMATCH.
 
 CORRECAO URGENTE (2026-08-26): A TENTATIVA ANTERIOR DO LOBO ATROZ TRAVAVA A PARTIDA INTEIRA
 ----------------------------------------------------------------------------------------------
@@ -239,31 +273,21 @@ dependencia do KayceePvP (API/CommunityPatch/ele mesmo) - existe porque
 outro jogador reportou cartas de mods de terceiros vazando pro pool do
 PvP. Se acontecer com voce, o jogo mostra qual mod remover.
 
-BARALHO DO F6 ATUALIZADO PRA TESTAR ESSE FIX ESPECIFICO
-(KayceePvP.F6Deck.txt incluido neste update - o Atualizar-PC2.ps1 ja copia
-ele junto com a DLL, sem precisar fazer nada extra):
+BARALHO DO F6 ENXUGADO NESTA BUILD (2026-08-26), focado no teste do Lobo
+Atroz/Evolve (KayceePvP.F6Deck.txt incluido - o Atualizar-PC2.ps1 ja copia
+ele junto com a DLL): Squirrel x2, Pronghorn x2, WolfCub+CorpseEater x2 -
+poucos tipos de carta de proposito, pra mao inicial ja vir com tudo que
+precisa.
 
-  Turno 1: joga Squirrel, sacrifica pra jogar Goat, sacrifica pra jogar
-           Pronghorn (fica sozinho no tabuleiro). Toca o sino.
-  Turno 3: joga Snelk sozinho num slot e Pronghorn (2a copia) sozinho em
-           outro slot. Toca o sino de novo.
-
-Repita a mesma sequencia nos dois PCs (cada um na sua vez). Se aparecer
-STATE HASH MISMATCH no log, manda pra gente de novo (ver
-COMO-REPORTAR-BUGS.md). Se nao aparecer nada estranho, essa e a
-confirmacao que faltava pra fechar esse bug de vez.
-
-SEGUNDO CENARIO NO MESMO BARALHO: A COLMEIA DO REPORT BILATERAL
-------------------------------------------------------------------
-
-O F6 agora tambem traz "Beehive+CorpseEater+Sacrificial" (a Colmeia com
-as duas habilidades extras que ela tinha na sua partida, alem do
-BeesOnHit normal dela). Posicione um Squirrel numa lane onde o Pronghorn
-do oponente vai atacar, mantenha a Colmeia na mao; quando o Pronghorn
-matar o Squirrel em combate, o CorpseEater deve fazer a Colmeia entrar
-sozinha em campo, de graca, pro lado que perdeu o Squirrel. Repita nos
-dois PCs (cada um com seu proprio Squirrel morto) e confira os dois logs
-por STATE HASH MISMATCH/PROTOCOL_DESYNC_FATAL com card=Beehive.
+Jogue um Squirrel numa lane; deixe ele morrer em combate no turno do
+adversario com o Lobo Atroz (WolfCub+CorpseEater) ainda na mao - o
+CorpseEater deve joga-lo sozinho, de graca. No upkeep seguinte do DONO do
+Lobo Atroz, ele deve virar "Wolf" (3/2) nos DOIS PCs ao mesmo tempo, e o
+combate seguinte dele contra um Pronghorn precisa bater o mesmo resultado
+(dano e sobrevivencia) nos dois lados. Repita nos dois PCs e confira os
+dois logs por STATE HASH MISMATCH. Se aparecer, manda o log de novo (ver
+COMO-REPORTAR-BUGS.md); senao, essa e a confirmacao que faltava pra
+fechar esse bug de vez.
 
 CORRECAO NOVA (2026-08-24, achada no seu ultimo log - obrigado por mandar!)
 ----------------------------------------------------------------------------

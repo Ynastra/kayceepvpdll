@@ -50,19 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B
+   A8D4B7A437264403F25ED1E20E8CB5F318B14E8EECE3027D1DDF1836460DC777
    ```
 
-   (build de 2026-08-26 - reverte de emergência a tentativa anterior de
-   corrigir o Filhote de Lobo Atroz, que travava toda partida por 45s a
-   cada troca de turno; veja a nota no topo do changelog abaixo)
+   (build de 2026-08-26 - Filhote de Lobo Atroz agora evolui certinho
+   nos dois lados, sem travar nada; veja a nota no topo do changelog
+   abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "7DB4E0A4F4088067B9BE8DCD5914264081676EED2B7502A1FA085A4012CDDD3B"
+   $esperado = "A8D4B7A437264403F25ED1E20E8CB5F318B14E8EECE3027D1DDF1836460DC777"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -74,6 +74,28 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-26): Filhote de Lobo Atroz agora evolui certinho nos dois lados
+
+Achamos a causa real do Lobo Atroz não evoluindo do outro lado (a
+tentativa anterior, revertida por travar tudo, tinha diagnosticado o
+sintoma certo mas a correção errada). A habilidade Evolve não checa de
+quem é a carta - ela dispara igual nos dois PCs, só pela posição no
+tabuleiro. Isso parece seguro, mas não é para uma carta que acabou de
+chegar automaticamente (via CorpseEater): o mecanismo que aplica essa
+chegada só começa a rodar DEPOIS que a checagem de início de turno
+daquele mesmo turno já passou, do lado que só está acompanhando. Ou
+seja, a carta sempre perde a única chance de evoluir bem na hora
+certa, do lado espelhado. Confirmado com um teste real: o Lobo Atroz
+evoluiu de verdade num PC e matou uma criatura do adversário em
+combate, enquanto o outro PC continuava achando que ele não tinha
+evoluído e que a criatura sobreviveu - os dois placares divergiam de
+vez dali pra frente, sem se corrigir sozinho.
+
+Corrigido do mesmo jeito que já corrigimos o CorpseEater: quem
+realmente é dono da carta avisa o outro lado assim que a evolução
+acontece de verdade, e o lado que só acompanha nunca mais tenta
+calcular isso sozinho - só aplica o que chegou pela rede.
 
 ## Correção urgente nesta build (2026-08-26): a tentativa anterior do Lobo Atroz travava a partida inteira
 
@@ -253,25 +275,20 @@ existe porque um outro jogador reportou cartas de mods de terceiros
 vazando pro pool do PvP e causando bugs. Se isso acontecer com você, o jogo
 mostra uma mensagem dizendo exatamente qual mod remover.
 
-**Baralho do F6 atualizado pra testar esse fix específico** (veja
-`KayceePvP.F6Deck.txt` incluído neste update, o `Atualizar-PC2.ps1` já
-copia ele junto com a DLL): Squirrel/Goat/Pronghorn/Snelk. No turno 1, joga
-Squirrel, sacrifica pra jogar Goat, sacrifica pra jogar Pronghorn (fica
-sozinho no tabuleiro) e toca o sino. No turno 3, joga Snelk sozinho num
-slot e Pronghorn (2ª cópia) sozinho em outro, toca o sino de novo. Repita
-a sequência nos dois PCs. Se aparecer erro, manda o log de novo (veja
+**Baralho do F6 enxugado nesta build (2026-08-26)** pra focar no teste do
+Lobo Atroz/Evolve (veja `KayceePvP.F6Deck.txt` incluído neste update, o
+`Atualizar-PC2.ps1` já copia ele junto com a DLL): `Squirrel x2`,
+`Pronghorn x2`, `WolfCub+CorpseEater x2` - poucos tipos de carta de
+propósito, pra mão inicial já vir com tudo que precisa. Jogue um Squirrel
+numa lane; deixe ele morrer em combate no turno do adversário com o Lobo
+Atroz (`WolfCub+CorpseEater`) ainda na mão - o `CorpseEater` deve jogá-lo
+sozinho, de graça. No upkeep seguinte do DONO do Lobo Atroz, ele deve virar
+"Wolf" (3/2) nos DOIS PCs ao mesmo tempo, e o combate seguinte dele contra
+um Pronghorn precisa bater o mesmo resultado (dano e sobrevivência) nos
+dois lados. Repita nos dois PCs e confira os dois logs por
+`STATE HASH MISMATCH`. Se aparecer, manda o log (veja
 `COMO-REPORTAR-BUGS.md`); senão, essa é a confirmação que faltava pra
 fechar esse bug de vez.
-
-**Segundo cenário no mesmo baralho: a Colmeia do report bilateral.** O F6
-agora também traz `Beehive+CorpseEater+Sacrificial` (a Colmeia com as duas
-habilidades extras que ela tinha na sua partida, além do `BeesOnHit`
-normal dela). Posicione um Squirrel numa lane onde o Pronghorn do oponente
-vai atacar, mantenha a Colmeia na mão; quando o Pronghorn matar o
-Squirrel em combate, o `CorpseEater` deve fazer a Colmeia entrar sozinha
-em campo, de graça, pro lado que perdeu o Squirrel. Repita nos dois PCs
-(cada um com seu próprio Squirrel morto) e confira os dois logs por
-`STATE HASH MISMATCH`/`PROTOCOL_DESYNC_FATAL` com `card=Beehive`.
 
 ## O que esta build corrige (acumulado desde a última atualização do PC2, 2026-08-07)
 

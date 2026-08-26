@@ -1,53 +1,21 @@
-# Teste dos fixes de 2026-08-25 (Upkeep espelhado / balance de combate espelhado)
+# Teste do fix de 2026-08-26 (Evolve espelhado - WolfCub via CorpseEater)
 # Formato: um card por linha, nome interno exato de CardInfo.name.
 # Quantidade opcional: "Nome x4", "Nome X4" ou "Nome*4" (sem quantidade = 1).
 # Habilidades extras opcionais: "Nome+Habilidade1+Habilidade2 x4" (nome exato
-# do enum DiskCardGame.Ability) - reproduz uma carta que pegou sigilos extras
-# via Totem num mapa normal, sem precisar andar o mapa de novo.
+# do enum DiskCardGame.Ability).
 # Linhas vazias e comentarios (# ...) sao ignorados.
-# Nomes duplicados (mesma carta + mesmo conjunto de habilidades) em linhas
-# separadas SOMAM a quantidade.
 # Lido do zero a cada F6 (hot reload) - edite e pressione F6 de novo sem reiniciar o jogo.
 #
-# Cenario 1 - reproduz o log real de 2026-08-25 (match=-1138738068):
-#   Turno 1: joga Squirrel -> sacrifica pra jogar Goat -> sacrifica pra jogar
-#            Pronghorn (fica sozinho no board). Toca o sino (fim de turno) -
-#            a Strafe do Pronghorn deve mover ele sozinho, e o log NAO pode
-#            mostrar "STATE HASH MISMATCH" pra esse forSeq.
-#   Turno 3: joga Snelk sozinho num slot e Pronghorn (2a copia) sozinho em
-#            outro slot. Toca o sino de novo - mesma checagem.
+# Deck bem enxuto de proposito (poucos tipos de carta = mao inicial quase
+# sempre com tudo que precisa, sem descartar turno esperando a carta certa).
 #
-# Cenario 2 - reproduz o report bilateral da Colmeia (STATE HASH MISMATCH +
-# PROTOCOL_DESYNC_FATAL com card=Beehive): posicione um Squirrel numa lane
-# onde o Pronghorn do oponente vai atacar; mantenha a Colmeia (com
-# CorpseEater+Sacrificial, alem do BeesOnHit normal dela) na mao. Quando o
-# Pronghorn matar o Squirrel em combate, o CorpseEater deve fazer a Colmeia
-# entrar sozinha em campo, de graca, pro lado que perdeu o Squirrel - repita
-# nos dois PCs (cada um com seu proprio Squirrel morto) e confira o log dos
-# dois lados por STATE HASH MISMATCH/PROTOCOL_DESYNC_FATAL.
-#
-# Cenario 3 - NOVO (fix do Upkeep espelhado, "Lobo Atroz nao evoluia do outro
-# lado"): mantenha WolfCub+CorpseEater na mao, com um Squirrel numa lane onde
-# o oponente vai atacar. Quando o Squirrel morrer, o CorpseEater deve jogar o
-# WolfCub de graca (igual ao cenario 2). NO PROXIMO turno do dono do WolfCub
-# (upkeep), ele deve virar "Wolf" nos DOIS lados ao mesmo tempo - antes do
-# fix, o lado que so estava espelhando ficava com "WolfCub" parado enquanto o
-# dono ja via "Wolf". Confira visualmente nos dois PCs, sem precisar olhar
-# log (a carta muda de nome/arte quando evolui).
-#
-# Cenario 4 - NOVO (fix do placar/dano espelhado, "trava no 5 de dano"):
-# jogue Grizzly+SplitStrike sozinho no meio do tabuleiro, sem nada do lado
-# oponente nas duas lanes vizinhas a lane oposta dele. Toque o sino -
-# SplitStrike faz ele atacar as DUAS lanes vizinhas em vez da lane oposta;
-# como ambas estao vazias, o dano das duas vai direto pro placar num unico
-# combate (mais do que cabe de uma vez, testando o "excesso"). Repita por
-# alguns turnos. Compare o placar mostrado no HUD dos dois PCs - antes do
-# fix, o lado de quem ataca ficava sempre mais baixo que o lado de quem so
-# esta espelhando o ataque; agora devem bater sempre.
-Squirrel x3
-Goat x2
-Pronghorn x4
-Snelk x2
-Beehive+CorpseEater+Sacrificial x2
+# Roteiro: turno 1, jogue um Squirrel numa lane. No turno seguinte (turno do
+# oponente te atacando), deixe ele morrer em combate com WolfCub+CorpseEater
+# ainda na mao - o CorpseEater deve jogar o WolfCub de graca. No PROXIMO
+# upkeep do DONO do WolfCub, ele deve virar "Wolf" (3/2) nos DOIS PCs ao
+# mesmo tempo, e o combate seguinte (WolfCub/Wolf atacando um Pronghorn) deve
+# bater o MESMO resultado (dano e sobrevivencia) nos dois lados - sem
+# STATE HASH MISMATCH no log de nenhum dos dois.
+Squirrel x2
+Pronghorn x2
 WolfCub+CorpseEater x2
-Grizzly+SplitStrike x2
