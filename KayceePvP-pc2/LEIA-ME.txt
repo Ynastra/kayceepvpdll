@@ -44,12 +44,43 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-25 - corrigido o deck PELES):
-   06200E2C2FFDB1AC911A9C7577DFB9106C495685AFB382A7FF72921214C8FADC
+   SHA-256 esperado (build de 2026-08-25 - Lobo Atroz + conexao travando):
+   82E1905D048D867204D8470228E454D7460D2943CB801F251FB2EDC693D4F709
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-25): CONEXAO TRAVAVA PRA SEMPRE SE CAISSE SILENCIOSAMENTE
+-------------------------------------------------------------------------------------
+
+Achamos por que as vezes a partida ficava travada esperando a vez do
+outro lado pra sempre, sem nenhum erro aparecer. Se a conexao caisse
+de um jeito que so um dos dois lados percebesse (o outro simplesmente
+nunca recebe nem um aviso de erro), o lado que nao percebeu ficava
+esperando uma mensagem que nunca mais chegaria, sem nenhum limite de
+tempo. Se depois disso vocês tentassem uma partida nova, o jogo podia
+misturar o estado da partida antiga (ainda "viva" internamente) com a
+nova, dando um erro de sincronizacao estranho. Corrigido: esse
+travamento agora e tratado do mesmo jeito que qualquer outra queda de
+conexao detectada.
+
+CORRECAO NOVA (2026-08-25): FILHOTE DE LOBO ATROZ NAO EVOLUIA DO OUTRO LADO
+---------------------------------------------------------------------------------
+
+Achamos por que uma carta automatica do CorpseEater (como o Filhote de
+Lobo Atroz que apareceu no seu teste, com Evolve + CorpseEater
+enxertados) evoluia pro dono dela mas ficava parada no visual do outro
+lado pra sempre. O motivo: a fase de "inicio de turno" do lado que
+mira o adversario roda ANTES do jogo sequer checar se chegou alguma
+mensagem de rede - entao, se a carta automatica ainda estava a
+caminho, essa fase de inicio de turno ja passava sem ver a carta, e
+ela perdia a unica chance de evoluir naquele ciclo, ficando pelo menos
+um turno inteiro atrasada no visual do outro lado. Corrigido: agora,
+antes de comecar essa fase pro adversario, o jogo espera uma
+confirmacao rapida de que o outro lado ja terminou de reagir ao turno
+anterior. Na pratica isso nao atrasa turnos normais - so espera de
+verdade quando realmente tem algo pendente.
 
 CORRECAO NOVA (2026-08-25, achada no teste real): DECK PELES VINHA COM PELES DEMAIS
 ----------------------------------------------------------------------------------------

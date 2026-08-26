@@ -50,18 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   06200E2C2FFDB1AC911A9C7577DFB9106C495685AFB382A7FF72921214C8FADC
+   82E1905D048D867204D8470228E454D7460D2943CB801F251FB2EDC693D4F709
    ```
 
-   (build de 2026-08-25 - corrigido o deck PELES, que vinha com peles
-   demais; veja a nota abaixo)
+   (build de 2026-08-25 - corrigido o Filhote de Lobo Atroz não
+   evoluindo do outro lado, e a conexão travando pra sempre quando cai
+   silenciosamente; veja as notas abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "06200E2C2FFDB1AC911A9C7577DFB9106C495685AFB382A7FF72921214C8FADC"
+   $esperado = "82E1905D048D867204D8470228E454D7460D2943CB801F251FB2EDC693D4F709"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -73,6 +74,36 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-25): conexão travava pra sempre se caísse silenciosamente
+
+Achamos por que às vezes a partida ficava travada esperando a vez do
+outro lado pra sempre, sem nenhum erro aparecer. Se a conexão caísse
+de um jeito que só um dos dois lados percebesse (o outro simplesmente
+nunca recebe nem um aviso de erro), o lado que não percebeu ficava
+esperando uma mensagem que nunca mais chegaria, sem nenhum limite de
+tempo. Se depois disso vocês tentassem uma partida nova, o jogo podia
+misturar o estado da partida antiga (ainda "viva" internamente) com a
+nova, dando um erro de sincronização estranho. Corrigido: esse
+travamento agora é tratado do mesmo jeito que qualquer outra queda de
+conexão detectada.
+
+## Correção nova nesta build (2026-08-25): Filhote de Lobo Atroz não evoluía do outro lado
+
+Achamos por que uma carta automática do CorpseEater (como o Filhote de
+Lobo Atroz que apareceu no seu teste, com Evolve + CorpseEater
+enxertados) evoluía pro dono dela mas ficava parada no visual do outro
+lado pra sempre. O motivo: a fase de "início de turno" do lado que
+mira o adversário roda ANTES do jogo sequer checar se chegou alguma
+mensagem de rede - então, se a carta automática ainda estava a
+caminho (o dono tinha acabado de decidir jogá-la, mas a mensagem
+ainda não tinha chegado), essa fase de início de turno já passava sem
+ver a carta, e ela perdia a única chance de evoluir naquele ciclo,
+ficando pelo menos um turno inteiro atrasada no visual do outro lado.
+Corrigido: agora, antes de começar essa fase pro adversário, o jogo
+espera uma confirmação rápida de que o outro lado já terminou de
+reagir ao turno anterior. Na prática isso não atrasa turnos normais -
+só espera de verdade quando realmente tem algo pendente.
 
 ## Correção nova nesta build (2026-08-25, achada no teste real): deck PELES vinha com peles demais
 
