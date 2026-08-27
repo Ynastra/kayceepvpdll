@@ -48,11 +48,24 @@ PASSO A PASSO
    nem do lado que perde nem do lado que ataca, e ofertas de carta do
    Caminho Balanceado/Tribe Fight/Draft de Peles nao repetem mais entre
    partidas):
-   999E71A1E56ACD735F31571D53E4FE380DFA9A0DA5C449E5DF89E4E9754AA90D
+   48EAE4746C79FFF1E6487285CC2FFD761CE6AD6877F0990DBE27BAE92F23EE67
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-27): ALARME FALSO DE "DECK INVALIDO" NO CAMINHO BALANCEADO
+--------------------------------------------------------------------------------------
+
+Achado no log do JP: "Pelt Draft: invalid final deck - cards=16,
+expected=14". Investigado - NAO e bug de verdade, o deck de 16 cartas
+estava certo. O Caminho Balanceado ganha cartas por um caminho
+diferente do Draft de Peles (que definia o "14" esperado): Mercador
+(6) + 10 nos de escolha por custo (+10) + Goobert (+1) - fusao de
+carta (-1) - fusao de duplicata (-1) + recompensa rara (+1) = 16,
+matematicamente certo pro layout desse mapa. O alarme comparava
+contra o numero esperado do OUTRO modo. Corrigido - nao muda nada no
+gameplay, so para de logar um erro falso.
 
 CORRECAO NOVA (2026-08-27): LAMMERGEIER LIA OS OSSOS DO JOGADOR ERRADO NO LADO ESPELHADO
 --------------------------------------------------------------------------------------------

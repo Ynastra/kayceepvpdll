@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   999E71A1E56ACD735F31571D53E4FE380DFA9A0DA5C449E5DF89E4E9754AA90D
+   48EAE4746C79FFF1E6487285CC2FFD761CE6AD6877F0990DBE27BAE92F23EE67
    ```
 
    (build de 2026-08-27 - placar do duelo não trava mais em 5 (nem no
@@ -63,7 +63,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "999E71A1E56ACD735F31571D53E4FE380DFA9A0DA5C449E5DF89E4E9754AA90D"
+   $esperado = "48EAE4746C79FFF1E6487285CC2FFD761CE6AD6877F0990DBE27BAE92F23EE67"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -75,6 +75,20 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-27): alarme falso de "deck inválido" no Caminho Balanceado
+
+Achado no log do JP: `Pelt Draft: invalid final deck - cards=16, expected=14`.
+Investigado a fundo - **não é um bug de verdade, o deck de 16 cartas
+estava certo**. O Caminho Balanceado ganha cartas por um caminho
+totalmente diferente do Draft de Peles (que é quem definia o "14"
+esperado): 1 visita ao Mercador (6 cartas) + 10 nós de escolha por
+custo (+10) + Goobert (+1 cópia) - fusão de carta (-1) - fusão de
+duplicata (-1) + recompensa rara (+1) = 16, matematicamente correto
+pro layout desse mapa. O alarme só existia porque o código comparava
+contra o número esperado do OUTRO modo. Corrigido - agora compara
+contra o número certo pra cada modo. Não muda nada no gameplay, só
+para de logar um erro falso.
 
 ## Correção nova nesta build (2026-08-27): Lammergeier lia os ossos do jogador errado no lado espelhado
 
