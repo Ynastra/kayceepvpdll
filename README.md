@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   48EAE4746C79FFF1E6487285CC2FFD761CE6AD6877F0990DBE27BAE92F23EE67
+   2CF8DEEA51AFE65FA83A2AD8FB564FD67B1291AD7B4084BFCD8272465E29F417
    ```
 
    (build de 2026-08-27 - placar do duelo não trava mais em 5 (nem no
@@ -63,7 +63,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "48EAE4746C79FFF1E6487285CC2FFD761CE6AD6877F0990DBE27BAE92F23EE67"
+   $esperado = "2CF8DEEA51AFE65FA83A2AD8FB564FD67B1291AD7B4084BFCD8272465E29F417"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -75,6 +75,25 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção urgente nesta build (2026-08-27): rematch terminava a batalha 1 sozinho, sem ninguém ter perdido
+
+Achado num rematch real: a batalha 1 terminou sozinha logo no primeiro
+turno, com o tabuleiro de um lado vazio mas ninguém tinha realmente
+perdido (`opponent.NumLives=1`, sem ninguém ter se rendido). Achamos
+um TERCEIRO lugar no jogo original com o mesmo "-5" grudado no código,
+diferente dos dois que já tínhamos corrigido antes (o que decide se o
+duelo acabou e o que decide se alguém já venceu) - esse aqui é o que
+decide "o jogo já acabou?" de um jeito totalmente separado. Antes do
+fix de hoje pro placar travado em 5, esse terceiro lugar nunca
+importava, porque o placar real nunca conseguia passar de -5 mesmo -
+era literalmente a mesma trava que causava a "partida nunca termina".
+Corrigir aquela trava destravou esse terceiro problema junto: assim
+que o placar passava de -5 (bem antes do limiar de vitória de
+verdade, que é -15), o jogo achava que tinha acabado na hora.
+
+Corrigido do mesmo jeito que os outros dois - agora os três lugares
+usam o mesmo limiar real de 15/-15.
 
 ## Correção nova nesta build (2026-08-27): alarme falso de "deck inválido" no Caminho Balanceado
 

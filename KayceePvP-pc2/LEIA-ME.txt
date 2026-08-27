@@ -48,11 +48,27 @@ PASSO A PASSO
    nem do lado que perde nem do lado que ataca, e ofertas de carta do
    Caminho Balanceado/Tribe Fight/Draft de Peles nao repetem mais entre
    partidas):
-   48EAE4746C79FFF1E6487285CC2FFD761CE6AD6877F0990DBE27BAE92F23EE67
+   2CF8DEEA51AFE65FA83A2AD8FB564FD67B1291AD7B4084BFCD8272465E29F417
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO URGENTE (2026-08-27): REMATCH TERMINAVA A BATALHA 1 SOZINHO, SEM NINGUEM TER PERDIDO
+----------------------------------------------------------------------------------------------------
+
+Achado num rematch real: a batalha 1 terminou sozinha logo no primeiro
+turno, tabuleiro de um lado vazio mas ninguem tinha perdido de verdade
+(opponent.NumLives=1, sem ninguem ter se rendido). Achado um TERCEIRO
+lugar no jogo original com o mesmo "-5" grudado, diferente dos dois ja
+corrigidos antes. Antes do fix de hoje pro placar travado em 5, esse
+terceiro lugar nunca importava (o placar real nunca passava de -5
+mesmo). Corrigir aquela trava destravou esse problema junto: assim que
+o placar passava de -5 (bem antes do limiar real de -15), o jogo
+achava que ja tinha acabado.
+
+Corrigido do mesmo jeito que os outros dois - os tres lugares agora
+usam o mesmo limiar real de 15.
 
 CORRECAO NOVA (2026-08-27): ALARME FALSO DE "DECK INVALIDO" NO CAMINHO BALANCEADO
 --------------------------------------------------------------------------------------
