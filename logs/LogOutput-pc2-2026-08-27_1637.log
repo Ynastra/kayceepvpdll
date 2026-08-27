@@ -1,0 +1,1299 @@
+[Message:   BepInEx] BepInEx 5.4.23.5 - Inscryption (16/06/2026 15:26:48)
+[Info   :   BepInEx] Running under Unity v2019.4.24.6137584
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.17020
+[Info   :   BepInEx] Supports SRE: False
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.5]
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.MonoMod.Loader 1.0.0.0]
+[Info   :   BepInEx] 2 patcher plugins loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Info   :   MonoMod] Collecting target assemblies from mods
+[Info   :   BepInEx] Patching [Assembly-CSharp] with [BepInEx.MonoMod.Loader.Patcher]
+[Message:   MonoMod] [Main] Scanning for mods in directory.
+[Message:   MonoMod] [ReadMod] Loading mod dir: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod
+[Message:   MonoMod] [ReadMod] Loading mod dir: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod\API_dev-API
+[Message:   MonoMod] [ReadMod] Loading mod: C:\Users\Administrador\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\KayceePvP\BepInEx\monomod\API_dev-API\Assembly-CSharp.APIPatcher.mm.dll
+[Message:   MonoMod] [Main] Found 1 mods
+[Message:   MonoMod] [Main] mm.PatchRefs(); fixup pre-pass
+[Message:   MonoMod] [Main] mm.AutoPatch();
+[Message:   MonoMod] [AutoPatch] Parsing rules in loaded mods
+[Message:   MonoMod] [AutoPatch] PrePatch pass
+[Message:   MonoMod] [AutoPatch] Patch pass
+[Message:   MonoMod] [AutoPatch] PatchRefs pass
+[Message:   MonoMod] [PostProcessor] PostProcessor pass #1
+[Message:   MonoMod] [Main] Done.
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 4 plugins to load
+[Warning:   BepInEx] Skipping [KayceePvP 0.1.4] because a newer version exists (KayceePvP 0.1.4)
+[Info   :   BepInEx] Loading [InscryptionAPI 2.24.0]
+[Info   :   BepInEx] Loading [InscryptionCommunityPatch 2.24.0]
+[Info   :   BepInEx] Loading [KayceePvP 0.1.4]
+[Info   : KayceePvP] PvpDialogueOverrides: initialized - 17 event override(s), 4 literal override(s).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] SelfCheck: ownership matrix (HOST/PEER x local/remote card, 4/4 cases) passed.
+[Info   : KayceePvP] SelfCheck: starter deck gate (multiplayer on/off, 2/2 cases) passed.
+[Info   : KayceePvP] SelfCheck: map-mode convergence (shared WaitForPeerDeckThenDuel entry point, no duplicate wait) passed.
+[Info   : KayceePvP] SelfCheck: rematch protocol (8/8 cases) passed.
+[Info   : KayceePvP] SelfCheck: PvP item allowlist (11/11 cases) passed.
+[Info   : KayceePvP] KayceePvP 0.1.4 loaded.
+[Message:   BepInEx] Chainloader startup complete
+[Info   :   Console] Searching for compatible XInput library...
+[Info   :   Console] Found Xinput1_4.dll.
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Debug  :InscryptionAPI] Inserted 4 dialogue event(s)!
+[Debug  :   BepInEx] [UnityInput] Using LegacyInputSystem
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Info   : Unity Log] Received stats and achievements from Steam
+
+[Debug  :InscryptionCommunityPatch] Ability [Reach] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [DrawAnt] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Flying] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [DebuffEnemy] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Submerge] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [Evolve] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [HydraEgg] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [HydraEgg] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [HydraEgg] stacks [1] time(s)
+[Debug  :InscryptionCommunityPatch] Ability [TriStrike] stacks [1] time(s)
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Info   : KayceePvP] New Ascension run requested - opening PvP lobby before it starts.
+[Info   : KayceePvP] Lobby: host set map mode = BalancedRoute
+[Info   : KayceePvP] Relay: connecting to 'kayceepvp.duckdns.org':443...
+[Info   : KayceePvP] Relay: TLS handshake complete.
+[Info   : KayceePvP] Relay: room created, waiting up to 330s for the peer to join...
+[Info   : KayceePvP] Relay: connecting to 'kayceepvp.duckdns.org':443...
+[Info   : KayceePvP] Relay: TLS handshake complete.
+[Info   : KayceePvP] Relay: paired with peer.
+[Info   : KayceePvP] Lobby: run starting, shared map seed = 20260727, matchId = -717998722, mapMode = BalancedRoute, names=[gustavo]/[teste]
+[Info   : KayceePvP] Lobby ready - starting PvP run with shared map seed 20260727, matchId -717998722, mapMode BalancedRoute (host goes first: True).
+[Info   :InscryptionAPI] Forest
+[Info   :InscryptionAPI] Wetlands
+[Info   :InscryptionAPI] Alpine
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] RunSetup: granted starting totem heads for this run.
+[Info   : KayceePvP] Caminho Balanceado: starting batch granted (3 Rabbit, 2 Wolf, 1 Golden).
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Info   : Unity Log] Test save file:
+[Info   : Unity Log] DiskCardGame.StoryEventsData
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.TurnManager>.FindInstance
+[Debug  :InscryptionCommunityPatch] Card pool has Energy cards? False. Card pool has Gem cards? False.
+[Info   : KayceePvP] Duel (totem): RunState.Run.totems changed | SELF=PEER count=0 totemTops=5 totemBottoms=0 assembled=[]
+[Warning: Singleton] Got null in Singleton<DiskCardGame.MapNodeManager>.FindInstance
+[Warning: Singleton] Got null in Singleton<DiskCardGame.MapNodeManager>.FindInstance
+[Info   : KayceePvP] Caminho Balanceado: deck re-normalized at the Trader boundary (3 Rabbit, 2 Wolf, 1 Golden); third-party starter cards removed.
+[Info   : KayceePvP] PvP pelt map: filtered 3 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 3 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 3 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 3 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Warning: Singleton] Got null in Singleton<DiskCardGame.ConduitCircuitManager>.FindInstance
+[Info   : KayceePvP] Lobby: opponent finished their boss - received their deck (16 cards, route=, risk=clean).
+[Info   : KayceePvP] PvP: Backspace pressed - skipping the current preparation battle phase.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] PvP pelt map: filtered 4 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Warning: Unity Log] DiskCardGame.CardInfo must be instantiated using the ScriptableObject.CreateInstance method instead of new CardInfo.
+[Error  : Unity Log] ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+Stack trace:
+System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) (at <44afb4564e9347cf99a1865351ea8f4a>:0)
+System.ThrowHelper.ThrowArgumentOutOfRangeException () (at <44afb4564e9347cf99a1865351ea8f4a>:0)
+AnimatingSprite.SetFrame (System.Int32 frameIndex) (at <4bde92741da1454db82522c215e393a6>:0)
+AnimatingSprite.IterateFrame () (at <4bde92741da1454db82522c215e393a6>:0)
+AnimatingSprite.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: Amoeba -> Alpha Amoeba (add=[BuffNeighbours] negate=[RandomAbility]).
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP pelt map: filtered 5 forbidden/special card occurrence(s), including Lice/Hrokkall, from Trader/choice pool.
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP (sem batalhas): rota local concluída (16 cartas) - iniciando o handoff compartilhado.
+[Info   : KayceePvP] Lobby: sent our deck (16 cards, route=) to the opponent, waiting for theirs...
+[Info   : KayceePvP] PvP handoff: peer deck received (16 cards) - continuing to the duel.
+[Info   : KayceePvP] PvP handoff: already in the gameplay scene - skipping the scene reload, going straight to the ready screen.
+[Info   : KayceePvP] Duel: ARMED_TURN_OWNERSHIP | self=PEER match=-717998722 battle=1 hostGoesFirstThisBattle=True soloDebugMode=False localFirstTurn=1 expectedOutgoing=1 expectedIncoming=0
+[Info   : KayceePvP] Duel (combat): CombatResolutionSignalPatch.ResetForMatch - reason='PrepareForMatch(-717998722)', generation 0 -> 0.
+[Info   : KayceePvP] Duel (turnend): TurnEndResolutionSignalPatch.ResetForMatch - reason='PrepareForMatch(-717998722)', generation 0 -> 0.
+[Info   : KayceePvP] Duel: prepared for match -717998722 - sequence/turn counters reset.
+[Info   : KayceePvP] Duel (lobby-match): INTERBATTLE_RELOAD_LATCH_OFF | match=0 battle=1
+[Info   : KayceePvP] Duel (interbattle): ResetBattleFlowForMatch - reason='PvpCardCreationFlow.ShowReadyScreenAndCountdown (real ready phase)', matchId 0 -> -717998722, _handledBattle 0 -> 0.
+[Error  : KayceePvP] Pelt Draft: invalid final deck - cards=16, remainingPelts=0, expected=14/0.
+[Info   : KayceePvP] PvP: duel_begin confirmed by host protocol - starting the duel now.
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] PvP items: replaced preparation inventory with exactly one SquirrelBottle for series -717998722.
+[Info   : KayceePvP] Duel (lobby-match): BeginMatch | match=-717998722 frozenLocalDeckCount=16
+[Info   : KayceePvP] Duel: ARM_TURN_OWNERSHIP_SKIPPED | already armed for match=-717998722 battle=1 (armed earlier by PrepareForMatch) - not overwriting counters that may have already advanced.
+[Info   : KayceePvP] Duel: starting with 16 cards.
+[Info   : KayceePvP] Duel (totem): SNAPSHOT at battle begin (battle 1) | matchId=-717998722 battleNumber=1 SELF=PEER ownTotems=[none]
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=-717998722 battleNumber=1 seed=111103466 firstPicks=[Squirrel,Squirrel,Squirrel]
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=-717998722 battleNumber=1 seed=111103466 firstPicks=[Grizzly,Grizzly,Grizzly]
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=0 seq=0 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2180,1
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=0 seq=0 sender=HOST type=card_played card=Squirrel slot=1 queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-717998722 battle=1 turn=0 seq=0 type=card_played queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=True queueDwellMs=8,6
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 1.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=0 seq=1 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2173,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=0 basedOnActionFromHost=True hash=gTdTz5wshTHQWsmd
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=0 basedOnActionFromHost=True hash=gTdTz5wshTHQWsmd state=[HOST=[EMPTY;Squirrel/0/1/[];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=0 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=0 basedOnActionFromHost=True hash=gTdTz5wshTHQWsmd
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=0 seq=2 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2163,1
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=0 seq=2 sender=HOST type=card_played card=Goat slot=1 queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-717998722 battle=1 turn=0 seq=2 type=card_played queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=True queueDwellMs=9,1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=0 seq=3 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2176,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=2 basedOnActionFromHost=True hash=8iWsbZTPT6XTgc5Y
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Squirrel').
+[Info   : KayceePvP] Duel (card-sync): RECV card='Goat' | SELF=PEER RECONSTRUCTED_BASE=[22] WIRE=[22] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[22]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Goat' onto opponent slot 1.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=2 basedOnActionFromHost=True hash=8iWsbZTPT6XTgc5Y state=[HOST=[EMPTY;Goat/0/1/[22];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=0 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=2 basedOnActionFromHost=True hash=8iWsbZTPT6XTgc5Y
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=0 seq=4 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2192,6
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=0 seq=4 sender=HOST type=card_played card=Shark slot=0 queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-717998722 battle=1 turn=0 seq=4 type=card_played queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=True queueDwellMs=9,1
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Goat').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=0 seq=5 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2186,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=4 basedOnActionFromHost=True hash=wRRkJf5V7uAWwyBm
+[Info   : KayceePvP] Duel (card-sync): RECV card='Shark' | SELF=PEER RECONSTRUCTED_BASE=[13] WIRE=[13] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[13]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Shark' onto opponent slot 0.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=0 seq=6 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2178,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=0 seq=6 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=0
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=4 basedOnActionFromHost=True hash=wRRkJf5V7uAWwyBm state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=0 TURN=0 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=4 basedOnActionFromHost=True hash=wRRkJf5V7uAWwyBm
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=1 match=-717998722 battle=1 turn=0 seq=6 type=end_turn queueBefore=1 queueAfter=0 currentTurn=0 isPlayerTurn=True queueDwellMs=105,6
+[Info   : KayceePvP] NetworkOpponent: end_turn (seq=6) arrived during SetupPhase's QueueFirstCardBeforePlayer mirror - vanilla never calls DoCombatPhase for this turn on its own, running it here before releasing this side's own first turn. gen=1 generationBefore=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=1 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=1 playerIsAttacker=False
+[Info   : KayceePvP] NetworkOpponent: SetupPhase-mirrored combat for end_turn seq=6 resolved - dispatching the TurnEnd trigger OpponentTurn() would have fired here, so mirrored TurnEnd abilities (e.g. Strafe) move on this side too. gen=1
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=1
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=6 basedOnActionFromHost=True hash=sTfu1Ts0UVlymarV state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] DIAG PlayerIsWinner | role=PEER result=False opponent.NumLives=1 opponent.Surrendered=False
+[Info   : KayceePvP] DIAG GameIsOver | role=PEER result=False balance=4 opponent.NumLives=1 opponent.Surrendered=False PlayerSurrendered=False MatchEnded=False
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=1 seq=7 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-2143,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=6 basedOnActionFromHost=True hash=QTY6rJ/hJU2OLons
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=6 basedOnActionFromHost=True localHash=sTfu1Ts0UVlymarV peerHash=QTY6rJ/hJU2OLons
+[Error  : KayceePvP] Duel: local state dump (forSeq=6) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;EMPTY] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=1 seq=4 sender=PEER type=card_played card=Squirrel slot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=4 basedOnActionFromHost=False hash=ttzzwFWJZA/wFEai state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;Squirrel/0/1/[];EMPTY;EMPTY] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=1 seq=8 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-2174,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=4 basedOnActionFromHost=False hash=JrB2Mqll6beLnPTd
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=4 basedOnActionFromHost=False localHash=ttzzwFWJZA/wFEai peerHash=JrB2Mqll6beLnPTd
+[Error  : KayceePvP] Duel: local state dump (forSeq=4) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;Squirrel/0/1/[];EMPTY;EMPTY] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=1 seq=6 sender=PEER type=card_played card=Goat slot=3 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=6 basedOnActionFromHost=False hash=XXVWORvQRrPOqZQn state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Goat/0/1/[14,22]] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=1 seq=9 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-2176,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=6 basedOnActionFromHost=False hash=/mJB+b996seJzu5N
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=6 basedOnActionFromHost=False localHash=XXVWORvQRrPOqZQn peerHash=/mJB+b996seJzu5N
+[Error  : KayceePvP] Duel: local state dump (forSeq=6) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;EMPTY;Goat/0/1/[14,22]] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=1 seq=8 sender=PEER type=card_played card=Grizzly slot=2 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=8 basedOnActionFromHost=False hash=Jm4mE6r6XMYPXQbR state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=1 seq=10 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-2172,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=8 basedOnActionFromHost=False hash=rxgibcrqpgQLjUQF
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=8 basedOnActionFromHost=False localHash=Jm4mE6r6XMYPXQbR peerHash=rxgibcrqpgQLjUQF
+[Error  : KayceePvP] Duel: local state dump (forSeq=8) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-4 TURN=1 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=1 seq=10 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=2 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=2 seq=11 currentTurn=1 isPlayerTurn=True netTransitMsApprox=-2178,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=10 basedOnActionFromHost=False hash=Frki2yPxjv97QGyr
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=2 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=10 basedOnActionFromHost=False hash=0IFRrK2ztYi9pHrG state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=2 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=10 basedOnActionFromHost=False localHash=0IFRrK2ztYi9pHrG peerHash=Frki2yPxjv97QGyr
+[Error  : KayceePvP] Duel: local state dump (forSeq=10) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=2 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=2
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=2 seq=12 currentTurn=2 isPlayerTurn=False netTransitMsApprox=-2188,1
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=2 seq=12 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=2
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=2 match=-717998722 battle=1 turn=2 seq=12 type=end_turn queueBefore=1 queueAfter=0 currentTurn=2 isPlayerTurn=False queueDwellMs=12,1
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=3 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=3 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=3
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=12 basedOnActionFromHost=True hash=CK3fdbI8X0bnCk4h state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=3 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=3 seq=13 currentTurn=3 isPlayerTurn=True netTransitMsApprox=-2161,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=12 basedOnActionFromHost=True hash=oSDosRWiLvrp3n1x
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=12 basedOnActionFromHost=True localHash=CK3fdbI8X0bnCk4h peerHash=oSDosRWiLvrp3n1x
+[Error  : KayceePvP] Duel: local state dump (forSeq=12) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=3 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=3 seq=13 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=4 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=4 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=4
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=4 seq=14 currentTurn=3 isPlayerTurn=True netTransitMsApprox=-2203,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=13 basedOnActionFromHost=False hash=QlSWsx3mG6nkaPHf
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=4
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=13 basedOnActionFromHost=False hash=GHLJxKSWAWEs8bdP state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=4 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=13 basedOnActionFromHost=False localHash=GHLJxKSWAWEs8bdP peerHash=QlSWsx3mG6nkaPHf
+[Error  : KayceePvP] Duel: local state dump (forSeq=13) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=4 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=3
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=4 seq=15 currentTurn=4 isPlayerTurn=False netTransitMsApprox=-2176,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=4 seq=15 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=4
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=3 match=-717998722 battle=1 turn=4 seq=15 type=end_turn queueBefore=1 queueAfter=0 currentTurn=4 isPlayerTurn=False queueDwellMs=6,2
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=5 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=5 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=5
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=5 seq=16 currentTurn=4 isPlayerTurn=False netTransitMsApprox=-2187,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=15 basedOnActionFromHost=True hash=Ts/7pomf45LAQfES
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=5
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=15 basedOnActionFromHost=True hash=U3jR2Fwile/fDCBm state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=5 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=15 basedOnActionFromHost=True localHash=U3jR2Fwile/fDCBm peerHash=Ts/7pomf45LAQfES
+[Error  : KayceePvP] Duel: local state dump (forSeq=15) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=5 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=5 seq=16 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=6 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=6 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=6
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=6 seq=17 currentTurn=5 isPlayerTurn=True netTransitMsApprox=-2186,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=16 basedOnActionFromHost=False hash=e47maFH48Tqd/7pK
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=6
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=16 basedOnActionFromHost=False hash=7LpL7+IIWqHjwzw6 state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=6 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=16 basedOnActionFromHost=False localHash=7LpL7+IIWqHjwzw6 peerHash=e47maFH48Tqd/7pK
+[Error  : KayceePvP] Duel: local state dump (forSeq=16) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=6 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=4
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=6 seq=18 currentTurn=6 isPlayerTurn=False netTransitMsApprox=-2173,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=6 seq=18 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=6
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=4 match=-717998722 battle=1 turn=6 seq=18 type=end_turn queueBefore=1 queueAfter=0 currentTurn=6 isPlayerTurn=False queueDwellMs=6,6
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=7 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=7 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=7
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=7 seq=19 currentTurn=6 isPlayerTurn=False netTransitMsApprox=-2187,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=18 basedOnActionFromHost=True hash=cI9jngKL3Fa4AuZm
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=7
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=18 basedOnActionFromHost=True hash=fQGA0p0lCt0psbOv state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=7 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=18 basedOnActionFromHost=True localHash=fQGA0p0lCt0psbOv peerHash=cI9jngKL3Fa4AuZm
+[Error  : KayceePvP] Duel: local state dump (forSeq=18) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=7 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=7 seq=19 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=8 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=8 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=8
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=8
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=19 basedOnActionFromHost=False hash=1iZE/oGyTgoeIpSv state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=8 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=8 seq=20 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-2197,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=19 basedOnActionFromHost=False hash=C7PxbNi6FgN3iQlU
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=19 basedOnActionFromHost=False localHash=1iZE/oGyTgoeIpSv peerHash=C7PxbNi6FgN3iQlU
+[Error  : KayceePvP] Duel: local state dump (forSeq=19) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-5 TURN=8 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=5
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=8 seq=21 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-2182,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=8 seq=21 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=8
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=5 match=-717998722 battle=1 turn=8 seq=21 type=end_turn queueBefore=1 queueAfter=0 currentTurn=8 isPlayerTurn=False queueDwellMs=4,0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=9 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=9 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=9
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=9 seq=22 currentTurn=8 isPlayerTurn=False netTransitMsApprox=-2175,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=21 basedOnActionFromHost=True hash=0ySz5+oUbcOqntHg
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=9
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=21 basedOnActionFromHost=True hash=K04sCN77mnbMcRhu state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=21 basedOnActionFromHost=True localHash=K04sCN77mnbMcRhu peerHash=0ySz5+oUbcOqntHg
+[Error  : KayceePvP] Duel: local state dump (forSeq=21) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=9 seq=22 sender=PEER type=card_played card=Squirrel slot=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=22 basedOnActionFromHost=False hash=sukGc9oxGu/CM9rR state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Squirrel/0/1/[]] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=9 seq=23 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-2173,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=22 basedOnActionFromHost=False hash=upK1o3rW5+RX0+jl
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=22 basedOnActionFromHost=False localHash=sukGc9oxGu/CM9rR peerHash=upK1o3rW5+RX0+jl
+[Error  : KayceePvP] Duel: local state dump (forSeq=22) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Squirrel/0/1/[]] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=9 seq=24 sender=PEER type=card_played card=Goat slot=3 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=24 basedOnActionFromHost=False hash=dVysFMSpxtsE2HOK state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Goat/0/1/[14,22]] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=9 seq=24 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-2185,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=24 basedOnActionFromHost=False hash=IEy+9jM12UEqBRIg
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=24 basedOnActionFromHost=False localHash=dVysFMSpxtsE2HOK peerHash=IEy+9jM12UEqBRIg
+[Error  : KayceePvP] Duel: local state dump (forSeq=24) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Goat/0/1/[14,22]] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (card-sync): SEND card='DireWolf' | SELF=PEER BASE=[DoubleStrike] PERMANENT_MOD_ABILITIES=[] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[100] WIRE=[100] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=9 seq=26 sender=PEER type=card_played card=DireWolf slot=3 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=26 basedOnActionFromHost=False hash=xgYqEDe5hc5Ac+xI state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=9 seq=25 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-2174,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=26 basedOnActionFromHost=False hash=ZEHDYJXxqhrEPchO
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=26 basedOnActionFromHost=False localHash=xgYqEDe5hc5Ac+xI peerHash=ZEHDYJXxqhrEPchO
+[Error  : KayceePvP] Duel: local state dump (forSeq=26) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-1 TURN=9 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=9 seq=28 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=10 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=10 seq=26 currentTurn=9 isPlayerTurn=True netTransitMsApprox=-2191,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=28 basedOnActionFromHost=False hash=qb9J6JTCbmoYQ+Cs
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=10 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=10
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=10
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=28 basedOnActionFromHost=False hash=xniYnN0vLzqN5m3T state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=28 basedOnActionFromHost=False localHash=xniYnN0vLzqN5m3T peerHash=qb9J6JTCbmoYQ+Cs
+[Error  : KayceePvP] Duel: local state dump (forSeq=28) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=6
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=10 seq=27 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2167,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=10 seq=27 sender=HOST type=card_played card=Squirrel slot=2 queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=-717998722 battle=1 turn=10 seq=27 type=card_played queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=7,5
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=10 seq=28 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2194,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=27 basedOnActionFromHost=True hash=JObx6r2bcLNAXXg4
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 2.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=27 basedOnActionFromHost=True hash=5fymAqg03TpPPue4 state=[HOST=[Shark/4/2/[13];EMPTY;Squirrel/0/1/[];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=27 basedOnActionFromHost=True localHash=5fymAqg03TpPPue4 peerHash=JObx6r2bcLNAXXg4
+[Error  : KayceePvP] Duel: local state dump (forSeq=27) | HOST=[Shark/4/2/[13];EMPTY;Squirrel/0/1/[];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=10 seq=29 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2193,8
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=10 seq=29 sender=HOST type=card_played card=Squirrel slot=1 queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=-717998722 battle=1 turn=10 seq=29 type=card_played queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=9,4
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 1.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=10 seq=30 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2174,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=29 basedOnActionFromHost=True hash=HklCJ9KZVOXYvz/Q
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=29 basedOnActionFromHost=True hash=UQl/gVSRp7LvYSWm state=[HOST=[Shark/4/2/[13];Squirrel/0/1/[];Squirrel/0/1/[];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=29 basedOnActionFromHost=True localHash=UQl/gVSRp7LvYSWm peerHash=HklCJ9KZVOXYvz/Q
+[Error  : KayceePvP] Duel: local state dump (forSeq=29) | HOST=[Shark/4/2/[13];Squirrel/0/1/[];Squirrel/0/1/[];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=10 seq=31 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2180,0
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=10 seq=31 sender=HOST type=card_played card=Squirrel slot=3 queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=-717998722 battle=1 turn=10 seq=31 type=card_played queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=5,6
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 3.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=10 seq=32 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2179,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=31 basedOnActionFromHost=True hash=cKe7HBiL3gdrG65Z
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=31 basedOnActionFromHost=True hash=GkK0LEGlrzJzkeKc state=[HOST=[Shark/4/2/[13];Squirrel/0/1/[];Squirrel/0/1/[];Squirrel/0/1/[]] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=31 basedOnActionFromHost=True localHash=GkK0LEGlrzJzkeKc peerHash=cKe7HBiL3gdrG65Z
+[Error  : KayceePvP] Duel: local state dump (forSeq=31) | HOST=[Shark/4/2/[13];Squirrel/0/1/[];Squirrel/0/1/[];Squirrel/0/1/[]] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=10 seq=33 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2184,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=10 seq=33 sender=HOST type=card_played card=Shark slot=3 queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=-717998722 battle=1 turn=10 seq=33 type=card_played queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=5,0
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Squirrel').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=10 seq=34 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2191,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=33 basedOnActionFromHost=True hash=E+et/oKxR1+cVz0L
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 2 ('Squirrel').
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 3 ('Squirrel').
+[Info   : KayceePvP] Duel (card-sync): RECV card='Shark' | SELF=PEER RECONSTRUCTED_BASE=[13] WIRE=[13+3+4] TO_ADD=[3+4] TO_NEGATE=[] FINAL_EFFECTIVE=[13+3+4]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Shark' onto opponent slot 3.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=10 seq=35 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2189,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=10 seq=35 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=10
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=33 basedOnActionFromHost=True hash=9HuoT0gAS7c0e9uI state=[HOST=[Shark/4/2/[13];EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=33 basedOnActionFromHost=True localHash=9HuoT0gAS7c0e9uI peerHash=E+et/oKxR1+cVz0L
+[Error  : KayceePvP] Duel: local state dump (forSeq=33) | HOST=[Shark/4/2/[13];EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];DireWolf/1/5/[100]] BAL=-5 TURN=10 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=6 match=-717998722 battle=1 turn=10 seq=35 type=end_turn queueBefore=1 queueAfter=0 currentTurn=10 isPlayerTurn=False queueDwellMs=369,8
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=11 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=11 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=11
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=3
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Singletons3D_Part1/CardSnapshotCamera/CardsPlane/CardBase/CardElements/CardAbilityIcons/DefaultIcons_3Abilities/AbilityIcon"
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=11 seq=36 currentTurn=10 isPlayerTurn=False netTransitMsApprox=-2165,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=35 basedOnActionFromHost=True hash=txxuHfTZ50zcNrPF
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=11
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=35 basedOnActionFromHost=True hash=VH9jW7vooC85Kq2N state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=35 basedOnActionFromHost=True localHash=VH9jW7vooC85Kq2N peerHash=txxuHfTZ50zcNrPF
+[Error  : KayceePvP] Duel: local state dump (forSeq=35) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=11 seq=35 sender=PEER type=card_played card=Squirrel slot=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=35 basedOnActionFromHost=False hash=HuqAyqUMjoRtuG5l state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Squirrel/0/1/[]] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=11 seq=37 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-2189,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=35 basedOnActionFromHost=False hash=af4N+LAP9QkvhaDU
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=35 basedOnActionFromHost=False localHash=HuqAyqUMjoRtuG5l peerHash=af4N+LAP9QkvhaDU
+[Error  : KayceePvP] Duel: local state dump (forSeq=35) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Squirrel/0/1/[]] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=11 seq=37 sender=PEER type=card_played card=Goat slot=3 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=37 basedOnActionFromHost=False hash=LnDFuoh3+kNRdsPz state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Goat/0/1/[14,22]] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=11 seq=38 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-2185,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=37 basedOnActionFromHost=False hash=hdLqllOnkLjirMop
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=37 basedOnActionFromHost=False localHash=LnDFuoh3+kNRdsPz peerHash=hdLqllOnkLjirMop
+[Error  : KayceePvP] Duel: local state dump (forSeq=37) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Grizzly/4/6/[];Goat/0/1/[14,22]] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (card-sync): SEND card='Elk' | SELF=PEER BASE=[Strafe] PERMANENT_MOD_ABILITIES=[Submerge] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[3+13] WIRE=[3+13] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=11 seq=39 sender=PEER type=card_played card=Elk slot=0 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=39 basedOnActionFromHost=False hash=MW6rd4FiTlmFyJrx state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=11 seq=41 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=12 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=11 seq=39 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-2179,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=39 basedOnActionFromHost=False hash=fycPATzxhmn5iy1U
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=39 basedOnActionFromHost=False localHash=MW6rd4FiTlmFyJrx peerHash=fycPATzxhmn5iy1U
+[Error  : KayceePvP] Duel: local state dump (forSeq=39) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[];EMPTY] BAL=-1 TURN=11 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=12 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=12
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True cardSlot=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=12 seq=40 currentTurn=11 isPlayerTurn=True netTransitMsApprox=-2184,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=41 basedOnActionFromHost=False hash=iGZ3GVsNym+IVO+3
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=12
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=41 basedOnActionFromHost=False hash=80O8u/3vAbNZIFsi state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];Grizzly/4/6/[];EMPTY] BAL=-5 TURN=12 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=41 basedOnActionFromHost=False localHash=80O8u/3vAbNZIFsi peerHash=iGZ3GVsNym+IVO+3
+[Error  : KayceePvP] Duel: local state dump (forSeq=41) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];Grizzly/4/6/[];EMPTY] BAL=-5 TURN=12 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=7
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=12 seq=41 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-2179,1
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=12 seq=41 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=12
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=7 match=-717998722 battle=1 turn=12 seq=41 type=end_turn queueBefore=1 queueAfter=0 currentTurn=12 isPlayerTurn=False queueDwellMs=6,0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=13 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=13 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=13
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=False RESULT=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=13 seq=42 currentTurn=12 isPlayerTurn=False netTransitMsApprox=-2163,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=41 basedOnActionFromHost=True hash=aTkzOUiQ+SLKmp3X
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=13
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=41 basedOnActionFromHost=True hash=zi5ikwrgF+K7Fkzv state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;EMPTY] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=41 basedOnActionFromHost=True localHash=zi5ikwrgF+K7Fkzv peerHash=aTkzOUiQ+SLKmp3X
+[Error  : KayceePvP] Duel: local state dump (forSeq=41) | HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;EMPTY] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=13 seq=44 sender=PEER type=card_played card=Opossum slot=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=44 basedOnActionFromHost=False hash=O1kYIQssfOMdk8OB state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];Opossum/1/1/[];EMPTY] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=13 seq=43 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-2191,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=44 basedOnActionFromHost=False hash=m+bK3OsRHbXwu3Ko
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=44 basedOnActionFromHost=False localHash=O1kYIQssfOMdk8OB peerHash=m+bK3OsRHbXwu3Ko
+[Error  : KayceePvP] Duel: local state dump (forSeq=44) | HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];Opossum/1/1/[];EMPTY] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Opossum' at slot 2 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=13 seq=46 sender=PEER type=card_played card=Goat slot=3 sacrificedSlots=[2]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=46 basedOnActionFromHost=False hash=T/o+qDhbCkfWSt2i state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Goat/0/1/[14,22]] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=13 seq=44 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-2177,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=46 basedOnActionFromHost=False hash=g8VUk2MbAVh9883I
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=46 basedOnActionFromHost=False localHash=T/o+qDhbCkfWSt2i peerHash=g8VUk2MbAVh9883I
+[Error  : KayceePvP] Duel: local state dump (forSeq=46) | HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Goat/0/1/[14,22]] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=13 seq=48 sender=PEER type=card_played card=Grizzly slot=3 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=48 basedOnActionFromHost=False hash=C7XiG+SlvCZvc5vg state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=13 seq=45 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-2182,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=48 basedOnActionFromHost=False hash=6QxMQ8c8CzXj/oX1
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=48 basedOnActionFromHost=False localHash=C7XiG+SlvCZvc5vg peerHash=6QxMQ8c8CzXj/oX1
+[Error  : KayceePvP] Duel: local state dump (forSeq=48) | HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=13 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=13 seq=50 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=14 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=14 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=14
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True cardSlot=1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=14 seq=46 currentTurn=13 isPlayerTurn=True netTransitMsApprox=-2187,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=50 basedOnActionFromHost=False hash=PoVEG3lnu8bG1buq
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=14
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=50 basedOnActionFromHost=False hash=PoVEG3lnu8bG1buq state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Elk/2/4/[3,13];Grizzly/4/6/[]] BAL=-5 TURN=14 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=50 basedOnActionFromHost=False hash=PoVEG3lnu8bG1buq
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=8
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=14 seq=47 currentTurn=14 isPlayerTurn=False netTransitMsApprox=-2180,2
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=14 seq=47 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=14
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=8 match=-717998722 battle=1 turn=14 seq=47 type=end_turn queueBefore=1 queueAfter=0 currentTurn=14 isPlayerTurn=False queueDwellMs=3,4
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=15 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=15 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=15
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=False RESULT=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=15 seq=48 currentTurn=14 isPlayerTurn=False netTransitMsApprox=-2190,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=47 basedOnActionFromHost=True hash=nRteecLcmPmn5FE7
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=15
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=47 basedOnActionFromHost=True hash=gFTMFmK5hnZ4ZYRA state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Elk/2/4/[3,13];Grizzly/4/6/[]] BAL=5 TURN=15 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=47 basedOnActionFromHost=True localHash=gFTMFmK5hnZ4ZYRA peerHash=nRteecLcmPmn5FE7
+[Error  : KayceePvP] Duel: local state dump (forSeq=47) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Elk/2/4/[3,13];Grizzly/4/6/[]] BAL=5 TURN=15 BATTLE=1 HW=0 PW=0
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+DiskCardGame.ConsumableItemSlot.OnCursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.MainInputInteractable.CursorStay () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.UpdateMainInput () (at <4bde92741da1454db82522c215e393a6>:0)
+DiskCardGame.InteractionCursor.ManagedUpdate () (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.ExecuteIteration (FrameLoopManager+IterationType type) (at <4bde92741da1454db82522c215e393a6>:0)
+FrameLoopManager.Update () (at <4bde92741da1454db82522c215e393a6>:0)
+
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=15 seq=53 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=16 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=16 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=16
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True cardSlot=2
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=16 seq=49 currentTurn=15 isPlayerTurn=True netTransitMsApprox=-2180,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=53 basedOnActionFromHost=False hash=uDcGym2/fSyWEuVz
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=16
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=53 basedOnActionFromHost=False hash=Lb0YaMiD1XQZfb62 state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=53 basedOnActionFromHost=False localHash=Lb0YaMiD1XQZfb62 peerHash=uDcGym2/fSyWEuVz
+[Error  : KayceePvP] Duel: local state dump (forSeq=53) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=9
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=16 seq=50 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2167,0
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=16 seq=50 sender=HOST type=card_played card=Squirrel slot=1 queueBefore=0 queueAfter=1 currentTurn=16
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=9 match=-717998722 battle=1 turn=16 seq=50 type=card_played queueBefore=1 queueAfter=0 currentTurn=16 isPlayerTurn=False queueDwellMs=5,8
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=16 seq=51 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2189,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=50 basedOnActionFromHost=True hash=24XTLqxYCghkXkMc
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 1.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=50 basedOnActionFromHost=True hash=rlOarkYjJwPQvq5Y state=[HOST=[Shark/4/2/[13];Squirrel/0/1/[];Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=50 basedOnActionFromHost=True localHash=rlOarkYjJwPQvq5Y peerHash=24XTLqxYCghkXkMc
+[Error  : KayceePvP] Duel: local state dump (forSeq=50) | HOST=[Shark/4/2/[13];Squirrel/0/1/[];Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=16 seq=52 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2182,0
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=16 seq=52 sender=HOST type=card_played card=Cockroach slot=3 queueBefore=0 queueAfter=1 currentTurn=16
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=9 match=-717998722 battle=1 turn=16 seq=52 type=card_played queueBefore=1 queueAfter=0 currentTurn=16 isPlayerTurn=False queueDwellMs=8,6
+[Info   : KayceePvP] Duel (card-sync): RECV card='Cockroach' | SELF=PEER RECONSTRUCTED_BASE=[14] WIRE=[14] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[14]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Cockroach' onto opponent slot 3.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=16 seq=53 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2183,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=52 basedOnActionFromHost=True hash=BXGfQMVRyLyHy7tE
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=52 basedOnActionFromHost=True hash=eIinVcPvMeIg2JGo state=[HOST=[Shark/4/2/[13];Squirrel/0/1/[];Shark/6/4/[3,4,13];Cockroach/1/1/[14]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=52 basedOnActionFromHost=True localHash=eIinVcPvMeIg2JGo peerHash=BXGfQMVRyLyHy7tE
+[Error  : KayceePvP] Duel: local state dump (forSeq=52) | HOST=[Shark/4/2/[13];Squirrel/0/1/[];Shark/6/4/[3,4,13];Cockroach/1/1/[14]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=1 turn=16 seq=54 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2187,8
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=16 seq=54 sender=HOST type=card_played card=Snapper slot=3 queueBefore=0 queueAfter=1 currentTurn=16
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=9 match=-717998722 battle=1 turn=16 seq=54 type=card_played queueBefore=1 queueAfter=0 currentTurn=16 isPlayerTurn=False queueDwellMs=7,7
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 1 ('Squirrel').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=16 seq=55 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2176,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=54 basedOnActionFromHost=True hash=06bZy7UT/maxnaBt
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 3 ('Cockroach').
+[Info   : KayceePvP] Duel (ownership): suppressed DrawCreatedCard's card-to-hand | ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER ABILITY=DrawCreatedCard card='Cockroach' - would have wrongly gone to the local player's hand.
+[Info   : KayceePvP] Duel (card-sync): RECV card='Snapper' | SELF=PEER RECONSTRUCTED_BASE=[] WIRE=[4] TO_ADD=[4] TO_NEGATE=[] FINAL_EFFECTIVE=[4]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Snapper' onto opponent slot 3.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=16 seq=56 currentTurn=16 isPlayerTurn=False netTransitMsApprox=-2165,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=16 seq=56 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=16
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=54 basedOnActionFromHost=True hash=k18dddPB3LcVFVvd state=[HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];Snapper/1/6/[4]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=54 basedOnActionFromHost=True localHash=k18dddPB3LcVFVvd peerHash=06bZy7UT/maxnaBt
+[Error  : KayceePvP] Duel: local state dump (forSeq=54) | HOST=[Shark/4/2/[13];EMPTY;Shark/6/4/[3,4,13];Snapper/1/6/[4]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Grizzly/4/6/[]] BAL=-1 TURN=16 BATTLE=1 HW=0 PW=0
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=9 match=-717998722 battle=1 turn=16 seq=56 type=end_turn queueBefore=1 queueAfter=0 currentTurn=16 isPlayerTurn=False queueDwellMs=344,8
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=17 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=17 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=17
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=False RESULT=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=17
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=56 basedOnActionFromHost=True hash=WrJ/S6R5o8uyaUSL state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;Snapper/1/6/[4]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;EMPTY] BAL=5 TURN=17 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=17 seq=57 currentTurn=17 isPlayerTurn=True netTransitMsApprox=-2176,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=56 basedOnActionFromHost=True hash=WrJ/S6R5o8uyaUSL
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=56 basedOnActionFromHost=True hash=WrJ/S6R5o8uyaUSL
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=17 seq=59 sender=PEER type=card_played card=Squirrel slot=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=59 basedOnActionFromHost=False hash=f2TOkFyoq+3FK11u state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;Snapper/1/6/[4]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Squirrel/0/1/[]] BAL=5 TURN=17 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=17 seq=58 currentTurn=17 isPlayerTurn=True netTransitMsApprox=-2195,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=59 basedOnActionFromHost=False hash=f2TOkFyoq+3FK11u
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=59 basedOnActionFromHost=False hash=f2TOkFyoq+3FK11u
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=17 seq=61 sender=PEER type=card_played card=Goat slot=3 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=61 basedOnActionFromHost=False hash=OJSZ+YRaaA8HePFZ state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;Snapper/1/6/[4]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Goat/0/1/[14,22]] BAL=5 TURN=17 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=17 seq=59 currentTurn=17 isPlayerTurn=True netTransitMsApprox=-2171,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=61 basedOnActionFromHost=False hash=OJSZ+YRaaA8HePFZ
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=61 basedOnActionFromHost=False hash=OJSZ+YRaaA8HePFZ
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 3 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=17 seq=63 sender=PEER type=card_played card=Shark slot=3 sacrificedSlots=[3]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=63 basedOnActionFromHost=False hash=9/VcDLvz89tQif5s state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;Snapper/1/6/[4]] PEER=[EMPTY;Elk/2/4/[3,13];EMPTY;Shark/4/2/[13]] BAL=5 TURN=17 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=17 seq=60 currentTurn=17 isPlayerTurn=True netTransitMsApprox=-2181,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=63 basedOnActionFromHost=False hash=9/VcDLvz89tQif5s
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=63 basedOnActionFromHost=False hash=9/VcDLvz89tQif5s
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=17 seq=65 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=18 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=18 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=18
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Elk' CARD_ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER playerTurnEnd=True cardSlot=1
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=18
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=65 basedOnActionFromHost=False hash=BhB0pLX/aF3TDWS7 state=[HOST=[Shark/4/2/[13];Shark/6/4/[3,4,13];EMPTY;Snapper/1/2/[4]] PEER=[Elk/2/4/[3,13];EMPTY;EMPTY;Shark/4/2/[13]] BAL=5 TURN=18 BATTLE=1 HW=0 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=1 turn=18 seq=61 currentTurn=18 isPlayerTurn=False netTransitMsApprox=-2173,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=65 basedOnActionFromHost=False hash=BhB0pLX/aF3TDWS7
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=65 basedOnActionFromHost=False hash=BhB0pLX/aF3TDWS7
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=10
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=1 turn=18 seq=62 currentTurn=18 isPlayerTurn=False netTransitMsApprox=-2172,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=1 turn=18 seq=62 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=18
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=10 match=-717998722 battle=1 turn=18 seq=62 type=end_turn queueBefore=1 queueAfter=0 currentTurn=18 isPlayerTurn=False queueDwellMs=6,6
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=19 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=19 playerIsAttacker=False
+[Info   : KayceePvP] Duel: MIRRORED_COMBAT_BALANCE_CLAMPED | damageDealt=11 excessDamage=3 balanceBeforeLocal=-7 playerDamage 55->52 balanceAfterCorrection=-15
+[Info   : KayceePvP] Duel: OUTCOME_OBSERVED_LOCAL | self=PEER match=-717998722 battle=1 loserAbsoluteSide=PEER localBalance=-15 hostRelativeBalance=15 reason=balance
+[Info   : KayceePvP] Duel: OUTCOME_REQUEST_SENT | self=PEER match=-717998722 battle=1 loserAbsoluteSide=PEER hostRelativeBalance=15
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=battle_result match=-717998722 battle=1 turn=18 seq=63 currentTurn=18 isPlayerTurn=False netTransitMsApprox=-2198,9
+[Info   : KayceePvP] Duel: RECEIVED battle_result | self=PEER match=-717998722 battle=1 loser=PEER hostWins=1 peerWins=0 balance=15 reason=balance isMatchFinal=False
+[Info   : KayceePvP] Duel: BATTLE_RESULT_CONFIRMED | self=PEER match=-717998722 battle=1 loser=PEER hostWins=1 peerWins=0 isMatchFinal=False
+[Info   : KayceePvP] Duel: ROUND_CONCLUSION_REQUESTED | self=PEER match=-717998722 battle=1 winnerIsHost=True localPlayerWon=False isMatchFinal=False balance=-15 incomingCount=0 playerSurrendered=False->True opponentSurrendered=False->False numLives=1
+[Info   : KayceePvP] Duel (interbattle): LEAVING_BATTLE | self=PEER match=-717998722 concludedBattle=1 isMatchFinal=False
+[Info   : KayceePvP] Duel (lobby-match): INTERBATTLE_RELOAD_LATCH_ON | match=-717998722 battle=1
+[Info   : KayceePvP] Duel: TURN_END_GATE_CANCELLED_BATTLE_ENDED | match=-717998722 battleAtStart=1 currentBattle=2 forSeq=62 turnEndGenerationBefore=18 resolvedGeneration=18
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=battle_return_ready match=-717998722 battle=2 turn=18 seq=64 currentTurn=18 isPlayerTurn=False netTransitMsApprox=-2191,0
+[Info   : KayceePvP] Duel: RECEIVED battle_return_ready | match=-717998722 battle=2 (peerReadyBattle now 2)
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=battle_begin match=-717998722 battle=2 turn=18 seq=65 currentTurn=18 isPlayerTurn=False netTransitMsApprox=-2182,0
+[Info   : KayceePvP] Duel: RECEIVED battle_begin | match=-717998722 battle=2
+[Info   : KayceePvP] Duel (interbattle): NEXT_BATTLE_READY | self=PEER match=-717998722 battle=2
+[Info   : KayceePvP] Duel (interbattle): SCENE_RELOAD_BEGIN | self=PEER match=-717998722 battle=2
+[Info   : KayceePvP] DIAG PlayerIsWinner | role=PEER result=False opponent.NumLives=1 opponent.Surrendered=False
+[Info   : KayceePvP] DIAG GameIsOver | role=PEER result=True balance=-15 opponent.NumLives=1 opponent.Surrendered=False PlayerSurrendered=True MatchEnded=False
+[Info   : KayceePvP] DIAG PlayerIsWinner | role=PEER result=False opponent.NumLives=1 opponent.Surrendered=False
+[Warning: Singleton] Got null in Singleton<DiskCardGame.GlobalTriggerHandler>.FindInstance
+[Info   : KayceePvP] Duel (interbattle-reload): INTERBATTLE_AWAKE_SUPPRESSED | self=PEER match=-717998722 battle=2
+[Debug  :InscryptionCommunityPatch] Card pool has Energy cards? False. Card pool has Gem cards? False.
+[Info   : KayceePvP] Duel (interbattle-reload): INTERBATTLE_INITIAL_MAP_TRANSITION_SUPPRESSED | self=PEER match=-717998722 battle=2
+[Info   : KayceePvP] Duel (interbattle): SCENE_RELOAD_DONE | self=PEER match=-717998722 battle=2
+[Info   : KayceePvP] Duel (interbattle): NEW_TURN_MANAGER_READY | self=PEER match=-717998722 battle=2
+[Info   : KayceePvP] Duel: ARMED_TURN_OWNERSHIP | self=PEER match=-717998722 battle=2 hostGoesFirstThisBattle=False soloDebugMode=False localFirstTurn=0 expectedOutgoing=0 expectedIncoming=1
+[Info   : KayceePvP] Duel (combat): CombatResolutionSignalPatch.ResetForMatch - reason='ResetForNewBattle', generation 19 -> 0.
+[Info   : KayceePvP] Duel (turnend): TurnEndResolutionSignalPatch.ResetForMatch - reason='ResetForNewBattle', generation 18 -> 0.
+[Info   : KayceePvP] Card mutation: PackRat -> Curious Rat (add=[Tutor] negate=[RandomConsumable+RandomAbility]).
+[Info   : KayceePvP] Duel: starting battle 2 with 16 cards (hostWins=1 peerWins=0).
+[Info   : KayceePvP] Duel (totem): SNAPSHOT at battle begin (battle 2) | matchId=-717998722 battleNumber=2 SELF=PEER ownTotems=[none]
+[Info   : KayceePvP] Duel (interbattle): NEXT_BATTLE_BEGIN | self=PEER match=-717998722 battle=2
+[Info   : KayceePvP] Duel (lobby-match): INTERBATTLE_RELOAD_LATCH_OFF | match=-717998722 battle=2
+[Warning: Singleton] Got null in Singleton<DiskCardGame.ConduitCircuitManager>.FindInstance
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=-717998722 battleNumber=2 seed=111011521 firstPicks=[Squirrel,Squirrel,Squirrel]
+[Info   : KayceePvP] Duel (deck-shuffle): role=PEER matchId=-717998722 battleNumber=2 seed=111011521 firstPicks=[DireWolf,Shark,Grizzly]
+[Info   : KayceePvP] DIAG PlayerIsWinner | role=PEER result=False opponent.NumLives=1 opponent.Surrendered=False
+[Info   : KayceePvP] DIAG GameIsOver | role=PEER result=False balance=0 opponent.NumLives=1 opponent.Surrendered=False PlayerSurrendered=False MatchEnded=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=0 seq=69 sender=PEER type=card_played card=Squirrel slot=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=69 basedOnActionFromHost=False hash=vzuYUHkpvM5eZd8G state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Squirrel/0/1/[];EMPTY] BAL=0 TURN=0 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=0 seq=66 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2172,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=69 basedOnActionFromHost=False hash=vzuYUHkpvM5eZd8G
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=69 basedOnActionFromHost=False hash=vzuYUHkpvM5eZd8G
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 2 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=0 seq=71 sender=PEER type=card_played card=Goat slot=2 sacrificedSlots=[2]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=71 basedOnActionFromHost=False hash=CbPlLBRY72lR9QhM state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Goat/0/1/[14,22];EMPTY] BAL=0 TURN=0 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=0 seq=67 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2180,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=71 basedOnActionFromHost=False hash=CbPlLBRY72lR9QhM
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=71 basedOnActionFromHost=False hash=CbPlLBRY72lR9QhM
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 2 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=0 seq=73 sender=PEER type=card_played card=Shark slot=2 sacrificedSlots=[2]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=73 basedOnActionFromHost=False hash=DW2eZ3uFp9rMEx44 state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=0 TURN=0 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=0 seq=68 currentTurn=0 isPlayerTurn=True netTransitMsApprox=-2179,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=73 basedOnActionFromHost=False hash=DW2eZ3uFp9rMEx44
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=73 basedOnActionFromHost=False hash=DW2eZ3uFp9rMEx44
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=0 seq=75 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=1 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=1 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=1
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=75 basedOnActionFromHost=False hash=Ws3VWkj49wSr/5I0 state=[HOST=[EMPTY;EMPTY;EMPTY;EMPTY] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=1 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=1 seq=69 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2150,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=75 basedOnActionFromHost=False hash=Ws3VWkj49wSr/5I0
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=75 basedOnActionFromHost=False hash=Ws3VWkj49wSr/5I0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=11
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=1 seq=70 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2177,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=1 seq=70 sender=HOST type=card_played card=Squirrel slot=2 queueBefore=0 queueAfter=1 currentTurn=1
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=11 match=-717998722 battle=2 turn=1 seq=70 type=card_played queueBefore=1 queueAfter=0 currentTurn=1 isPlayerTurn=False queueDwellMs=7,3
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 2.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=1 seq=71 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2170,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=70 basedOnActionFromHost=True hash=zKxK0rwz0TjhQWLN
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=70 basedOnActionFromHost=True hash=zKxK0rwz0TjhQWLN state=[HOST=[EMPTY;EMPTY;Squirrel/0/1/[];EMPTY] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=1 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=70 basedOnActionFromHost=True hash=zKxK0rwz0TjhQWLN
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=1 seq=72 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2180,2
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=1 seq=72 sender=HOST type=card_played card=Goat slot=2 queueBefore=0 queueAfter=1 currentTurn=1
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=11 match=-717998722 battle=2 turn=1 seq=72 type=card_played queueBefore=1 queueAfter=0 currentTurn=1 isPlayerTurn=False queueDwellMs=6,1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=1 seq=73 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2198,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=72 basedOnActionFromHost=True hash=7AsU1b3+cSnZgJOB
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 2 ('Squirrel').
+[Info   : KayceePvP] Duel (card-sync): RECV card='Goat' | SELF=PEER RECONSTRUCTED_BASE=[22] WIRE=[22] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[22]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Goat' onto opponent slot 2.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=72 basedOnActionFromHost=True hash=7AsU1b3+cSnZgJOB state=[HOST=[EMPTY;EMPTY;Goat/0/1/[22];EMPTY] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=1 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=72 basedOnActionFromHost=True hash=7AsU1b3+cSnZgJOB
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=1 seq=74 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2175,8
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=1 seq=74 sender=HOST type=card_played card=Shark slot=2 queueBefore=0 queueAfter=1 currentTurn=1
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=11 match=-717998722 battle=2 turn=1 seq=74 type=card_played queueBefore=1 queueAfter=0 currentTurn=1 isPlayerTurn=False queueDwellMs=6,3
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 2 ('Goat').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=1 seq=75 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2175,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=74 basedOnActionFromHost=True hash=vkRrkTYis6o5v0lo
+[Info   : KayceePvP] Duel (card-sync): RECV card='Shark' | SELF=PEER RECONSTRUCTED_BASE=[13] WIRE=[13+3+4] TO_ADD=[3+4] TO_NEGATE=[] FINAL_EFFECTIVE=[13+3+4]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Shark' onto opponent slot 2.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=74 basedOnActionFromHost=True hash=vkRrkTYis6o5v0lo state=[HOST=[EMPTY;EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=1 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=74 basedOnActionFromHost=True hash=vkRrkTYis6o5v0lo
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=1 seq=76 currentTurn=1 isPlayerTurn=False netTransitMsApprox=-2176,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=1 seq=76 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=1
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=11 match=-717998722 battle=2 turn=1 seq=76 type=end_turn queueBefore=1 queueAfter=0 currentTurn=1 isPlayerTurn=False queueDwellMs=5,1
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=2 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=2 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=2
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=2
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=76 basedOnActionFromHost=True hash=NtWDSrjV1ecDTJEH state=[HOST=[EMPTY;EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=2 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=2 seq=77 currentTurn=2 isPlayerTurn=True netTransitMsApprox=-2196,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=76 basedOnActionFromHost=True hash=NtWDSrjV1ecDTJEH
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=76 basedOnActionFromHost=True hash=NtWDSrjV1ecDTJEH
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=2 seq=81 sender=PEER type=card_played card=Squirrel slot=0
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=81 basedOnActionFromHost=False hash=cPE9JHf1jjgfZd26 state=[HOST=[EMPTY;EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[Squirrel/0/1/[];EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=2 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=2 seq=78 currentTurn=2 isPlayerTurn=True netTransitMsApprox=-2182,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=81 basedOnActionFromHost=False hash=cPE9JHf1jjgfZd26
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=81 basedOnActionFromHost=False hash=cPE9JHf1jjgfZd26
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 0 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=2 seq=83 sender=PEER type=card_played card=Goat slot=0 sacrificedSlots=[0]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=83 basedOnActionFromHost=False hash=BxhfUfOuv8d5vwET state=[HOST=[EMPTY;EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[Goat/0/1/[14,22];EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=2 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=2 seq=79 currentTurn=2 isPlayerTurn=True netTransitMsApprox=-2172,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=83 basedOnActionFromHost=False hash=BxhfUfOuv8d5vwET
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=83 basedOnActionFromHost=False hash=BxhfUfOuv8d5vwET
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 0 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (card-sync): SEND card='DireWolf' | SELF=PEER BASE=[DoubleStrike] PERMANENT_MOD_ABILITIES=[] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[100] WIRE=[100] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=2 seq=85 sender=PEER type=card_played card=DireWolf slot=0 sacrificedSlots=[0]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=85 basedOnActionFromHost=False hash=1DoFYIj6VoqB/LzD state=[HOST=[EMPTY;EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=2 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=2 seq=87 sender=PEER type=end_turn cardsPlayedThisTurn=3
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=3 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=2 seq=80 currentTurn=2 isPlayerTurn=True netTransitMsApprox=-2185,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=85 basedOnActionFromHost=False hash=1DoFYIj6VoqB/LzD
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=85 basedOnActionFromHost=False hash=1DoFYIj6VoqB/LzD
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=3 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=3
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=3
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=87 basedOnActionFromHost=False hash=GK74nvMVfLQmWC5f state=[HOST=[EMPTY;EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=3 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=3 seq=81 currentTurn=3 isPlayerTurn=False netTransitMsApprox=-2199,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=87 basedOnActionFromHost=False hash=GK74nvMVfLQmWC5f
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=87 basedOnActionFromHost=False hash=GK74nvMVfLQmWC5f
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=12
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=3 seq=82 currentTurn=3 isPlayerTurn=False netTransitMsApprox=-2172,7
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=3 seq=82 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=3
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=12 match=-717998722 battle=2 turn=3 seq=82 type=end_turn queueBefore=1 queueAfter=0 currentTurn=3 isPlayerTurn=False queueDwellMs=3,0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=4 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=4 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=4
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=3
+[Warning: Unity Log] BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Singletons3D_Part1/CardSnapshotCamera/CardsPlane/CardBase/CardElements/CardAbilityIcons/DefaultIcons_3Abilities/AbilityIcon"
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=4
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=4 seq=83 currentTurn=3 isPlayerTurn=False netTransitMsApprox=-2186,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=82 basedOnActionFromHost=True hash=8cPeoztmm58hMkQt
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=82 basedOnActionFromHost=True hash=8cPeoztmm58hMkQt state=[HOST=[EMPTY;EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=4 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=82 basedOnActionFromHost=True hash=8cPeoztmm58hMkQt
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=4 seq=90 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=5 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=5 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=5
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=5
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=5 seq=84 currentTurn=4 isPlayerTurn=True netTransitMsApprox=-2195,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=90 basedOnActionFromHost=False hash=yf/50FZB1gAjrcE4
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=90 basedOnActionFromHost=False hash=yf/50FZB1gAjrcE4 state=[HOST=[EMPTY;EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=5 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=90 basedOnActionFromHost=False hash=yf/50FZB1gAjrcE4
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=13
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=5 seq=85 currentTurn=5 isPlayerTurn=False netTransitMsApprox=-2178,2
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=5 seq=85 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=5
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=13 match=-717998722 battle=2 turn=5 seq=85 type=end_turn queueBefore=1 queueAfter=0 currentTurn=5 isPlayerTurn=False queueDwellMs=3,7
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=6 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=6 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=6
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=6
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=85 basedOnActionFromHost=True hash=h+uaBeesC0tCC3IN state=[HOST=[EMPTY;Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=6 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=6 seq=86 currentTurn=6 isPlayerTurn=True netTransitMsApprox=-2185,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=85 basedOnActionFromHost=True hash=h+uaBeesC0tCC3IN
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=85 basedOnActionFromHost=True hash=h+uaBeesC0tCC3IN
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=6 seq=93 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=7 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=7 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=7
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=7
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=93 basedOnActionFromHost=False hash=+MmCM32+d09srZ2n state=[HOST=[EMPTY;Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=7 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=7 seq=87 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2177,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=93 basedOnActionFromHost=False hash=+MmCM32+d09srZ2n
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=93 basedOnActionFromHost=False hash=+MmCM32+d09srZ2n
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=14
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=7 seq=88 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2172,6
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=7 seq=88 sender=HOST type=card_played card=Squirrel slot=2 queueBefore=0 queueAfter=1 currentTurn=7
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=14 match=-717998722 battle=2 turn=7 seq=88 type=card_played queueBefore=1 queueAfter=0 currentTurn=7 isPlayerTurn=False queueDwellMs=4,0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=7 seq=89 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2200,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=88 basedOnActionFromHost=True hash=T96yST0IWf9jzyd+
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 2.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=88 basedOnActionFromHost=True hash=T96yST0IWf9jzyd+ state=[HOST=[EMPTY;Shark/6/4/[3,4,13];Squirrel/0/1/[];EMPTY] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=7 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=88 basedOnActionFromHost=True hash=T96yST0IWf9jzyd+
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=7 seq=90 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2191,4
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=7 seq=90 sender=HOST type=card_played card=Squirrel slot=3 queueBefore=0 queueAfter=1 currentTurn=7
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=14 match=-717998722 battle=2 turn=7 seq=90 type=card_played queueBefore=1 queueAfter=0 currentTurn=7 isPlayerTurn=False queueDwellMs=12,2
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 3.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=7 seq=91 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2172,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=90 basedOnActionFromHost=True hash=K9Y4Raod65cdeuzf
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=90 basedOnActionFromHost=True hash=K9Y4Raod65cdeuzf state=[HOST=[EMPTY;Shark/6/4/[3,4,13];Squirrel/0/1/[];Squirrel/0/1/[]] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=7 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=90 basedOnActionFromHost=True hash=K9Y4Raod65cdeuzf
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=7 seq=92 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2170,9
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=7 seq=92 sender=HOST type=card_played card=Squirrel slot=0 queueBefore=0 queueAfter=1 currentTurn=7
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=14 match=-717998722 battle=2 turn=7 seq=92 type=card_played queueBefore=1 queueAfter=0 currentTurn=7 isPlayerTurn=False queueDwellMs=8,4
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=7 seq=93 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2191,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=92 basedOnActionFromHost=True hash=2N4eAyyha6cj7B4E
+[Info   : KayceePvP] NetworkOpponent: queueing 'Squirrel' onto opponent slot 0.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=92 basedOnActionFromHost=True hash=2N4eAyyha6cj7B4E state=[HOST=[Squirrel/0/1/[];Shark/6/4/[3,4,13];Squirrel/0/1/[];Squirrel/0/1/[]] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=7 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=92 basedOnActionFromHost=True hash=2N4eAyyha6cj7B4E
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=7 seq=94 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2155,9
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=7 seq=94 sender=HOST type=card_played card=Shark slot=0 queueBefore=0 queueAfter=1 currentTurn=7
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=7 seq=95 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2200,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=94 basedOnActionFromHost=True hash=YUlIN3eaMnfseAmQ
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=14 match=-717998722 battle=2 turn=7 seq=94 type=card_played queueBefore=1 queueAfter=0 currentTurn=7 isPlayerTurn=False queueDwellMs=12,6
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 0 ('Squirrel').
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 2 ('Squirrel').
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 3 ('Squirrel').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=7 seq=96 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2177,7
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=7 seq=96 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=7
+[Info   : KayceePvP] Duel (card-sync): RECV card='Shark' | SELF=PEER RECONSTRUCTED_BASE=[13] WIRE=[13+3+4] TO_ADD=[3+4] TO_NEGATE=[] FINAL_EFFECTIVE=[13+3+4]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Shark' onto opponent slot 0.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=94 basedOnActionFromHost=True hash=YUlIN3eaMnfseAmQ state=[HOST=[Shark/4/4/[3,4,13];Shark/6/4/[3,4,13];EMPTY;EMPTY] PEER=[DireWolf/1/5/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=-4 TURN=7 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=94 basedOnActionFromHost=True hash=YUlIN3eaMnfseAmQ
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=14 match=-717998722 battle=2 turn=7 seq=96 type=end_turn queueBefore=1 queueAfter=0 currentTurn=7 isPlayerTurn=False queueDwellMs=901,6
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=8 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=8 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=8
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=0
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=1
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=8 seq=97 currentTurn=7 isPlayerTurn=False netTransitMsApprox=-2178,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=96 basedOnActionFromHost=True hash=Nb5tR/PYdfSFBklc
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=8
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=96 basedOnActionFromHost=True hash=Nb5tR/PYdfSFBklc state=[HOST=[Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=8 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=96 basedOnActionFromHost=True hash=Nb5tR/PYdfSFBklc
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=8 seq=100 sender=PEER type=card_played card=Squirrel slot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=100 basedOnActionFromHost=False hash=IpsVVfyU16JL+VJy state=[HOST=[Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Squirrel/0/1/[];Shark/4/2/[13];EMPTY] BAL=2 TURN=8 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=8 seq=98 currentTurn=8 isPlayerTurn=True netTransitMsApprox=-2173,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=100 basedOnActionFromHost=False hash=IpsVVfyU16JL+VJy
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=100 basedOnActionFromHost=False hash=IpsVVfyU16JL+VJy
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=8 seq=102 sender=PEER type=card_played card=Goat slot=1 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=102 basedOnActionFromHost=False hash=qBtJarqwKorK+66G state=[HOST=[Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;Goat/0/1/[14,22];Shark/4/2/[13];EMPTY] BAL=2 TURN=8 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=8 seq=99 currentTurn=8 isPlayerTurn=True netTransitMsApprox=-2181,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=102 basedOnActionFromHost=False hash=qBtJarqwKorK+66G
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=102 basedOnActionFromHost=False hash=qBtJarqwKorK+66G
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (card-sync): SEND card='PackRat' | SELF=PEER BASE=[RandomConsumable] PERMANENT_MOD_ABILITIES=[Tutor] PERMANENT_MOD_NEGATIONS=[RandomConsumable+RandomAbility] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[7] WIRE=[7] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=8 seq=104 sender=PEER type=card_played card=PackRat slot=1 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=104 basedOnActionFromHost=False hash=wXimPmjcf7v5FtdM state=[HOST=[Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;PackRat/2/2/[7];Shark/4/2/[13];EMPTY] BAL=2 TURN=8 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel (ownership): Tutor.OnResolveOnBoard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=Tutor card='PackRat' -> proceeding (local card, local player chooses).
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=8 seq=100 currentTurn=8 isPlayerTurn=True netTransitMsApprox=-2193,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=104 basedOnActionFromHost=False hash=wXimPmjcf7v5FtdM
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=104 basedOnActionFromHost=False hash=wXimPmjcf7v5FtdM
+[Info   : KayceePvP] Duel: captured sacrifice of 'PackRat' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=8 seq=106 sender=PEER type=card_played card=Goat slot=0 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=106 basedOnActionFromHost=False hash=g1LHsDn7jldCUWl4 state=[HOST=[Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[Goat/0/1/[14,22];EMPTY;Shark/4/2/[13];EMPTY] BAL=2 TURN=8 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=8 seq=101 currentTurn=8 isPlayerTurn=True netTransitMsApprox=-2168,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=106 basedOnActionFromHost=False hash=g1LHsDn7jldCUWl4
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=106 basedOnActionFromHost=False hash=g1LHsDn7jldCUWl4
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=8 seq=108 sender=PEER type=end_turn cardsPlayedThisTurn=4
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=9 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=9 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=9
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=9
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=108 basedOnActionFromHost=False hash=mzvOzYI3kyDxwKVu state=[HOST=[Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[Goat/0/1/[14,22];EMPTY;Shark/4/2/[13];EMPTY] BAL=-2 TURN=9 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=9 seq=102 currentTurn=9 isPlayerTurn=False netTransitMsApprox=-2207,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=108 basedOnActionFromHost=False hash=mzvOzYI3kyDxwKVu
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=108 basedOnActionFromHost=False hash=mzvOzYI3kyDxwKVu
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=15
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=9 seq=103 currentTurn=9 isPlayerTurn=False netTransitMsApprox=-2186,5
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=9 seq=103 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=9
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=15 match=-717998722 battle=2 turn=9 seq=103 type=end_turn queueBefore=1 queueAfter=0 currentTurn=9 isPlayerTurn=False queueDwellMs=6,6
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=10 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=10 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=10
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=0
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=10 seq=104 currentTurn=9 isPlayerTurn=False netTransitMsApprox=-2191,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=103 basedOnActionFromHost=True hash=SCu1rrqyfH+ZhGV/
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=10
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=103 basedOnActionFromHost=True hash=SCu1rrqyfH+ZhGV/ state=[HOST=[EMPTY;Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=4 TURN=10 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=103 basedOnActionFromHost=True hash=SCu1rrqyfH+ZhGV/
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=10 seq=111 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=11 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=11 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=11
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=11
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=111 basedOnActionFromHost=False hash=JLazMnMe3JTe4bLR state=[HOST=[EMPTY;Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=0 TURN=11 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=11 seq=105 currentTurn=11 isPlayerTurn=False netTransitMsApprox=-2172,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=111 basedOnActionFromHost=False hash=JLazMnMe3JTe4bLR
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=111 basedOnActionFromHost=False hash=JLazMnMe3JTe4bLR
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=16
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=11 seq=106 currentTurn=11 isPlayerTurn=False netTransitMsApprox=-2185,1
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=11 seq=106 sender=HOST type=card_played card=Ijiraq_UnlockScreen slot=0 queueBefore=0 queueAfter=1 currentTurn=11
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=16 match=-717998722 battle=2 turn=11 seq=106 type=card_played queueBefore=1 queueAfter=0 currentTurn=11 isPlayerTurn=False queueDwellMs=6,0
+[Info   : KayceePvP] Duel (card-sync): RECV card='Ijiraq_UnlockScreen' | SELF=PEER RECONSTRUCTED_BASE=[23+8] WIRE=[23+8] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[23+8]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Ijiraq_UnlockScreen' onto opponent slot 0.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=11 seq=107 currentTurn=11 isPlayerTurn=False netTransitMsApprox=-2188,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=106 basedOnActionFromHost=True hash=Hez6Cv09fzcwOf+t
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=11 seq=108 currentTurn=11 isPlayerTurn=False netTransitMsApprox=-2182,0
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=11 seq=108 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=11
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=106 basedOnActionFromHost=True hash=Hez6Cv09fzcwOf+t state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];Shark/4/4/[3,4,13];EMPTY;Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=0 TURN=11 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=106 basedOnActionFromHost=True hash=Hez6Cv09fzcwOf+t
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=16 match=-717998722 battle=2 turn=11 seq=108 type=end_turn queueBefore=1 queueAfter=0 currentTurn=11 isPlayerTurn=False queueDwellMs=165,9
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=12 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=12 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=12
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=1
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=3
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=12
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=108 basedOnActionFromHost=True hash=PIp2JXJg/aGRGVOq state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=109 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2183,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=108 basedOnActionFromHost=True hash=PIp2JXJg/aGRGVOq
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=108 basedOnActionFromHost=True hash=PIp2JXJg/aGRGVOq
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=115 sender=PEER type=card_played card=Opossum slot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=115 basedOnActionFromHost=False hash=VLkELRFHadMvCUuh state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[EMPTY;Opossum/1/1/[];Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=110 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2187,9
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=115 basedOnActionFromHost=False hash=VLkELRFHadMvCUuh
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=115 basedOnActionFromHost=False hash=VLkELRFHadMvCUuh
+[Info   : KayceePvP] Duel: captured sacrifice of 'Opossum' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=117 sender=PEER type=card_played card=Goat slot=1 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=117 basedOnActionFromHost=False hash=O1VdOrPnuGfE/gaz state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[EMPTY;Goat/0/1/[14,22];Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=111 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2195,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=117 basedOnActionFromHost=False hash=O1VdOrPnuGfE/gaz
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=117 basedOnActionFromHost=False hash=O1VdOrPnuGfE/gaz
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (card-sync): SEND card='DireWolf' | SELF=PEER BASE=[DoubleStrike] PERMANENT_MOD_ABILITIES=[] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[100] WIRE=[100] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=119 sender=PEER type=card_played card=DireWolf slot=0 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=119 basedOnActionFromHost=False hash=N97VKiao5z1WBECC state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];EMPTY;Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=112 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2188,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=119 basedOnActionFromHost=False hash=N97VKiao5z1WBECC
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=119 basedOnActionFromHost=False hash=N97VKiao5z1WBECC
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=121 sender=PEER type=card_played card=Squirrel slot=1
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=121 basedOnActionFromHost=False hash=GAcHG1VO1TW3VCCh state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];Squirrel/0/1/[];Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=113 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2194,6
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=121 basedOnActionFromHost=False hash=GAcHG1VO1TW3VCCh
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=121 basedOnActionFromHost=False hash=GAcHG1VO1TW3VCCh
+[Info   : KayceePvP] Duel: captured sacrifice of 'Squirrel' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=123 sender=PEER type=card_played card=Goat slot=1 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=123 basedOnActionFromHost=False hash=K8LfyAj0tRiCPUka state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];Goat/0/1/[14,22];Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=114 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2195,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=123 basedOnActionFromHost=False hash=K8LfyAj0tRiCPUka
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=123 basedOnActionFromHost=False hash=K8LfyAj0tRiCPUka
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=125 sender=PEER type=card_played card=DireWolf slot=1 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=125 basedOnActionFromHost=False hash=ValsH+bDUNed/HuU state=[HOST=[Ijiraq_UnlockScreen/0/6/[8,23];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=5 TURN=12 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=12 seq=115 currentTurn=12 isPlayerTurn=True netTransitMsApprox=-2181,3
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=125 basedOnActionFromHost=False hash=ValsH+bDUNed/HuU
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=125 basedOnActionFromHost=False hash=ValsH+bDUNed/HuU
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=12 seq=127 sender=PEER type=end_turn cardsPlayedThisTurn=6
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=13 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=13 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=13
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=13
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=127 basedOnActionFromHost=False hash=70/ilt/5yepN6ECb state=[HOST=[EMPTY;EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=2 TURN=13 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=13 seq=116 currentTurn=13 isPlayerTurn=False netTransitMsApprox=-2187,2
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=127 basedOnActionFromHost=False hash=70/ilt/5yepN6ECb
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=127 basedOnActionFromHost=False hash=70/ilt/5yepN6ECb
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=auto_card_played match=-717998722 battle=2 turn=13 seq=117 currentTurn=13 isPlayerTurn=False netTransitMsApprox=-2178,6
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=13 seq=117 sender=HOST type=auto_card_played card=Maggots slot=0 queueBefore=0 queueAfter=1 currentTurn=13
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=13 seq=118 currentTurn=13 isPlayerTurn=False netTransitMsApprox=-2190,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=117 basedOnActionFromHost=True hash=WUSCugvsDsTWfhGL
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=17
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=17 match=-717998722 battle=2 turn=13 seq=117 type=auto_card_played queueBefore=1 queueAfter=0 currentTurn=13 isPlayerTurn=False queueDwellMs=405,9
+[Info   : KayceePvP] Duel (card-sync): RECV card='Maggots' | SELF=PEER RECONSTRUCTED_BASE=[11] WIRE=[11] TO_ADD=[] TO_NEGATE=[] FINAL_EFFECTIVE=[11]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Maggots' onto opponent slot 0 (automatic ability trigger, never turn-gated).
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=117 basedOnActionFromHost=True hash=WUSCugvsDsTWfhGL state=[HOST=[Maggots/1/2/[11];EMPTY;Shark/4/4/[3,4,13];Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=2 TURN=13 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=117 basedOnActionFromHost=True hash=WUSCugvsDsTWfhGL
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=13 seq=119 currentTurn=13 isPlayerTurn=False netTransitMsApprox=-2173,8
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=13 seq=119 sender=HOST type=card_played card=Snapper slot=0 queueBefore=0 queueAfter=1 currentTurn=13
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=17 match=-717998722 battle=2 turn=13 seq=119 type=card_played queueBefore=1 queueAfter=0 currentTurn=13 isPlayerTurn=False queueDwellMs=12,3
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 2 ('Shark').
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=13 seq=120 currentTurn=13 isPlayerTurn=False netTransitMsApprox=-2164,0
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=119 basedOnActionFromHost=True hash=qaaQgjHgQd8VqUM4
+[Info   : KayceePvP] NetworkOpponent: applying remote sacrifice at slot 0 ('Maggots').
+[Info   : KayceePvP] Duel (card-sync): RECV card='Snapper' | SELF=PEER RECONSTRUCTED_BASE=[] WIRE=[4] TO_ADD=[4] TO_NEGATE=[] FINAL_EFFECTIVE=[4]
+[Info   : KayceePvP] NetworkOpponent: queueing 'Snapper' onto opponent slot 0.
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=119 basedOnActionFromHost=True hash=qaaQgjHgQd8VqUM4 state=[HOST=[Snapper/1/6/[4];EMPTY;EMPTY;Shark/6/4/[3,4,13]] PEER=[DireWolf/4/10/[100];DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=2 TURN=13 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=119 basedOnActionFromHost=True hash=qaaQgjHgQd8VqUM4
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=13 seq=121 currentTurn=13 isPlayerTurn=False netTransitMsApprox=-2203,0
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=13 seq=121 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=13
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=17 match=-717998722 battle=2 turn=13 seq=121 type=end_turn queueBefore=1 queueAfter=0 currentTurn=13 isPlayerTurn=False queueDwellMs=8,4
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=14 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=14 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=14
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=3
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=14
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=121 basedOnActionFromHost=True hash=tVGyKMqTXA9Ii+NY state=[HOST=[Snapper/1/6/[4];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=5 TURN=14 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=14 seq=122 currentTurn=14 isPlayerTurn=True netTransitMsApprox=-2185,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=121 basedOnActionFromHost=True hash=tVGyKMqTXA9Ii+NY
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=121 basedOnActionFromHost=True hash=tVGyKMqTXA9Ii+NY
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=14 seq=132 sender=PEER type=end_turn cardsPlayedThisTurn=0
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=15 playerIsAttacker=True
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=15 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=15
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=15
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=132 basedOnActionFromHost=False hash=eaBbWWwLRikN93Yb state=[HOST=[Snapper/1/6/[4];EMPTY;Shark/6/4/[3,4,13];EMPTY] PEER=[EMPTY;DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=0 TURN=15 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=15 seq=123 currentTurn=15 isPlayerTurn=False netTransitMsApprox=-2175,8
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=132 basedOnActionFromHost=False hash=eaBbWWwLRikN93Yb
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=132 basedOnActionFromHost=False hash=eaBbWWwLRikN93Yb
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=18
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=card_played match=-717998722 battle=2 turn=15 seq=124 currentTurn=15 isPlayerTurn=False netTransitMsApprox=-2192,6
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=15 seq=124 sender=HOST type=card_played card=Rattler slot=3 queueBefore=0 queueAfter=1 currentTurn=15
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=18 match=-717998722 battle=2 turn=15 seq=124 type=card_played queueBefore=1 queueAfter=0 currentTurn=15 isPlayerTurn=False queueDwellMs=4,1
+[Info   : KayceePvP] NetworkOpponent: queueing 'Rattler' onto opponent slot 3.
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=15 seq=125 currentTurn=15 isPlayerTurn=False netTransitMsApprox=-2181,4
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=124 basedOnActionFromHost=True hash=5laOaevpeAPTcp+8
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=124 basedOnActionFromHost=True hash=5laOaevpeAPTcp+8 state=[HOST=[Snapper/1/6/[4];EMPTY;Shark/6/4/[3,4,13];Rattler/3/1/[]] PEER=[EMPTY;DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=0 TURN=15 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=124 basedOnActionFromHost=True hash=5laOaevpeAPTcp+8
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=end_turn match=-717998722 battle=2 turn=15 seq=126 currentTurn=15 isPlayerTurn=False netTransitMsApprox=-2178,3
+[Info   : KayceePvP] Duel: RECEIVED | match=-717998722 battle=2 turn=15 seq=126 sender=HOST type=end_turn queueBefore=0 queueAfter=1 currentTurn=15
+[Info   : KayceePvP] NetworkOpponent: PROCESSING | gen=18 match=-717998722 battle=2 turn=15 seq=126 type=end_turn queueBefore=1 queueAfter=0 currentTurn=15 isPlayerTurn=False queueDwellMs=14,1
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=16 playerIsAttacker=False
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=16 playerIsAttacker=False
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=16
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False RESULT=True
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.OnTurnEnd STARTED | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=False cardSlot=2
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=16
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=126 basedOnActionFromHost=True hash=9xg2wx/qYiVJ/c4g state=[HOST=[Snapper/1/6/[4];Shark/6/4/[3,4,13];EMPTY;Rattler/3/1/[]] PEER=[EMPTY;DireWolf/2/5/[100];Shark/4/2/[13];EMPTY] BAL=5 TURN=16 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=16 seq=127 currentTurn=16 isPlayerTurn=True netTransitMsApprox=-2192,7
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=126 basedOnActionFromHost=True hash=9xg2wx/qYiVJ/c4g
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=126 basedOnActionFromHost=True hash=9xg2wx/qYiVJ/c4g
+[Info   : KayceePvP] Duel: captured sacrifice of 'DireWolf' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (card-sync): SEND card='Goat' | SELF=PEER BASE=[TripleBlood] PERMANENT_MOD_ABILITIES=[DrawCopyOnDeath] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[22+14] WIRE=[22+14] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=16 seq=136 sender=PEER type=card_played card=Goat slot=1 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=136 basedOnActionFromHost=False hash=nIIV2d+IKvSPKEqW state=[HOST=[Snapper/1/6/[4];Shark/6/4/[3,4,13];EMPTY;Rattler/3/1/[]] PEER=[EMPTY;Goat/0/1/[14,22];Shark/4/2/[13];EMPTY] BAL=5 TURN=16 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=16 seq=128 currentTurn=16 isPlayerTurn=True netTransitMsApprox=-2172,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=136 basedOnActionFromHost=False hash=nIIV2d+IKvSPKEqW
+[Info   : KayceePvP] Duel: STATE HASH MATCH | match=-717998722 forSeq=136 basedOnActionFromHost=False hash=nIIV2d+IKvSPKEqW
+[Info   : KayceePvP] Duel: captured sacrifice of 'Goat' at slot 1 - will attach to the next card_played broadcast.
+[Info   : KayceePvP] Duel (ownership): DrawCreatedCard fired | ABSOLUTE_OWNER=PEER LOCAL_SIDE=PLAYER SELF=PEER ABILITY=DrawCreatedCard card='Goat' -> proceeding (local card).
+[Info   : KayceePvP] Duel (card-sync): SEND card='Lammergeier' | SELF=PEER BASE=[Flying] PERMANENT_MOD_ABILITIES=[] PERMANENT_MOD_NEGATIONS=[] TEMPORARY_MOD_ABILITIES=[] EFFECTIVE=[19] WIRE=[19] hasTotemAbility=False
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=16 seq=138 sender=PEER type=card_played card=Lammergeier slot=3 sacrificedSlots=[1]
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=138 basedOnActionFromHost=False hash=HZeeyzvTowr5uPqF state=[HOST=[Snapper/1/6/[4];Shark/6/4/[3,4,13];EMPTY;Rattler/3/1/[]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];Lammergeier/7/4/[19]] BAL=5 TURN=16 BATTLE=2 HW=1 PW=0]
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=16 seq=129 currentTurn=16 isPlayerTurn=True netTransitMsApprox=-2161,1
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=138 basedOnActionFromHost=False hash=vm/lW5lqvbKiQesu
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=138 basedOnActionFromHost=False localHash=HZeeyzvTowr5uPqF peerHash=vm/lW5lqvbKiQesu
+[Error  : KayceePvP] Duel: local state dump (forSeq=138) | HOST=[Snapper/1/6/[4];Shark/6/4/[3,4,13];EMPTY;Rattler/3/1/[]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];Lammergeier/7/4/[19]] BAL=5 TURN=16 BATTLE=2 HW=1 PW=0
+[Info   : KayceePvP] Duel: SENDING | match=-717998722 turn=16 seq=140 sender=PEER type=end_turn cardsPlayedThisTurn=2
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_STARTED | self=PEER generation=17 playerIsAttacker=True
+[Info   : KayceePvP] Duel: TRACE_HANDLE_MESSAGE | self=PEER sender=HOST type=duel_state_hash match=-717998722 battle=2 turn=17 seq=130 currentTurn=16 isPlayerTurn=True netTransitMsApprox=-2179,5
+[Info   : KayceePvP] Duel: RECEIVED PEER HASH | match=-717998722 sender=HOST forSeq=140 basedOnActionFromHost=False hash=SeGwn1GpElZgRNQx
+[Info   : KayceePvP] Duel (combat): COMBAT_PHASE_RESOLVED | self=PEER generation=17 playerIsAttacker=True
+[Info   : KayceePvP] Duel (ability-trigger): GlobalTriggerHandler.TriggerCardsOnBoard(Trigger.TurnEnd) DISPATCHED | SELF=PEER playerTurnEndArg=True
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_STARTED | self=PEER generation=17
+[Info   : KayceePvP] Duel (ability-trigger): Strafe.RespondsToTurnEnd | ABILITY=Strafe CARD='Shark' CARD_ABSOLUTE_OWNER=HOST LOCAL_SIDE=OPPONENT SELF=PEER playerTurnEnd=True RESULT=False
+[Info   : KayceePvP] Duel (turnend): TURN_END_TRIGGER_RESOLVED | self=PEER generation=17
+[Info   : KayceePvP] Duel: LOCAL STATE HASH | match=-717998722 forSeq=140 basedOnActionFromHost=False hash=O1kLMPWxmMEdMCI2 state=[HOST=[Snapper/1/6/[4];Shark/6/4/[3,4,13];EMPTY;Rattler/3/1/[]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];Lammergeier/7/4/[19]] BAL=-1 TURN=17 BATTLE=2 HW=1 PW=0]
+[Error  : KayceePvP] Duel: STATE HASH MISMATCH | match=-717998722 forSeq=140 basedOnActionFromHost=False localHash=O1kLMPWxmMEdMCI2 peerHash=SeGwn1GpElZgRNQx
+[Error  : KayceePvP] Duel: local state dump (forSeq=140) | HOST=[Snapper/1/6/[4];Shark/6/4/[3,4,13];EMPTY;Rattler/3/1/[]] PEER=[EMPTY;EMPTY;Shark/4/2/[13];Lammergeier/7/4/[19]] BAL=-1 TURN=17 BATTLE=2 HW=1 PW=0
+[Info   : KayceePvP] NetworkOpponent: waiting for the peer's turn (4 opponent slots available). gen=19
