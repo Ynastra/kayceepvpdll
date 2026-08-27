@@ -50,19 +50,20 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   5734E00BEFE1FEA2C543C80B76758C498567027EF9A442E66BC5B74F0AAC66FF
+   C6ABE70EB2748CC53E8518DC50F2CD401BFCA7929626C55694BCF10A263842F0
    ```
 
-   (build de 2026-08-27 - dano espelhado não trava mais o placar real em
-   5, corrigindo partidas que nunca terminavam; veja a nota no topo do
-   changelog abaixo)
+   (build de 2026-08-27 - placar do duelo não trava mais em 5 (nem no
+   lado que perde, nem no lado que ataca), e as ofertas de carta do
+   Caminho Balanceado/Tribe Fight/Draft de Peles não repetem mais entre
+   partidas diferentes; veja as notas no topo do changelog abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "5734E00BEFE1FEA2C543C80B76758C498567027EF9A442E66BC5B74F0AAC66FF"
+   $esperado = "C6ABE70EB2748CC53E8518DC50F2CD401BFCA7929626C55694BCF10A263842F0"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -95,17 +96,44 @@ continuando a atacar, placar preso em -5 turno após turno.
 Corrigido: o cálculo do dano espelhado agora usa o limiar real de 15,
 igual ao resto do duelo já usa pra decidir vitória/derrota.
 
+**Atualização, mesmo dia**: achado um segundo problema irmão desse.
+Depois do fix acima, o placar do lado que PERDE já ia até -15 certinho
+e a batalha concluía - mas o número mostrado pro lado que está
+ATACANDO/ganhando (o contador de dano do nosso próprio HUD, não a
+barrinha visual do jogo) continuava travado em 5 pra sempre, porque
+esse lado usa um clamp original do próprio jogo que a gente nunca
+tinha corrigido (só o lado espelhado). Corrigido do mesmo jeito, pro
+lado que ataca também.
+
 **Ainda NÃO confirmado numa partida bilateral real** - passou pelo build
 limpo e pelos ~21 validadores offline (incluindo o
-`MirroredCombatBalanceValidator`, atualizado pra esse mesmo limiar), mas
-precisa de um teste de verdade nos dois PCs até uma batalha terminar de
-verdade (placar cruzando -15/+15) antes de considerar fechado de vez.
+`MirroredCombatBalanceValidator`, atualizado pra esses dois limiares),
+mas precisa de um teste de verdade nos dois PCs até uma batalha
+terminar de verdade (placar cruzando -15/+15 e mostrando certo dos dois
+lados) antes de considerar fechado de vez.
 
 **Separado disso**: o log usado pra achar esse bug também mostrou
 `STATE HASH MISMATCH` acontecendo em quase toda jogada da partida, não
 só nos casos já corrigidos antes (Estampida/Strafe no fim de turno). Se
 isso aparecer de novo nos seus logs desse teste, é um problema
 DIFERENTE e ainda não investigado - manda o log de qualquer forma.
+
+## Correção nova nesta build (2026-08-27): ofertas de carta do Caminho Balanceado/Tribe Fight/Draft de Peles repetiam entre partidas
+
+Relato real: "toda vez as cartas vêm iguais" jogando várias partidas do
+Caminho Balanceado. Achamos por quê: as ofertas de carta nos nós de
+Custo/Tribo e as ofertas do Mercador (Caminho Balanceado, Tribe Fight e
+Draft de Peles) usavam a mesma semente do MAPA pra ficarem iguais nos
+dois PCs dentro de uma partida - só que essa semente do mapa é uma
+constante fixa desde o primeiro dia do mod (o layout do mapa virou
+desenhado à mão, não sorteado), então as ofertas saíam idênticas em
+TODA partida diferente, não só sincronizadas dentro da mesma. O
+CAMINHO em si (layout do mapa) continua igual pros dois lados de
+propósito - só as ofertas de carta que agora mudam de partida pra
+partida. Corrigido: as ofertas agora usam o identificador da partida
+(já é sorteado e sincronizado entre os dois PCs no lobby), mantendo as
+mesmas ofertas pros dois lados dentro de uma partida, mas variando
+entre partidas diferentes.
 
 ## Correção nova nesta build (2026-08-26): Filhote de Lobo Atroz agora evolui certinho nos dois lados
 

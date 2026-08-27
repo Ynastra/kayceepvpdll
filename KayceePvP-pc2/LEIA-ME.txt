@@ -44,8 +44,11 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-27 - placar nao trava mais em 5):
-   5734E00BEFE1FEA2C543C80B76758C498567027EF9A442E66BC5B74F0AAC66FF
+   SHA-256 esperado (build de 2026-08-27 - placar nao trava mais em 5,
+   nem do lado que perde nem do lado que ataca, e ofertas de carta do
+   Caminho Balanceado/Tribe Fight/Draft de Peles nao repetem mais entre
+   partidas):
+   C6ABE70EB2748CC53E8518DC50F2CD401BFCA7929626C55694BCF10A263842F0
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
@@ -64,11 +67,30 @@ nosso duelo - assim que o placar chegava em -5/+5 ele travava ali pra
 sempre e nenhum PC conseguia detectar sozinho que a batalha acabou.
 Corrigido: o calculo do dano espelhado agora usa o limiar real de 15.
 
+ATUALIZACAO (mesmo dia): achado um segundo problema irmao. Depois do
+fix acima, o lado que PERDE ja conseguia chegar em -15 e a batalha
+concluia, mas o numero mostrado pro lado que ATACA/ganha (contador de
+dano do HUD proprio do mod, nao a barrinha visual do jogo) continuava
+travado em 5 pra sempre - esse lado usa um clamp original do proprio
+jogo que ainda nao tinha sido corrigido. Corrigido tambem.
+
 AINDA NAO CONFIRMADO NUMA PARTIDA REAL - joguem ate uma batalha terminar
-de verdade (placar cruzando -15/+15, um lado com o tabuleiro vazio) e
+de verdade (placar cruzando -15/+15 mostrando certo dos dois lados) e
 confirmem que ela conclui sozinha. Se aparecer STATE HASH MISMATCH
 repetido (nao so no fim de turno com Estampida/Pronghorn, que ja tinha
 correcao), isso e um problema DIFERENTE - mandem o log de qualquer jeito.
+
+CORRECAO NOVA (2026-08-27): OFERTAS DE CARTA DO CAMINHO BALANCEADO/TRIBE FIGHT/DRAFT DE PELES REPETIAM ENTRE PARTIDAS
+--------------------------------------------------------------------------------------------------------------------------
+
+Relato real: "toda vez as cartas vem iguais" jogando o Caminho
+Balanceado varias vezes. As ofertas de carta (nos de Custo/Tribo e o
+Mercador) usavam a semente do MAPA pra ficarem iguais nos dois PCs
+dentro de uma partida - so que essa semente e uma constante fixa desde
+o primeiro dia do mod (o layout do mapa e desenhado a mao, nao
+sorteado), entao as ofertas saiam identicas em TODA partida diferente.
+O caminho/layout em si continua igual pros dois lados de proposito -
+so as ofertas de carta que agora variam de partida pra partida.
 
 CORRECAO NOVA (2026-08-26): FILHOTE DE LOBO ATROZ AGORA EVOLUI CERTINHO NOS DOIS LADOS
 ------------------------------------------------------------------------------------------
