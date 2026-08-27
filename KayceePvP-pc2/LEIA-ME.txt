@@ -48,11 +48,28 @@ PASSO A PASSO
    nem do lado que perde nem do lado que ataca, e ofertas de carta do
    Caminho Balanceado/Tribe Fight/Draft de Peles nao repetem mais entre
    partidas):
-   C6ABE70EB2748CC53E8518DC50F2CD401BFCA7929626C55694BCF10A263842F0
+   999E71A1E56ACD735F31571D53E4FE380DFA9A0DA5C449E5DF89E4E9754AA90D
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO NOVA (2026-08-27): LAMMERGEIER LIA OS OSSOS DO JOGADOR ERRADO NO LADO ESPELHADO
+--------------------------------------------------------------------------------------------
+
+Relato real: poder do Lammergeier travou em 7 pro HOST, enquanto pro
+PEER continuou escalando. O poder dele e calculado a partir dos
+proprios ossos do dono - so que no lado que espelha a carta do
+adversario, o jogo le os ossos do jogador ERRADO (os da tela local,
+nao os do dono real). Mesma classe de bug do CorpseEater/Lobo Atroz,
+mas num valor recalculado toda hora, nao um evento unico - sincronizar
+direito seria bem mais trabalho.
+
+Em vez disso: removida a escalada dinamica, ataque fixado em 3, e
+concedido Bone Digger (ganha 1 osso no fim do turno) como sigilo de
+compensacao. O Bone Digger por si so tinha o mesmo tipo de bug -
+corrigido com o mesmo esquema ja usado noutras habilidades que davam
+osso errado.
 
 CORRECAO URGENTE (2026-08-27): PARTIDA FICAVA TRAVADA SEM NUNCA TERMINAR
 ----------------------------------------------------------------------------

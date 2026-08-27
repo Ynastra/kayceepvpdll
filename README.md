@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   C6ABE70EB2748CC53E8518DC50F2CD401BFCA7929626C55694BCF10A263842F0
+   999E71A1E56ACD735F31571D53E4FE380DFA9A0DA5C449E5DF89E4E9754AA90D
    ```
 
    (build de 2026-08-27 - placar do duelo não trava mais em 5 (nem no
@@ -63,7 +63,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "C6ABE70EB2748CC53E8518DC50F2CD401BFCA7929626C55694BCF10A263842F0"
+   $esperado = "999E71A1E56ACD735F31571D53E4FE380DFA9A0DA5C449E5DF89E4E9754AA90D"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -75,6 +75,24 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção nova nesta build (2026-08-27): Lammergeier lia os ossos do jogador errado no lado espelhado
+
+Relato real: poder do Lammergeier travou em 7 pro HOST, enquanto pro
+PEER continuou escalando. Achamos por quê: o poder do Lammergeier é
+calculado a partir dos SEUS PRÓPRIOS ossos - só que no lado que
+espelha a carta do adversário, o jogo lê os ossos do jogador ERRADO
+(os seus, da tela local, não os do dono real da carta). Mesma classe
+de bug que já tínhamos corrigido pro CorpseEater/Lobo Atroz, mas
+dessa vez num valor que fica recalculando toda hora, não um evento
+único - sincronizar isso direito seria bem mais trabalho.
+
+Em vez disso: removemos a escalada dinâmica do Lammergeier e fixamos
+o ataque dele em **3**, e demos **Bone Digger** (ganha 1 osso no fim
+do turno) como sigilo de compensação. O Bone Digger por si só tinha
+o mesmo tipo de bug (concede osso sem checar de quem é a carta) -
+corrigido com o mesmo esquema que já usamos pra outras habilidades
+que davam ossos errado.
 
 ## Correção urgente nesta build (2026-08-27): partida ficava travada sem nunca terminar
 
