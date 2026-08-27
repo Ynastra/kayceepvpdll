@@ -50,19 +50,19 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   A8D4B7A437264403F25ED1E20E8CB5F318B14E8EECE3027D1DDF1836460DC777
+   5734E00BEFE1FEA2C543C80B76758C498567027EF9A442E66BC5B74F0AAC66FF
    ```
 
-   (build de 2026-08-26 - Filhote de Lobo Atroz agora evolui certinho
-   nos dois lados, sem travar nada; veja a nota no topo do changelog
-   abaixo)
+   (build de 2026-08-27 - dano espelhado não trava mais o placar real em
+   5, corrigindo partidas que nunca terminavam; veja a nota no topo do
+   changelog abaixo)
 
    **Não conte nem copie a quebra de linha exibida pelo terminal.** Um SHA-256 possui
    exatamente 64 caracteres hexadecimais. Para evitar qualquer ambiguidade, execute
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "A8D4B7A437264403F25ED1E20E8CB5F318B14E8EECE3027D1DDF1836460DC777"
+   $esperado = "5734E00BEFE1FEA2C543C80B76758C498567027EF9A442E66BC5B74F0AAC66FF"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -74,6 +74,38 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Correção urgente nesta build (2026-08-27): partida ficava travada sem nunca terminar
+
+Achamos por que uma partida podia continuar indefinidamente mesmo com o
+tabuleiro de um lado completamente vazio e o outro lado ainda atacando -
+o placar (a "gangorra" que decide quem ganha o duelo) tinha um teto real
+de -5/+5, quando deveria ir até -15/+15 (o limiar de vitória real do
+KayceePvP, diferente do vanilla). A correção de 2026-08-25 pro dano
+espelhado divergindo entre os dois PCs (ver nota logo abaixo) resolveu
+aquele bug, mas usou por engano o limite de 5 do jogo original em vez do
+15 do nosso duelo - então, assim que o placar chegava em -5 (ou +5), ele
+travava exatamente ali pra sempre, e nenhum dos dois lados conseguia
+detectar localmente que a batalha tinha acabado. Isso é diferente do
+"display" da barra visual (que sempre satura em 5 e é normal, sempre
+foi assim) - aqui era o número real por trás que estava preso. Achado
+num relato real: HOST com as 4 lanes vazias há mais de 14 turnos, PEER
+continuando a atacar, placar preso em -5 turno após turno.
+
+Corrigido: o cálculo do dano espelhado agora usa o limiar real de 15,
+igual ao resto do duelo já usa pra decidir vitória/derrota.
+
+**Ainda NÃO confirmado numa partida bilateral real** - passou pelo build
+limpo e pelos ~21 validadores offline (incluindo o
+`MirroredCombatBalanceValidator`, atualizado pra esse mesmo limiar), mas
+precisa de um teste de verdade nos dois PCs até uma batalha terminar de
+verdade (placar cruzando -15/+15) antes de considerar fechado de vez.
+
+**Separado disso**: o log usado pra achar esse bug também mostrou
+`STATE HASH MISMATCH` acontecendo em quase toda jogada da partida, não
+só nos casos já corrigidos antes (Estampida/Strafe no fim de turno). Se
+isso aparecer de novo nos seus logs desse teste, é um problema
+DIFERENTE e ainda não investigado - manda o log de qualquer forma.
 
 ## Correção nova nesta build (2026-08-26): Filhote de Lobo Atroz agora evolui certinho nos dois lados
 

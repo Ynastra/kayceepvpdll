@@ -44,12 +44,31 @@ PASSO A PASSO
 
      ...\profiles\KayceePvP\BepInEx\plugins\KayceePvP\KayceePvP.dll
 
-   SHA-256 esperado (build de 2026-08-26 - Lobo Atroz evolui certinho):
-   A8D4B7A437264403F25ED1E20E8CB5F318B14E8EECE3027D1DDF1836460DC777
+   SHA-256 esperado (build de 2026-08-27 - placar nao trava mais em 5):
+   5734E00BEFE1FEA2C543C80B76758C498567027EF9A442E66BC5B74F0AAC66FF
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+CORRECAO URGENTE (2026-08-27): PARTIDA FICAVA TRAVADA SEM NUNCA TERMINAR
+----------------------------------------------------------------------------
+
+Achamos por que uma partida podia continuar pra sempre mesmo com um dos
+tabuleiros completamente vazio e o outro lado ainda atacando - o placar
+real (nao so a barra visual, que satura em 5 normalmente) tinha um teto
+de -5/+5 quando deveria ir ate -15/+15 (o limiar de vitoria real do
+KayceePvP). A correcao de 2026-08-25 pro dano espelhado divergindo entre
+os dois PCs usou por engano o limite 5 do jogo original em vez do 15 do
+nosso duelo - assim que o placar chegava em -5/+5 ele travava ali pra
+sempre e nenhum PC conseguia detectar sozinho que a batalha acabou.
+Corrigido: o calculo do dano espelhado agora usa o limiar real de 15.
+
+AINDA NAO CONFIRMADO NUMA PARTIDA REAL - joguem ate uma batalha terminar
+de verdade (placar cruzando -15/+15, um lado com o tabuleiro vazio) e
+confirmem que ela conclui sozinha. Se aparecer STATE HASH MISMATCH
+repetido (nao so no fim de turno com Estampida/Pronghorn, que ja tinha
+correcao), isso e um problema DIFERENTE - mandem o log de qualquer jeito.
 
 CORRECAO NOVA (2026-08-26): FILHOTE DE LOBO ATROZ AGORA EVOLUI CERTINHO NOS DOIS LADOS
 ------------------------------------------------------------------------------------------
