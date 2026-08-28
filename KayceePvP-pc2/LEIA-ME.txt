@@ -48,11 +48,23 @@ PASSO A PASSO
    nem do lado que perde nem do lado que ataca, e ofertas de carta do
    Caminho Balanceado/Tribe Fight/Draft de Peles nao repetem mais entre
    partidas):
-   2CF8DEEA51AFE65FA83A2AD8FB564FD67B1291AD7B4084BFCD8272465E29F417
+   CCA8835F80D5BCC2C1E64BFC18B6D8B24238482F96F6864C6C82E680245F316D
 
 7. Inicie o jogo por esse profile, pelo Thunderstore Mod Manager
    (deve abrir uma janela de console preta junto - se aparecer a linha
    "KayceePvP 0.1.0 loaded." nela, esta tudo certo).
+
+NOVIDADE (2026-08-28): REDHART VIROU "VEADO FEDORENTO" (STINKY DEER)
+----------------------------------------------------------------------
+
+Por pedido do usuario: RedHart escalava o poder pelos sacrificios do
+turno - mesmo tipo de bug do Lammergeier (le um contador so do jogador
+LOCAL da tela, nao do dono real, diverge no lado que espelha).
+Removida a escalada dinamica, ataque fixado em 3, renomeado pra Veado
+Fedorento, e concedido DebuffEnemy (reduz em 1 o ataque de quem
+estiver na posicao oposta) como sigilo novo. Esse sigilo nao precisou
+de correcao extra - e um calculo passivo que os dois lados ja
+recalculam sozinhos a partir do tabuleiro.
 
 CORRECAO URGENTE (2026-08-27): REMATCH TERMINAVA A BATALHA 1 SOZINHO, SEM NINGUEM TER PERDIDO
 ----------------------------------------------------------------------------------------------------

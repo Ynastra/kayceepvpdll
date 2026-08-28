@@ -50,7 +50,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    Hash esperado desta build:
 
    ```text
-   2CF8DEEA51AFE65FA83A2AD8FB564FD67B1291AD7B4084BFCD8272465E29F417
+   CCA8835F80D5BCC2C1E64BFC18B6D8B24238482F96F6864C6C82E680245F316D
    ```
 
    (build de 2026-08-27 - placar do duelo não trava mais em 5 (nem no
@@ -63,7 +63,7 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
    a comparação automática abaixo, trocando somente o caminho:
 
    ```powershell
-   $esperado = "2CF8DEEA51AFE65FA83A2AD8FB564FD67B1291AD7B4084BFCD8272465E29F417"
+   $esperado = "CCA8835F80D5BCC2C1E64BFC18B6D8B24238482F96F6864C6C82E680245F316D"
    $obtido = (Get-FileHash -Algorithm SHA256 "CAMINHO_DO_PROFILE\BepInEx\plugins\KayceePvP\KayceePvP.dll").Hash
    $obtido.Length
    $obtido -eq $esperado
@@ -75,6 +75,18 @@ Só abra o jogo depois da mensagem `ATUALIZADA E VALIDADA`.
 7. **IMPORTANTE - confira a versão da dependência `API` (autor `API_dev`) nesse profile.** Esta build foi compilada contra a versão `2.24.0`. Se o profile do PC2 ainda tiver a `API` numa versão diferente (ex: `2.23.7`), o mod pode falhar ao carregar ou dar erro ao iniciar - **esse é o suspeito nº 1 se o jogo der erro ao abrir**. Atualize a dependência `API` para `2.24.0` pelo Thunderstore Mod Manager (aba de mods do profile) antes de continuar. `Atualizar-PC2.ps1` (método automático) já checa isso e avisa se a versão estiver errada.
 8. Só depois da confirmação do hash E da versão da `API`, abra o jogo pelo profile correto do Thunderstore.
 9. No lobby, confirme que não aparece incompatibilidade `local=3 peer=0`. Ambos os lados precisam anunciar o mesmo protocolo.
+
+## Novidade nesta build (2026-08-28): RedHart virou "Veado Fedorento" (Stinky Deer)
+
+Por pedido do usuário: RedHart escalava o poder pelos sacrifícios do
+turno - mesmo tipo de bug do Lammergeier (lê um contador só do jogador
+LOCAL da tela, não do dono real da carta, então diverge no lado que
+espelha). Removida a escalada dinâmica, ataque fixado em **3**,
+renomeado pra **Veado Fedorento**, e concedido **DebuffEnemy** (reduz
+em 1 o ataque de quem estiver na posição oposta) como sigilo novo.
+Diferente do Bone Digger do Lammergeier, esse sigilo não precisou de
+nenhuma correção extra de sincronização - é um cálculo passivo que os
+dois lados já recalculam sozinhos a partir do tabuleiro, sempre igual.
 
 ## Correção urgente nesta build (2026-08-27): rematch terminava a batalha 1 sozinho, sem ninguém ter perdido
 
